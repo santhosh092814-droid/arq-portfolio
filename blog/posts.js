@@ -7,6 +7,53 @@
 //  3. Save, commit, done. Keep the backtick ` characters that wrap the md text; if your article needs a
 //     backtick, write \` instead.
 window.ARQ24_POSTS = [
+{day: "03", date: "2026-11-12", cat: "Branding", region: "Industry · Adobe MAX", read: "3 min", accent: "same.", poster: "blog/ARQ24_Day03_Reference_Loop.png", alt: "ARQ./24 Day 03 poster: twelve tiles, eleven identical and one breaking the pattern",
+ md: `
+# Everything is starting to look the same.
+
+**ARQ./24 · Day 03** · Nov 12, 2026 · @Santhosh · Branding · 3 min read
+
+## What is ARQ./24?
+
+ARQ./24 is a daily series where I pick one real story from the design world and share what it means to me as a UX designer. One story, one take, every day. Everything is taken from published sources, with links at the end of each post so you can read the original yourself.
+
+## What happened
+
+Speaking to the Australian marketing publication B&T at Adobe MAX in Miami, Jolene Delisle, founder and creative director of the US branding agency The Working Assembly, said brands are stuck in a "reference loop" of design choices that conform to their category. Her summary: "We're seeing a lot of homogeneity."
+
+She pointed to several causes:
+
+- **Algorithms and AI.** Algorithm-driven digital media, and increasingly AI, are pushing design towards the same answers.
+- **Chasing "something buzzy".** The industry's appetite for what's trending pulls teams towards short-lived looks.
+- **References first.** More people than ever are entering design, and many start by studying what everyone else in the category is doing, then fit their work to it.
+- **Avoiding the "unsexy" work.** The less glamorous side of creative work, the real business problems, tends to get skipped.
+
+She also made the point that disruption doesn't last. Her example was olive oil brand Graza, whose squeezy bottle stood out at launch: "Within six months, all their competitors had squeezy bottles. That's when disruption becomes the pattern."
+
+## The reference loop, in one picture
+
+The poster shows twelve tiles. Eleven are the same safe, familiar layout, and only one breaks the pattern. That's how a lot of categories feel right now.
+
+[image: ARQ./24 Day 03 poster: twelve tiles, eleven identical and one breaking the pattern]
+
+## My take
+
+If your work looks like the references, it's not a brand. It's a template.
+
+References aren't the enemy. Every designer uses them, me included. The problem starts when they become the brief. A moodboard should show you what's already been done so you can avoid it, not a target to land on.
+
+AI makes this easier to fall into, not harder. A tool trained on what already exists will happily hand you the average of your category, beautifully polished. That's exactly why the human part of the job, understanding the people and the problem, matters more than ever.
+
+## What I'm taking into my own work
+
+For my own UX case study, I'm starting from interviews and real moments of friction, not from Dribbble shots of similar apps. Research gives you something references can't: a reason to look different that comes from the people you're designing for.
+
+## Source
+
+- B&T, "'A Lot Of Homogeneity': Are Brands Stuck In A Growth-Hampering Design 'Reference Loop'?" by Tom Fogden (12 November 2026): https://bandt.com.au/a-lot-of-homogeneity-are-brands-stuck-in-a-growth-hampering-design-reference-loop
+
+*ARQ./24 is a daily design news series by Santhosh Muthu at ARQ. One design story, every day.*
+`},
 {day: "02", date: "2026-11-11", cat: "Brand", region: "UK · Telecom", read: "3 min", accent: "signpost.", poster: "blog/ARQ24_Day02_giffgaff.png", alt: "ARQ./24 Day 02 poster: the old and new giffgaff logos side by side, with the new signpost circled",
  md: `
 # giffgaff didn't reinvent itself. It added a signpost.
