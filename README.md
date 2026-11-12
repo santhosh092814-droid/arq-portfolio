@@ -2,6 +2,7 @@
 
 ## What's in this folder
 - `index.html` — the whole site (all images are built in).
+- `config.js` — your private settings (the Web3Forms key). Set once, never replaced.
 - `blog/posts.js` — your ARQ./24 articles. This is the only file you edit for a new post.
 - `blog/*.png` — the posters.
 - Upload the folder exactly like this; keep `blog/` next to `index.html`.
@@ -24,11 +25,11 @@ Alternative, if you'd rather not touch GitHub: drag this folder onto https://app
 ## 2. Get enquiries delivered to your email (Web3Forms, free, ~2 minutes, once)
 1. Go to https://web3forms.com → enter santhoshmuthu910@gmail.com → "Create Access Key".
 2. Open the email they send you and copy the access key.
-3. In `index.html` find `YOUR_WEB3FORMS_ACCESS_KEY` (it appears once) and paste your key in its place.
-4. Re-upload `index.html`. From then on every message sent from the site's contact form lands in
-   your inbox, with the sender's name and email so you can reply.
-Until you do this the form still works: it opens the visitor's email app with the message pre-filled.
-(Free plan: 250 messages a month, spam protection included.)
+3. Open `config.js`, paste the key between the quotes, and save/upload it. That's the only place the key lives,
+   so replacing `index.html` later never erases it.
+Every message from the site's contact form lands in your inbox with the sender's name and email. The visitor sees
+a "Thanks, your message is on its way" note on the same page (no new page). If the key is missing the form opens
+the visitor's email app instead. Free plan: 250 messages a month, spam protection included.
 
 ## 3. Publish a new ARQ./24 post every day (~2 minutes)
 1. Save the day's poster as `blog/ARQ24_DayXX_Name.png`.
