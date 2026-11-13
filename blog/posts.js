@@ -7,6 +7,53 @@
 //  3. Save, commit, done. Keep the backtick ` characters that wrap the md text; if your article needs a
 //     backtick, write \` instead.
 window.ARQ24_POSTS = [
+{day: "04", date: "2026-11-13", cat: "Design festival", region: "Glasgow · 12–22 Nov", read: "3 min", accent: "days.", poster: "blog/ARQ24_Day04_International_Assembly.png", alt: "ARQ./24 Day 04 poster: a wall of six abstract posters for International Assembly in Glasgow",
+ md: `
+# 190 posters. One city. Eleven days.
+
+**ARQ./24 · Day 04** · Nov 13, 2026 · @Santhosh · Design festival · 3 min read
+
+## What is ARQ./24?
+
+ARQ./24 is a daily series where I pick one real story from the design world and share what it means to me as a UX designer. One story, one take, every day. Everything is taken from published sources, with links at the end of each post so you can read the original yourself.
+
+## What's happening
+
+International Assembly, the design and creative festival run by INTL, is on in Glasgow right now, from 12 to 22 November, at Glasgow Royal Concert Hall and The Pyramid at Anderston. INTL was formerly Graphic Design Festival Scotland, and the team has been running the festival for 11 years.
+
+Here's what's in it:
+
+- **A conference** on 12 November covering graphic design, branding, coding, animation, art and advertising, with speakers including Bráulio Amado, COLLINS, FISK, Eva Cremers and Coding Systems.
+- **The International Poster Exhibition**, with 190 contemporary works by more than 200 designers and creatives from around the world. It opened alongside the launch of the new International Poster Book and runs until 22 November.
+- **Weekend workshops** on 14 and 15 November in type design, coding, editorial, illustration, visual language and poster design.
+- **A Live Project** on 16 and 17 November for students and recent graduates: two days of mentoring from studios on a live brief, with more than 22 work placements on offer.
+- **An awards night** at Rowallan Castle, a medieval castle, with a ceilidh.
+
+Co-founder James Gilchrist describes the goal simply: "to create the dream event which we would want to attend."
+
+## The poster wall, in one picture
+
+The poster shows a wall of abstract posters, a nod to the International Poster Exhibition. They're my own illustrations, not works from the show.
+
+[image: ARQ./24 Day 04 poster: a wall of six abstract posters for International Assembly in Glasgow]
+
+## My take
+
+Design communities aren't built in feeds. They're built in rooms like this.
+
+Most of us learn design alone, behind a screen, scrolling other people's work. Festivals like International Assembly flip that: you make things with your hands, you hear studios talk honestly about their work, and you meet the people behind the posters. For students, the Live Project and its work placements might matter even more than the talks.
+
+## What I'm taking into my own work
+
+As an international student in Birmingham, I know how isolating it can be to build a design career from scratch. The best things that have happened to my work came from conversations, not algorithms. I'm going to make more effort to show up in person, and I'd encourage any student in Scotland to look at the Live Project.
+
+## Source
+
+- Creative Boom, "International Assembly 2026: Glasgow's festival returns with a secret stage and a night in a castle" by Tom May (26 October 2026): https://www.creativeboom.com/news/international-assembly-2026-glasgows-design-festival-turns-with-a-secret-stage-and-a-night-in-a-medieval-castle/
+- Festival website: https://intl.international
+
+*ARQ./24 is a daily design news series by Santhosh Muthu at ARQ. One design story, every day.*
+`},
 {day: "03", date: "2026-11-12", cat: "Branding", region: "Industry · Adobe MAX", read: "3 min", accent: "same.", poster: "blog/ARQ24_Day03_Reference_Loop.png", alt: "ARQ./24 Day 03 poster: twelve tiles, eleven identical and one breaking the pattern",
  md: `
 # Everything is starting to look the same.
