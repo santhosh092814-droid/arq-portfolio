@@ -208,6 +208,17 @@ blockquote footer{margin-top:2rem;font-size:.8125rem;text-transform:uppercase;le
 #lb{position:fixed;inset:0;z-index:90;background:rgba(8,8,10,.95);display:grid;place-items:center;padding:2rem;cursor:zoom-out}
 #lb{padding:56px 64px}
 #lb img{max-width:calc(100vw - 128px);max-height:calc(100vh - 112px);max-height:calc(100dvh - 112px);width:auto;height:auto;object-fit:contain;border-radius:2px;cursor:default}
+.ar{width:1em;height:1em;flex:none;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;vertical-align:-.14em;transition:transform .3s cubic-bezier(.2,.7,.2,1)}
+.bk,.bk2,.rb,.more,.a24nx .mn,.em i{display:inline-flex;align-items:center}
+.bk,.bk2{gap:.6rem}.bk:hover .al,.bk2:hover .al{transform:translateX(-5px)}
+.rb:hover .ar,.more:hover .ar,.a24nx:hover .ar{transform:translate(3px,-3px)}
+.more:hover .ar,.a24nx:hover .ar{transform:translateX(4px)}
+.nx h2 .ar{width:.7em;height:.7em;margin-left:.15em;vertical-align:-.02em;stroke-width:1.6}
+.nx:hover h2 .ar{transform:translate(6px,-6px)}
+.em i .ar{width:1em;height:1em;vertical-align:-.1em}
+.em:hover i .ar{transform:translate(4px,-4px)}
+.lbn .ar{width:22px;height:22px}
+.wr em .ar{width:1em;height:1em}
 .lbn{position:absolute;display:grid;place-items:center;width:48px;height:48px;border-radius:50%;border:1px solid rgba(243,241,234,.3);background:rgba(8,8,10,.6);color:#f3f1ea;font:400 20px/1 Inter,system-ui,sans-serif;cursor:pointer;transition:border-color .25s,color .25s}
 .lbn:hover,.lbn:focus-visible{border-color:var(--ac);color:var(--ac)}
 .lbp{left:12px;top:50%;margin-top:-24px}.lbx{right:12px;top:50%;margin-top:-24px}.lbc{right:12px;top:12px;width:44px;height:44px;font-size:16px}
@@ -359,7 +370,7 @@ blockquote footer{margin-top:2rem;font-size:.8125rem;text-transform:uppercase;le
 <div class="eb">The Story</div>
 <h2 class="d big rv" style="margin-top:1.5rem;max-width:16ch">From sketches to systems.</h2>
 <p class="lead rv" style="--dl:120ms">I started with drawing and portraits, then trained in Graphics and Visual Design at Arena Animation. Since then, my work has grown across graphic design, 3D product visualisation and UX research. My engineering background gives me a practical approach to design, while my experience at GM Modular, university projects and Hilton Birmingham Metropole has shaped how I create visual and digital experiences.</p>
-<a class="rb rv" href="#resume" data-resume style="--dl:200ms">View my resume <i>↗</i></a>
+<a class="rb rv" href="#resume" data-resume style="--dl:200ms">View my resume <i><svg class="ar au" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></i></a>
 </div>
 <div class="c6" style="padding-top:.5rem"><ul class="pr" id="pr"></ul></div>
 </div></section>
@@ -369,7 +380,7 @@ blockquote footer{margin-top:2rem;font-size:.8125rem;text-transform:uppercase;le
 <ul class="wk" id="wk"></ul>
 </section>
 
-<section id="arq24" class="a24 a24t" aria-labelledby="a24h" hidden><div class="a24w"><div class="th2"><div><div class="mn ac">ARQ./24 · Daily design news</div><h2 id="a24h">One design story. <span class="ac">Every day.</span></h2></div><a class="more mn" href="#blog">All posts →</a></div><div class="cards" id="arq24-cards"></div></div></section>
+<section id="arq24" class="a24 a24t" aria-labelledby="a24h" hidden><div class="a24w"><div class="th2"><div><div class="mn ac">ARQ./24 · Daily design news</div><h2 id="a24h">One design story. <span class="ac">Every day.</span></h2></div><a class="more mn" href="#blog">All posts <svg class="ar" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></div><div class="cards" id="arq24-cards"></div></div></section>
 
 <section id="impact">
 <div class="eb">Experience &amp; Impact</div><h2 class="d rv" style="margin-top:1.5rem">Design, with purpose.</h2>
@@ -388,8 +399,8 @@ blockquote footer{margin-top:2rem;font-size:.8125rem;text-transform:uppercase;le
 <div class="eb">Let’s Build</div>
 <h2 class="d rv">Have something that needs to make sense?</h2>
 <p class="lead rv" style="--dl:120ms">Tell me about the product, the people, or the problem. I read every message.</p>
-<a class="em rv" href="mailto:santhoshmuthu910@gmail.com">santhoshmuthu910@gmail.com <i>↗</i></a>
-<a class="rb rv" href="#resume" data-resume>View my resume <i>↗</i></a>
+<a class="em rv" href="mailto:santhoshmuthu910@gmail.com">santhoshmuthu910@gmail.com <i><svg class="ar au" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></i></a>
+<a class="rb rv" href="#resume" data-resume>View my resume <i><svg class="ar au" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></i></a>
 <form class="cf rv" id="cf" action="https://api.web3forms.com/submit" method="POST" novalidate>
 <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
 <input type="hidden" name="subject" value="New enquiry from your portfolio site">
@@ -398,7 +409,7 @@ blockquote footer{margin-top:2rem;font-size:.8125rem;text-transform:uppercase;le
 <div class="cf2"><label><span>Name</span><input name="name" autocomplete="name" required></label>
 <label><span>Email</span><input type="email" name="email" autocomplete="email" required></label></div>
 <label><span>Message</span><textarea name="message" rows="5" required placeholder="The product, the people, or the problem…"></textarea></label>
-<button type="submit" class="rb">Send message <i>↗</i></button>
+<button type="submit" class="rb">Send message <i><svg class="ar au" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></i></button>
 <p class="cfs" role="status" aria-live="polite"></p>
 </form>
 <div class="fb">
@@ -456,7 +467,7 @@ blockquote footer{margin-top:2rem;font-size:.8125rem;text-transform:uppercase;le
 </article>
 </div>
 </div>
-<div id="lb" hidden role="dialog" aria-modal="true" aria-label="Image viewer"><img alt=""><button class="lbn lbp" aria-label="Previous image">&#8592;</button><button class="lbn lbx" aria-label="Next image">&#8594;</button><button class="lbn lbc" aria-label="Close">&#10005;</button><div class="lbk" aria-live="polite"></div></div>
+<div id="lb" hidden role="dialog" aria-modal="true" aria-label="Image viewer"><img alt=""><button class="lbn lbp" aria-label="Previous image"><svg class="ar al" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12H5M11 6l-6 6 6 6"/></svg></button><button class="lbn lbx" aria-label="Next image"><svg class="ar" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></button><button class="lbn lbc" aria-label="Close"><svg class="ar" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button><div class="lbk" aria-live="polite"></div></div>
 
 <script>
 const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
@@ -470,7 +481,7 @@ $("#tr").innerHTML=[...words,...words].map(w=>`<span class="d">${w}</span>`).joi
 const pr=[["People before pixels","My research project with AFJ Travel explored how a fleet-management system could better support users and improve operational visibility."],["Craft the visual story","From portraits and posters to 3D product visuals, I use composition, typography and imagery to communicate ideas clearly."],["Think beyond the screen","Engineering and product design taught me to consider how systems work together, not just how individual elements look."],["Design for real people","At Hilton Birmingham Metropole, I create event campaigns, menus, websites and brand materials for real-world use."]];
 $("#pr").innerHTML=pr.map((p,i)=>`<li class="rv" style="--dl:${i*90}ms"><span class="k">0${i+1}</span><div><h3>${p[0]}</h3><p>${p[1]}</p></div></li>`).join("");
 const wk0=[["UI Carousel","UI Design","2026","6 slides","A six-slide carousel that teaches practical UI habits through side-by-side wrong and good screens."],["Website Design","UX / UI","2024–26","10 hero sections","Hero-section concepts across travel, retail, marketing, education and crypto, 2024–2026."],["Motion Graphics","Motion Design","2026","3 pieces","Kinetic typography and motion graphics for vertical social, made in After Effects."],["Poster Series","Graphic Design","2023–24","8 posters","Bold type, dramatic perspective and tight palettes across film, music and street culture."]];const ORD=[3,1,0,2],wk=ORD.map(k=>wk0[k]);
-$("#wk").innerHTML=wk.map((p,i)=>`<li class="rv" style="--dl:${(i%2)*120}ms"><a class="cl" href="#project-${i+1}" aria-label="Open ${p[0]}"></a><div class="ph">${({"Website Design":"web","Poster Series":"pcover","UI Carousel":"uicv","Motion Graphics":"mcv"})[p[0]]?`<img data-im="${({"Website Design":"web","Poster Series":"pcover","UI Carousel":"uicv","Motion Graphics":"mcv"})[p[0]]}" alt="${p[0]}">`:p[0]+" — cover image"}</div><div class="wr"><div><h3>${p[0]}</h3><p>${p[4]}</p></div><div><em>${p[1]} ↗</em></div></div></li>`).join("");
+$("#wk").innerHTML=wk.map((p,i)=>`<li class="rv" style="--dl:${(i%2)*120}ms"><a class="cl" href="#project-${i+1}" aria-label="Open ${p[0]}"></a><div class="ph">${({"Website Design":"web","Poster Series":"pcover","UI Carousel":"uicv","Motion Graphics":"mcv"})[p[0]]?`<img data-im="${({"Website Design":"web","Poster Series":"pcover","UI Carousel":"uicv","Motion Graphics":"mcv"})[p[0]]}" alt="${p[0]}">`:p[0]+" — cover image"}</div><div class="wr"><div><h3>${p[0]}</h3><p>${p[4]}</p></div><div><em>${p[1]} <svg class="ar au" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></em></div></div></li>`).join("");
 const st=[["60+","Projects shipped"],["25+","Research studies led"],["15+","Brands and identities designed"],["2K+","People reached by the work"]];
 $("#dl").innerHTML=st.map((s,i)=>`<div class="rv" style="--dl:${i*110}ms"><dd>${s[0]}</dd><dt>${s[1]}</dt></div>`).join("");
 const vo=[["“Santhosh is an enthusiastic and creative individual who consistently brings fresh ideas and a proactive attitude to his work. I particularly appreciated his initiative in developing menu designs for the hotel in his own time, demonstrating a genuine passion for design beyond his day-to-day responsibilities. His contribution and dedication were recognised through our Team Member Recognition programme. It was a pleasure working with him.”","Rachel Keeling","Director, Hilton Birmingham Metropole"],["“He demonstrated a strong commitment to understanding the problem through thorough research and thoughtful analysis. His ability to translate research findings into a considered design solution was particularly impressive, and the final outcome showed real potential to add value to the business. It was a pleasure leading the KTP project with him and seeing his ideas develop into a practical solution.”","Miheer Hosgeri Karnam","KTP Project Lead, AFJ Travel"],["“Santhosh showed a genuine interest in visual design and a thoughtful approach to developing user interfaces. He brought creativity to his work while considering the principles behind effective design, usability and visual communication. His willingness to explore ideas and refine his work reflected a strong commitment to developing as a designer.”","Robert Sharl","Visual Interface Design Lecturer, Birmingham City University"]];
@@ -565,7 +576,7 @@ const fd=iso=>{const x=new Date(iso+"T12:00:00");return isNaN(x)?iso:x.toLocaleD
 const BA_RE=/^(before and after|before & after|the details)/i;
 function card(p){return '<a class="a24c" href="#blog/'+p.slug+'"><div class="th">'+(p.poster?'<img src="'+esc(p.poster)+'" alt="" loading="lazy" decoding="async">':"")+'</div><div class="bd"><div class="mn ac">ARQ./24 · Day '+p.day+'</div><h3>'+tx(p.title)+'</h3><div class="m2 mn"><span>'+fd(p.date)+'</span>'+(p.cat?'<span class="chip">'+tx(p.cat)+'</span>':"")+'</div></div></a>'}
 function a24foot(){return '<footer class="a24f"><p>'+tx(A24_SIGN)+'</p><div class="l mn"><a href="#blog">All posts</a><a href="#top">Portfolio</a><a href="#contact">Contact</a></div></footer>'}
-function listHTML(){return '<a class="bk2 mn" href="#top">← Portfolio</a><div class="mn ac" style="margin-top:28px">ARQ./24</div><h1>One design story. <span class="ac">Every day.</span></h1><p class="lede">'+tx(A24_SHORT)+'</p>'+(POSTS.length?'<div class="cards">'+POSTS.map(card).join("")+'</div>':'<p class="lede">The first post is on its way.</p>')}
+function listHTML(){return '<a class="bk2 mn" href="#top"><svg class="ar al" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12H5M11 6l-6 6 6 6"/></svg> Portfolio</a><div class="mn ac" style="margin-top:28px">ARQ./24</div><h1>One design story. <span class="ac">Every day.</span></h1><p class="lede">'+tx(A24_SHORT)+'</p>'+(POSTS.length?'<div class="cards">'+POSTS.map(card).join("")+'</div>':'<p class="lede">The first post is on its way.</p>')}
 function rb(b){return b.k==="p"?'<p>'+inl(b.t)+'</p>':'<'+b.k+' class="'+(b.k==="ul"?"facts":"steps")+'">'+b.i.map(x=>'<li><span>'+inl(x)+'</span></li>').join("")+'</'+b.k+'>'}
 function posterFig(p){return p.poster?'<figure class="a24pf"><img src="'+esc(p.poster)+'" alt="'+tx(p.alt||("ARQ./24 Day "+p.day+" poster: "+p.title))+'" loading="lazy"><figcaption class="mn">The Day '+p.day+' poster</figcaption></figure>':""}
 const hasImg=p=>p.secs.some(s=>s.b.some(b=>b.k==="img"));
@@ -578,8 +589,8 @@ function postHTML(p){
  const i=POSTS.indexOf(p),newer=POSTS[i-1],older=POSTS[i+1];
  const t=p.accent&&p.title.endsWith(p.accent)?tx(p.title.slice(0,-p.accent.length).trimEnd())+' <span class="ac">'+tx(p.accent)+'</span>':tx(p.title);
  const hasBA=hasImg(p)||p.secs.some(s=>BA_RE.test(s.h));
- return '<article class="post"><a class="bk2 mn" href="#blog">← All posts</a><div class="meta mn"><span class="ac">ARQ./24 · Day '+p.day+'</span><span>'+fd(p.date)+'</span>'+(p.cat?'<span class="chip">'+tx(p.cat)+'</span>':"")+(p.region?'<span class="chip g">'+tx(p.region)+'</span>':"")+(p.read?'<span>'+tx(p.read)+' read</span>':"")+'</div><h1>'+t+'</h1>'+(hasBA?"":posterFig(p))+p.secs.map(s=>secHTML(s,p)).join("")
- +((newer||older)?'<div class="pn" role="navigation" aria-label="More posts">'+(older?'<a href="#blog/'+older.slug+'"><span class="mn">← Older</span><b>Day '+older.day+': '+tx(older.title)+'</b></a>':"<span></span>")+(newer?'<a class="a24nx" href="#blog/'+newer.slug+'"><span class="mn">Newer →</span><b>Day '+newer.day+': '+tx(newer.title)+'</b></a>':"")+'</div>':"")+'</article>';
+ return '<article class="post"><a class="bk2 mn" href="#blog"><svg class="ar al" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12H5M11 6l-6 6 6 6"/></svg> All posts</a><div class="meta mn"><span class="ac">ARQ./24 · Day '+p.day+'</span><span>'+fd(p.date)+'</span>'+(p.cat?'<span class="chip">'+tx(p.cat)+'</span>':"")+(p.region?'<span class="chip g">'+tx(p.region)+'</span>':"")+(p.read?'<span>'+tx(p.read)+' read</span>':"")+'</div><h1>'+t+'</h1>'+(hasBA?"":posterFig(p))+p.secs.map(s=>secHTML(s,p)).join("")
+ +((newer||older)?'<div class="pn" role="navigation" aria-label="More posts">'+(older?'<a href="#blog/'+older.slug+'"><span class="mn"><svg class="ar al" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12H5M11 6l-6 6 6 6"/></svg> Older</span><b>Day '+older.day+': '+tx(older.title)+'</b></a>':"<span></span>")+(newer?'<a class="a24nx" href="#blog/'+newer.slug+'"><span class="mn">Newer <svg class="ar" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></span><b>Day '+newer.day+': '+tx(newer.title)+'</b></a>':"")+'</div>':"")+'</article>';
 }
 function renderBlog(h){
  const bl=$("#bl"),p=POSTS.find(x=>"blog/"+x.slug===h);
@@ -597,14 +608,14 @@ const P0=[
 {t:"Poster Series",c:"Graphic Design",y:"2023–24",role:"Graphic Designer",time:"Ongoing series",tools:"Photoshop, Illustrator, Figma",cv:"pcover",g:["eyes","her","black","saints","dead","outlaw","run","night"],sum:"A collection of poster and typography studies: bold lettering, dramatic perspective and tight palettes, built to show range across film, music and street culture.",s:[["The brief","A self-initiated series showing how I approach posters across genres. Every piece had to be read from across a room and still reward a closer look."],["Concept","Low-angle photography paired with oversized, distressed lettering on paper-stock textures. Each poster limits itself to one or two colours so the image and the type lock together."],["Execution","Compositing, halftone and grain textures, and hand-tuned letterforms. Small editorial details such as captions, barcodes and icons give each piece an extra layer."],["The result","A versatile body of work covering film, campaign and editorial posters, and the base for my brand and event work."]],r:[["08","Posters in the series"],["06","Colour palettes explored"],["01","Consistent visual language"]]}
 ];const P=ORD.map(k=>P0[k]);
 function renderP(i){const p=P[i],k=(i+1)%P.length,n=P[k];
-$("#pj").innerHTML=`<a class="bk" href="#work">← All work</a><div class="eb rv" style="margin-top:3rem">${p.c} · ${p.y}</div><h1 class="d rv">${p.t}</h1><p class="lead rv">${p.sum}</p>
+$("#pj").innerHTML=`<a class="bk" href="#work"><svg class="ar al" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12H5M11 6l-6 6 6 6"/></svg> All work</a><div class="eb rv" style="margin-top:3rem">${p.c} · ${p.y}</div><h1 class="d rv">${p.t}</h1><p class="lead rv">${p.sum}</p>
 <div class="mt rv">${[["Role",p.role],["Year",p.y],["Timeline",p.time],["Tools",p.tools]].map(m=>`<div><small>${m[0]}</small><span>${m[1]}</span></div>`).join("")}</div>
 ${p.cv?`<div class="ph pjc rv"><img data-im="${p.cv}" alt="${p.t}"></div>`:`<div class="ph pjc rv">${p.t} — cover image</div>`}
 <div style="margin-top:4rem">${p.s.map((s,j)=>`<div class="sx rv"><h3 class="d"><i>0${j+1}</i> — ${s[0]}</h3><p>${s[1]}</p></div>`).join("")}</div>
 <div class="st3 rv">${p.r.map(r=>`<div><b>${r[0]}</b><small>${r[1]}</small></div>`).join("")}</div>
 ${p.v?`<div class="vg rv">${p.v.map(v=>`<figure><video controls playsinline preload="metadata" poster="${v[1]}" width="${v[3]}" height="${v[4]}" aria-label="${v[2]}"><source src="${v[0]}" type="video/mp4"></video><figcaption>${v[2]}</figcaption></figure>`).join("")}</div>`:p.g?`<div class="pg rv">${p.g.map(k=>`<button aria-label="Enlarge image"><img data-im="${k}" alt="${p.t}"></button>`).join("")}</div>`:`<div class="gl2 rv"><div class="ph">Image 01</div><div class="ph">Image 02</div></div>`}
-<a class="nx rv" href="#project-${k+1}"><div class="eb">Next project</div><h2 class="d big">${n.t} ↗</h2></a>
-<div class="pf cp"><span>© 2026 Santhosh</span><a href="#contact" class="bk">Get in touch ↗</a></div>`;
+<a class="nx rv" href="#project-${k+1}"><div class="eb">Next project</div><h2 class="d big">${n.t} <svg class="ar au" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></h2></a>
+<div class="pf cp"><span>© 2026 Santhosh</span><a href="#contact" class="bk">Get in touch <svg class="ar au" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a></div>`;
 setIm($("#pj"));$$("#pj .rv").forEach(e=>io.observe(e));$$("#pj video").forEach(v=>v.addEventListener("play",()=>$$("#pj video").forEach(o=>{if(o!==v)o.pause()})));document.title=p.t+" — Santhosh"}
 function route(){const h=location.hash.slice(1),i=P.findIndex((_,k)=>"project-"+(k+1)===h),pj=$("#pj"),m=$("main"),bl=$("#bl"),was=!pj.hidden||!bl.hidden;
 if(h==="blog"||h.startsWith("blog/")){pj.hidden=true;m.hidden=true;renderBlog(h);bl.hidden=false;scrollTo({top:0,behavior:"instant"})}
