@@ -52,7 +52,7 @@ nav{pointer-events:auto;display:flex;align-items:center;justify-content:space-be
 nav ul{display:none;gap:2.5rem}
 nav ul a{position:relative;font-size:.8125rem;font-weight:500;text-transform:uppercase;letter-spacing:.18em;color:var(--muted);transition:color .3s}
 nav ul a:after{content:"";position:absolute;left:0;bottom:-.25rem;height:1px;width:0;background:var(--ac);transition:width .3s}
-nav ul a:hover{color:var(--fg)}nav ul a:hover:after{width:100%}
+.xs{color:var(--ac)!important;display:inline-flex;align-items:center;gap:.4em}.xs .ar{width:.9em;height:.9em}nav ul a:hover{color:var(--fg)}nav ul a:hover:after{width:100%}
 @media(min-width:640px){.logo span.n{display:block}}
 @media(min-width:768px){nav ul{display:flex}#bg{display:none}}
 #bg{width:2.5rem;height:2.5rem;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:.375rem}
@@ -344,10 +344,10 @@ blockquote footer{margin-top:2rem;font-size:.8125rem;text-transform:uppercase;le
 
 <header><nav>
 <a href="#top" class="logo"><img class="lw nv" data-logo="w" alt="ARQ"><span class="n">By Santhosh</span></a>
-<ul><li><a href="#story">Story</a></li><li><a href="#work">Work</a></li><li><a href="#impact">Impact</a></li><li><a href="#voices">Voices</a></li><li><a href="#blog">Blog</a></li><li><a href="#resume" data-resume>Resume</a></li><li><a href="#contact">Contact</a></li></ul>
+<ul><li><a href="#story">Story</a></li><li><a href="#work">Work</a></li><li><a href="#impact">Impact</a></li><li><a href="#voices">Voices</a></li><li><a href="#blog">Blog</a></li><li><a href="#resume" data-resume>Resume</a></li><li><a href="#contact">Contact</a></li><li><a class="xs" href="https://santhosh092814-droid.github.io/arq-portfolio/studio/">ARQ. Studio <svg class="ar au" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a></li></ul>
 <button id="bg" aria-label="Menu"><i></i><i></i><i></i></button>
 </nav></header>
-<div id="mm"><a href="#story">Story</a><a href="#work">Work</a><a href="#impact">Impact</a><a href="#voices">Voices</a><a href="#blog">Blog</a><a href="#resume" data-resume>Resume</a><a href="#contact">Contact</a></div>
+<div id="mm"><a href="#story">Story</a><a href="#work">Work</a><a href="#impact">Impact</a><a href="#voices">Voices</a><a href="#blog">Blog</a><a href="#resume" data-resume>Resume</a><a href="#contact">Contact</a><a class="xs" href="https://santhosh092814-droid.github.io/arq-portfolio/studio/">ARQ. Studio <svg class="ar au" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a></div>
 
 <main>
 <section id="top">
@@ -419,6 +419,7 @@ blockquote footer{margin-top:2rem;font-size:.8125rem;text-transform:uppercase;le
 
 
 </ul></nav>
+<p class="cp"><a class="xs" href="https://santhosh092814-droid.github.io/arq-portfolio/studio/">Looking for a design studio? Visit ARQ. Studio <svg class="ar au" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a></p>
 <p class="cp">© 2026 Santhosh. All rights reserved.</p>
 </div>
 </footer>
