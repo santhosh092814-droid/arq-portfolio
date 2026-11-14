@@ -7,6 +7,50 @@
 //  3. Save, commit, done. Keep the backtick ` characters that wrap the md text; if your article needs a
 //     backtick, write \` instead.
 window.ARQ24_POSTS = [
+{day: "05", date: "2026-11-14", cat: "Product design", region: "Kids' tech · Yoto × Heirloom", read: "3 min", accent: "back.", poster: "blog/ARQ24_Day05_Yoto_Low_Screen.png", alt: "ARQ./24 Day 05 poster: what Yoto could have added (a waving character, an iPod-style screen, addictive moments) versus what it chose (a lo-fi pixel menu, a green dial of 20 favourites, softer dials)",
+ md: `
+# A kids' screen designed to hold back.
+
+**ARQ./24 · Day 05** · Nov 14, 2026 · @Santhosh · Product design · 3 min read
+
+## What is ARQ./24?
+
+ARQ./24 is a daily series where I pick one real story from the design world and share what it means to me as a UX designer. One story, one take, every day. Everything is taken from published sources, with links at the end of each post so you can read the original yourself.
+
+## What happened
+
+Creative Bloq spoke to Jack Godfrey Wood of design studio Heirloom about redesigning Yoto's fourth-generation audio players for kids. The interesting part isn't what they added. It's what they chose not to add.
+
+- **The technical brief:** more storage, more battery, more internal robustness, and a splashproof build, with a lot of work on keeping dust and liquid out.
+- **The design brief:** players that fit better in kids' hands, travel better, and are easier to hold, carry and drop without anything breaking.
+- **The screen stayed lo-fi.** Both screens have more resolution, but the team "kept everything in pixel world". They considered motion, like a character that waves at you after 15 minutes of nothing happening, and rejected it. They "didn't want addictive, distracting moments".
+- **A green dial** gives kids access to daily radio, podcasts and 20 favourites without overwhelming them with 200 cards. Parents can set day and night versions in the app, and cards are still the main way younger kids use it.
+- **Small physical details:** the dials were softened so kids can reach them from different angles, and made slightly longer for more grip. For one player, the team explored up to 10 to 15 shape concepts before recommending a more pebbly form, after children had held it.
+
+Yoto's core goal, as the article puts it: "kids in control and parents in charge". And the measure of success isn't eyeballs on a screen. It's how often the player gets used and whether it adds value to a child's and a family's life.
+
+## The visual, explained
+
+The poster splits the redesign into two columns: what the team could have added (a waving character, an iPod-style screen, addictive moments), and what it chose instead (a lo-fi pixel menu with no motion, a green dial with 20 favourites, softer and longer dials). The pixel face in the middle is my own illustration of the "pixel world" idea, not Yoto's screen.
+
+[image: ARQ./24 Day 05 poster: what Yoto could have added versus what it chose]
+
+## My take
+
+The best UX metric isn't time on screen. It's time well spent.
+
+So much of the industry still measures success in engagement, sessions and minutes. Yoto's team did the opposite: they had the resolution to do more and decided the product was better with less. That's a harder call than adding a feature, because nobody puts "the animation we didn't ship" in a release note. But restraint is a design decision, and here it's the whole point. A clear mission ("kids in control, parents in charge") made every one of those calls easier.
+
+## What I'm taking into my own work
+
+In my UX case study on international students in the UK, it's tempting to design an app that wants attention: more notifications, more nudges, more screens. Stories like this remind me to ask a different question: how do I help a student get what they need and get on with their day? I want to write my own "moral code" for the project, a one-line rule I can test every design decision against.
+
+## Source
+
+- Creative Bloq, "How do you redesign a cult kids' product? I asked Yoto's new designers" by Georgia Coggan (13 November 2026): https://www.creativebloq.com/inspiration/how-do-you-redesign-a-cult-kids-product-i-asked-yotos-new-designers
+
+*ARQ./24 is a daily design news series by Santhosh Muthu at ARQ. One design story, every day.*
+`},
 {day: "04", date: "2026-11-13", cat: "Design festival", region: "Glasgow · 12–22 Nov", read: "3 min", accent: "days.", poster: "blog/ARQ24_Day04_International_Assembly.png", alt: "ARQ./24 Day 04 poster: a wall of six abstract posters for International Assembly in Glasgow",
  md: `
 # 190 posters. One city. Eleven days.
