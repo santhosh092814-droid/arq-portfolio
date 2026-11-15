@@ -7,7 +7,7 @@
 //  3. Save, commit, done. Keep the backtick ` characters that wrap the md text; if your article needs a
 //     backtick, write \` instead.
 window.ARQ24_POSTS = [
-{day: "06", date: "2026-11-15", cat: "Brand identity", region: "Sydney · Local government", read: "3 min", accent: "wars.", poster: "blog/ARQ24_Day06_Logo_Wars.png", alt: "ARQ./24 Day 06 poster: the words LOGO WARS above a spanner standing on a plinth engraved NOT A MONUMENT",
+{day: "06", date: "2026-11-15", cat: "Brand identity", region: "Sydney · Local government", read: "3 min", accent: "wars.", poster: "blog/ARQ24_Day06_Logo_Wars_v2.png", alt: "ARQ./24 Day 06 poster: the words LOGO WARS above a spanner standing on a plinth engraved NOT A MONUMENT",
  md: `
 # Logo wars.
 
