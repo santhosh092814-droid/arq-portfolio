@@ -7,6 +7,49 @@
 //  3. Save, commit, done. Keep the backtick ` characters that wrap the md text; if your article needs a
 //     backtick, write \` instead.
 window.ARQ24_POSTS = [
+{day: "06", date: "2026-11-15", cat: "Brand identity", region: "Sydney · Local government", read: "3 min", accent: "wars.", poster: "blog/ARQ24_Day06_Logo_Wars.png", alt: "ARQ./24 Day 06 poster: the words LOGO WARS above a spanner standing on a plinth engraved NOT A MONUMENT",
+ md: `
+# Logo wars.
+
+**ARQ./24 · Day 06** · Nov 15, 2026 · @Santhosh · Brand identity · 3 min read
+
+## What is ARQ./24?
+
+ARQ./24 is a daily series where I pick one real story from the design world and share what it means to me as a UX designer. One story, one take, every day. Everything is taken from published sources, with links at the end of each post so you can read the original yourself.
+
+## What happened
+
+A small logo decision at a council in Sydney has turned into a national argument, and Creative Bloq's Tom May has written about why that matters for designers.
+
+- **The council:** Sutherland Shire Council, in Sydney's south, serves around 240,000 people. Captain James Cook first came ashore at Kurnell, within the shire, in 1770, and the council's crest features an engraved portrait of him.
+- **The change:** from July, staff began favouring a newer, simpler light blue wave logo in day-to-day communications. The Cook emblem was moved to "civic, ceremonial and high-value corporate applications". According to the article, Cook wasn't removed or erased.
+- **The row:** Councillor Haris Strangas tabled a motion to review the policy and went on the Today show, a national breakfast TV programme.
+- **The history:** this isn't new. In 2008 the council shrank Cook in favour of its name and a new colour scheme, the wave arrived in 2017, and the portrait was restyled for digital screens ahead of the 250th anniversary of Cook's landing.
+
+The article puts it next to redesigns people accepted, like Mastercard dropping its name from its circles in 2019 and Burger King returning to its retro bun in 2021. Its argument: "Logos are tools, not monuments." The risk, it says, is that clients conclude "it's safer never to change anything at all."
+
+## The visual, explained
+
+A spanner standing on a plinth engraved "NOT A MONUMENT". A logo is something you use and maintain, not something you put on a pedestal. It's my own illustration; I haven't redrawn either of the council's marks.
+
+[image: ARQ./24 Day 06 poster: LOGO WARS, a spanner standing on a plinth engraved NOT A MONUMENT]
+
+## My take
+
+Most of the time, the people a logo serves aren't arguing about it on breakfast TV. They're trying to read it on a phone screen, on a bin lorry, on a council letter about their council tax.
+
+That's the part of the job that gets lost when a mark becomes a symbol of something bigger. A simple wave that works at 16 pixels is a usability decision. A detailed engraved portrait that only works large is a heritage decision. Both can be right, in the right place, and that's exactly what the council seems to have done by keeping Cook for ceremonial use. The design decision was reasonable. The communication of it wasn't strong enough to survive the politics.
+
+## What I'm taking into my own work
+
+When I present design changes, I want to explain the "why" in terms of the people using it, before anyone else gets to explain it for me. In my UX case study on international students in the UK, that means showing the research behind every change, so the decision stands on evidence, not on taste.
+
+## Source
+
+- Creative Bloq, "A simple logo redesign has become Australia's latest culture war – why that's bad news for designers" by Tom May (14 November 2026): https://creativebloq.com/news/sydneys-logo-controversy-shows-how-politics-can-get-in-the-way-of-good-design
+
+*ARQ./24 is a daily design news series by Santhosh Muthu at ARQ. One design story, every day.*
+`},
 {day: "05", date: "2026-11-14", cat: "Product design", region: "Kids' tech · Yoto × Heirloom", read: "3 min", accent: "back.", poster: "blog/ARQ24_Day05_Yoto_Low_Screen.png", alt: "ARQ./24 Day 05 poster: what Yoto could have added (a waving character, an iPod-style screen, addictive moments) versus what it chose (a lo-fi pixel menu, a green dial of 20 favourites, softer dials)",
  md: `
 # A kids' screen designed to hold back.
