@@ -427,7 +427,7 @@ blockquote footer{margin-top:2rem;font-size:.8125rem;text-transform:uppercase;le
 <!-- ARQ./24 posts live in blog/posts.js (see the notes at the top of that file). -->
 <div id="bl" class="a24" hidden></div>
 <script src="config.js"></script>
-<script src="blog/posts.js"></script>
+<script>document.write('<script src="blog/posts.js?v='+Date.now()+'"><\/script>')</script>
 <div id="pj" hidden></div>
 <div id="rm" role="dialog" aria-modal="true" aria-label="Resume" hidden>
 <div class="rp">
