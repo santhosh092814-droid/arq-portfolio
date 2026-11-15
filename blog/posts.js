@@ -36,7 +36,7 @@ A spanner standing on a plinth engraved "NOT A MONUMENT". A logo is something yo
 
 ## My take
 
-Most of the time, the people a logo serves aren't arguing about it on breakfast TV. They're trying to read it on a phone screen, on a bin lorry, on a council letter about their council tax.
+Most of the time, the people a logo serves aren't arguing about it on breakfast TV. They're trying to read it on a phone screen, on the side of a bin truck, on a letter from the council.
 
 That's the part of the job that gets lost when a mark becomes a symbol of something bigger. A simple wave that works at 16 pixels is a usability decision. A detailed engraved portrait that only works large is a heritage decision. Both can be right, in the right place, and that's exactly what the council seems to have done by keeping Cook for ceremonial use. The design decision was reasonable. The communication of it wasn't strong enough to survive the politics.
 
