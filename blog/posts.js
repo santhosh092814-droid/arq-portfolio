@@ -7,6 +7,49 @@
 //  3. Save, commit, done. Keep the backtick ` characters that wrap the md text; if your article needs a
 //     backtick, write \` instead.
 window.ARQ24_POSTS = [
+{day: "07", date: "2026-11-16", cat: "Product · UX", region: "US · Mobility", read: "3 min", accent: "exit.", poster: "blog/ARQ24_Day07_No_Exit.png", alt: "ARQ./24 Day 07 poster: the words NO EXIT above a generic car key fob locked to a padlock with a $299/MO price tag",
+ md: `
+# No exit.
+
+**ARQ./24 · Day 07** · Nov 16, 2026 · @Santhosh · Product · UX · 3 min read
+
+## What is ARQ./24?
+
+ARQ./24 is a daily series where I pick one real story from the design world and share what it means to me as a UX designer. One story, one take, every day. Everything is taken from published sources, with links at the end of each post so you can read the original yourself.
+
+## What happened
+
+Tesla's Cybercab is now available to order, and Creative Bloq's Joe Foley argues it could be the ultimate subscription trap.
+
+- **The price:** the car costs $29,990. To drive it, buyers also have to commit to a Tesla Autonomy Subscription at $299 a month.
+- **No way back:** according to the article, the Cybercab has no manual controls, so cancelling the subscription doesn't turn it into a normal car. In the writer's words, it becomes "an expensive decoration".
+- **The terms:** the subscription agreement lets Tesla change the monthly fee with a month's notice, change service areas and operating conditions, and control access to autonomous driving remotely.
+- **Who can buy:** sales aren't open to the public yet. Buyers need a personal invite, Tesla expects first deliveries in Austin, Texas "as soon as December", and at first the car only works where Tesla's Robotaxi service operates, in parts of Texas and Florida.
+
+The article also reports that Elon Musk, replying on X to the YouTuber Marques Brownlee on 14 November, said the fee is "too high" and should be "more like ~$115/month". It puts the Cybercab next to other car subscriptions, like BMW charging $18 a month for heated seats.
+
+## The visual, explained
+
+A plain car key locked to a padlock, with a monthly price tag hanging off it. The key only works while you keep paying. It's my own illustration of a generic key, not Tesla's product or logo.
+
+[image: ARQ./24 Day 07 poster: NO EXIT, a car key locked to a padlock with a $299/MO price tag]
+
+## My take
+
+In UX we talk a lot about "exit". Can people undo, cancel, leave, without losing everything? It's one of the first things I check in any flow, because a product you can't leave isn't really a choice.
+
+What strikes me here is that the exit has been designed out of the object itself. There's no steering wheel to fall back on. So the subscription isn't a feature on top of the car, it's the car. That might be a fair business model for a self-driving service. But when the price can change with a month's notice and access can be switched off remotely, the person paying carries all the risk. Good design makes that trade-off clear before someone commits, not after.
+
+## What I'm taking into my own work
+
+International students in the UK sign up for a lot of things they can't easily leave: phone contracts, tenancies, gym memberships, bank accounts. In my UX case study, I want every sign-up moment in my design to answer one question clearly: "what happens if I want to stop?" If my design can't answer that in one screen, it isn't finished.
+
+## Source
+
+- Creative Bloq, "The Tesla Cybercab sounds like the ultimate subscription trap" by Joe Foley (15 November 2026): https://www.creativebloq.com/news/the-tesla-cybercab-sounds-like-the-ultimate-subscription-trap
+
+*ARQ./24 is a daily design news series by Santhosh Muthu at ARQ. One design story, every day.*
+`},
 {day: "06", date: "2026-11-15", cat: "Brand identity", region: "Sydney · Local government", read: "3 min", accent: "wars.", poster: "blog/ARQ24_Day06_Logo_Wars_v2.png", alt: "ARQ./24 Day 06 poster: the words LOGO WARS above a spanner standing on a plinth engraved NOT A MONUMENT",
  md: `
 # Logo wars.
