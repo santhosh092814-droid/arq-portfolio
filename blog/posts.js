@@ -7,6 +7,47 @@
 //  3. Save, commit, done. Keep the backtick ` characters that wrap the md text; if your article needs a
 //     backtick, write \` instead.
 window.ARQ24_POSTS = [
+{day: "08", date: "2026-11-17", cat: "Motion · Brand", region: "Gaming · 30+ years", read: "3 min", accent: "start.", poster: "blog/ARQ24_Day08_Press_Start.png", alt: "ARQ./24 Day 08 poster: the words PRESS START above a generic power button with sound waves and a four-step timeline: begin, build, pause, release",
+ md: `
+# Press start.
+
+**ARQ./24 · Day 08** · Nov 17, 2026 · @Santhosh · Motion · Brand · 3 min read
+
+## What is ARQ./24?
+
+ARQ./24 is a daily series where I pick one real story from the design world and share what it means to me as a UX designer. One story, one take, every day. Everything is taken from published sources, with links at the end of each post so you can read the original yourself.
+
+## What happened
+
+In Creative Bloq, Andrew Vucko, founder and executive creative director of the motion studio Vucko, breaks down how PlayStation designed the few seconds between pressing the power button and seeing the dashboard. He calls it "a masterclass in using motion, sound and logo design."
+
+- **Seconds, with a story:** the startup sequence lasts only seconds, but in his words it has "a beginning, a build, a pause and a release."
+- **Where it started:** according to the article, Manabu Sakamoto designed the original PlayStation logo, with an interlocking P and S that gave a sense of depth to match the console's 3D promise. By spring 1994 the identity had become an animation, handed to sound designer Takafumi Fujisawa as what the team called a "motion logo".
+- **It had a job:** on the original PlayStation, the startup sound confirmed the hardware was working and the disc had been read. If something was wrong, part of the sound was designed to loop to signal a fault.
+- **It never stopped:** for more than thirty years, every generation of PlayStation has opened with its own version of the sequence. The original technical job stopped mattering, but PlayStation kept designing the transition.
+
+## The visual, explained
+
+A plain power button in the middle of the bronze circle, with sound waves on both sides, and under it a four-step timeline: begin, build, pause, release. The pause is drawn as a dashed gap, because the pause is part of the design too. It's my own illustration of a generic power button, not PlayStation's logo or hardware.
+
+[image: ARQ./24 Day 08 poster: PRESS START, a power button with sound waves and a begin, build, pause, release timeline]
+
+## My take
+
+Most products treat loading as dead time: a spinner, a blank screen, something to hide. PlayStation did the opposite. It took the moment people wait and turned it into the first thing they feel.
+
+What I like most is that it started as feedback, not decoration. The sound told you the machine was working, and a looping sound told you it wasn't. That's a status message, designed with so much care that people still remember it. In UX we talk about "visibility of system status" as a rule. This is that rule done with emotion.
+
+## What I'm taking into my own work
+
+In my UX case study on international students in the UK, a lot of the journey is waiting: for a visa decision, a bank account, a reply from a landlord. Those waits are where students feel most anxious. I want to design the in-between moments properly: show clearly that something is happening, what comes next, and roughly when, instead of leaving people staring at nothing.
+
+## Source
+
+- Creative Bloq, "How Playstation nailed its iconic startup screen" by Andrew Vucko (16 November 2026): https://www.creativebloq.com/news/how-playstation-nailed-its-iconic-startup-screen
+
+*ARQ./24 is a daily design news series by Santhosh Muthu at ARQ. One design story, every day.*
+`},
 {day: "07", date: "2026-11-16", cat: "Product · UX", region: "US · Mobility", read: "3 min", accent: "exit.", poster: "blog/ARQ24_Day07_No_Exit.png", alt: "ARQ./24 Day 07 poster: the words NO EXIT above a generic car key fob locked to a padlock with a $299/MO price tag",
  md: `
 # No exit.
