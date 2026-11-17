@@ -4,10 +4,12 @@
 //  2. Copy one {...} block below, paste it at the top of the list, and change day, date (YYYY-MM-DD),
 //     cat, region, read, accent (the orange word on the card), poster (file name), alt (describe the poster),
 //     and the md text (your article in Markdown: "# Title", then "## Section" headings).
+//     Optional: slides: ["blog/cover.png", "blog/slide2.png", ...] turns the poster into a swipeable carousel
+//     (first item = the cover people see on the page).
 //  3. Save, commit, done. Keep the backtick ` characters that wrap the md text; if your article needs a
 //     backtick, write \` instead.
 window.ARQ24_POSTS = [
-{day: "08", date: "2026-11-17", cat: "Motion · Brand", region: "Gaming · 30+ years", read: "3 min", accent: "start.", poster: "blog/ARQ24_Day08_Press_Start.png", alt: "ARQ./24 Day 08 poster: the words PRESS START above the PlayStation logo on a round button with sound waves and a four-step timeline: begin, build, pause, release",
+{day: "08", date: "2026-11-17", cat: "Motion · Brand", region: "Gaming · 30+ years", read: "3 min", accent: "start.", poster: "blog/ARQ24_Day08_Press_Start.png", slides: ["blog/ARQ24_Day08_Press_Start.png", "blog/ARQ24_Day08_Slide2.jpg", "blog/ARQ24_Day08_Slide3.jpg", "blog/ARQ24_Day08_Slide4.jpg", "blog/ARQ24_Day08_Slide5.jpg", "blog/ARQ24_Day08_Slide6.jpg"], alt: "ARQ./24 Day 08 poster: the words PRESS START above the PlayStation logo on a round button with sound waves and a four-step timeline: begin, build, pause, release",
  md: `
 # Press start.
 

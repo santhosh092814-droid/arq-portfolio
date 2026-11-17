@@ -287,6 +287,8 @@ footer{border-top:1px solid var(--line);padding-block:3rem 3.4rem}
 .art a{color:var(--ac);border-bottom:1px solid color-mix(in srgb,var(--ac) 40%,transparent);word-break:break-word}
 .art figure{margin:2rem 0}
 .art figure img{width:100%;height:auto;border:1px solid var(--line);border-radius:2px}
+.art .a24sl{display:block;position:relative;width:100%;padding:0;border:0;background:none;cursor:zoom-in}.art .a24sl:focus-visible{outline:2px solid var(--ac);outline-offset:4px}
+.a24b,.a24s{position:absolute;padding:7px 11px;border-radius:999px;background:rgba(11,11,12,.78);color:#F4F2EE;font:500 11px var(--mono);letter-spacing:.12em;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}.a24b{top:14px;right:14px}.a24s{bottom:14px;right:14px}
 .art figcaption{margin-top:.7rem;font:500 11px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--dim)}
 .art .sec.src p{font-size:14.5px}
 .bpn{display:grid;grid-template-columns:1fr 1fr;gap:1rem;border-top:1px solid var(--line);margin-top:3.2rem;padding-top:1.6rem}
@@ -648,13 +650,14 @@ function parsePost(o){var lines=(o.md||"").replace(/\r/g,"").split("\n"),title="
     if(cur)cur.t.push(l)});
   secs=secs.map(function(x){return {h:x.h,b:blocks(x.t.join("\n")).filter(function(b){return !(b.k==="p"&&/^\*?ARQ\.\/24 is a daily design news series/i.test(b.t))})}});
   var day=String(o.day||"").padStart(2,"0");
-  return {slug:"day-"+day,day:day,date:o.date||"",cat:o.cat||"",region:o.region||"",read:o.read||"",accent:o.accent||"",poster:o.poster?ROOT+o.poster:"",alt:o.alt||"",title:title,secs:secs}}
+  return {slug:"day-"+day,day:day,date:o.date||"",cat:o.cat||"",region:o.region||"",read:o.read||"",accent:o.accent||"",poster:o.poster?ROOT+o.poster:"",slides:(Array.isArray(o.slides)?o.slides:[]).map(function(x){return ROOT+x}),alt:o.alt||"",title:title,secs:secs}}
 var POSTS=(window.ARQ24_POSTS||[]).map(parsePost).sort(function(a,b){return b.date.localeCompare(a.date)||b.day.localeCompare(a.day)});
 function fd(iso){var x=new Date(iso+"T12:00:00");return isNaN(x)?iso:x.toLocaleDateString("en-GB",{day:"numeric",month:"short",year:"numeric"})}
 var BA=/^(before and after|before & after|the details)/i;
 function bcard(p){return '<a class="bc" href="#blog-'+p.slug+'"><div class="th">'+(p.poster?'<img src="'+esc(p.poster)+'" alt="" loading="lazy" decoding="async">':"")+'</div><div class="bd"><div class="mono ac">ARQ./24 · Day '+p.day+'</div><h3>'+bx(p.title)+'</h3><div class="m2"><span>'+fd(p.date)+'</span>'+(p.cat?'<span class="chip">'+bx(p.cat)+'</span>':"")+'</div></div></a>'}
 function rb(b){return b.k==="p"?'<p>'+inl(b.t)+'</p>':'<'+b.k+'>'+b.i.map(function(x){return '<li>'+inl(x)+'</li>'}).join("")+'</'+b.k+'>'}
-function fig(p){return p.poster?'<figure><img src="'+esc(p.poster)+'" alt="'+bx(p.alt||("ARQ./24 Day "+p.day+" poster: "+p.title))+'" loading="lazy"><figcaption>The Day '+p.day+' poster</figcaption></figure>':""}
+function fig(p){var n=p.slides.length;if(p.poster&&n>1)return '<figure class="sl"><button type="button" class="a24sl" aria-label="Open the Day '+p.day+' carousel, '+n+' slides"><img src="'+esc(p.slides[0])+'" alt="'+bx(p.alt||("ARQ./24 Day "+p.day+" poster: "+p.title))+'" loading="lazy"><span class="a24b">▣ 1 / '+n+'</span><span class="a24s">Tap to swipe →</span></button><figcaption>The Day '+p.day+' carousel · '+n+' slides · tap the poster to swipe through</figcaption></figure>';
+  return p.poster?'<figure><img src="'+esc(p.poster)+'" alt="'+bx(p.alt||("ARQ./24 Day "+p.day+" poster: "+p.title))+'" loading="lazy"><figcaption>The Day '+p.day+' poster</figcaption></figure>':""}
 function hasImg(p){return p.secs.some(function(x){return x.b.some(function(b){return b.k==="img"})})}
 function sec(x,p){var take=/^my take/i.test(x.h),src=/^source/i.test(x.h);
   var body=x.b.map(function(b,k){return b.k==="img"?fig(p):take&&k===0&&b.k==="p"?'<p class="pull">'+inl(b.t)+'</p>':rb(b)}).join("")+(!hasImg(p)&&BA.test(x.h)?fig(p):"");
@@ -678,6 +681,7 @@ $("#bvx").addEventListener("click",function(){location.hash="#arq24"});
 (function(){var h=$("#bhome");if(!h)return;var n=POSTS.slice(0,3);if(!n.length)return;h.innerHTML=n.map(bcard).join("");var hh=$("#bhh");if(hh)hh.hidden=false})();
 addEventListener("hashchange",route);
 $("#pvx").addEventListener("click",function(){location.hash="#work"});
+bvc.addEventListener("click",function(e){var b=e.target.closest(".a24sl");if(!b||!curB||curB==="idx")return;set=curB.slides.slice();set.alt="ARQ./24 Day "+curB.day+" carousel";lbf=b;show(0);lb.classList.add("open");$(".x",lb).focus()});
 /* open directly on load */
 route();
 
@@ -701,7 +705,7 @@ function wireCarousel(cr){var tr=$(".crt",cr),sl=$$(".cs",cr),ds=$$(".cd button"
   sync()}
 /* lightbox */
 var lb=$("#lb"),lbi=$("img",lb),lbk=$(".k",lb),set=[],ix=0,lbf=null;
-function show(n){ix=(n+set.length)%set.length;lbi.src=set[ix];lbi.alt=cur?cur.t+", design "+(ix+1):"";lbk.textContent=String(ix+1).padStart(2,"0")+" / "+String(set.length).padStart(2,"0");lb.classList.toggle("one",set.length<2)}
+function show(n){ix=(n+set.length)%set.length;lbi.src=set[ix];lbi.alt=set.alt?set.alt+", slide "+(ix+1)+" of "+set.length:cur?cur.t+", design "+(ix+1):"";lbk.textContent=String(ix+1).padStart(2,"0")+" / "+String(set.length).padStart(2,"0");lb.classList.toggle("one",set.length<2)}
 pvc.addEventListener("click",function(e){var b=e.target.closest(".ga button, .cs");if(!b||!cur)return;var tr=b.closest(".crt");if(tr&&tr.dragged)return;set=cur.g;lbf=b;show(+b.getAttribute("data-i"));lb.classList.add("open");$(".x",lb).focus()});
 function closeL(){lb.classList.remove("open");if(lbf&&lbf.focus)lbf.focus({preventScroll:true})}
 lb.addEventListener("click",function(e){if(e.target.closest(".p"))show(ix-1);else if(e.target.closest(".n"))show(ix+1);else if(e.target===lbi)show(ix+1);else closeL()});
