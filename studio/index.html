@@ -213,6 +213,11 @@ footer{border-top:1px solid var(--line);padding-block:3rem 3.4rem}
 .mt4>div{background:var(--card);padding:1rem 1.1rem;min-width:0}
 .mt4 small{display:block;font:500 11px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--dim);margin-bottom:.35rem}
 .mt4 span{font-weight:500}
+.csf{display:grid;gap:1rem;margin:0 0 2.4rem}.csf figure{margin:0}.csf button{display:block;width:100%;padding:0;border:1px solid var(--line);background:var(--card);border-radius:2px;overflow:hidden;cursor:zoom-in}
+.csf img{display:block;width:100%;height:auto}.csf figcaption{margin-top:.65rem;font:500 11px/1.4 "JetBrains Mono",monospace;letter-spacing:.14em;text-transform:uppercase;color:var(--dim)}
+@media(min-width:768px){.csf.two{grid-template-columns:1fr 1fr}.csf.mix{grid-template-columns:1fr 2.6fr;align-items:end}.csf.one-two{grid-template-columns:1fr 1fr}.csf.one-two figure:first-child{grid-column:1/-1}}
+.cta2{border-top:1px solid var(--line);padding:3.5rem 0 1.5rem;display:grid;gap:1.6rem;justify-items:start}.cta2 h2{font-size:clamp(1.8rem,4vw,3rem);line-height:1.08;max-width:22ch;margin:0}
+.pvw .csf:first-of-type{margin-top:2.4rem}
 .ga{display:grid;gap:1rem;grid-template-columns:repeat(4,1fr)}
 .ga.web,.ga.ui{grid-template-columns:repeat(5,1fr)}
 .ga.ui{grid-template-columns:repeat(3,1fr)}
@@ -392,8 +397,8 @@ footer{border-top:1px solid var(--line);padding-block:3rem 3.4rem}
 
 <div class="w">
   <div class="cn" id="cn">
-    <div class="rv"><b data-count="4">0</b><span class="mono">Projects open on this site</span></div>
-    <div class="rv" style="--d:100ms"><b data-count="24">0</b><span class="mono">Designs to browse</span></div>
+    <div class="rv"><b data-count="5">0</b><span class="mono">Projects open on this site</span></div>
+    <div class="rv" style="--d:100ms"><b data-count="32">0</b><span class="mono">Designs to browse</span></div>
     <div class="rv" style="--d:200ms"><b data-count="3">0</b><span class="mono">Motion pieces to play</span></div>
     <div class="rv" style="--d:300ms"><b data-count="4">0</b><span class="mono">Stages in every project</span></div>
   </div>
@@ -533,7 +538,15 @@ tg.addEventListener("click",function(){setTheme(root.getAttribute("data-theme")=
 
 /* work data */
 function nums(p,n,a){var o=[];for(var i=1;i<=n;i++)o.push("assets/work/"+p+i+".webp");return o}
+var GMI="assets/gm/gm-";
+var GMC={hero:[["banner","Outdoor flex banner, 10 × 4 ft. Design artwork; the photograph is an illustrative placeholder."]],s:[["The brief","GM Modulars is an interior design and build company in Chennai that makes its own cabinetry in its own factory. It needed an identity that could hold up from a business card to a ten-foot banner. This case shows how one brushed-metal monogram, and the guidelines behind it, scale across print and signage.",[]],["The mark","The primary mark is a brushed-bronze monogram, with a fine horizontal grain, a polished bevel and a dark keyline, so it reads like a raised metal plate. That finish gives the brand its character on dark covers, signage and quiet photography. The flat versions, in charcoal, ivory and a two-tone charcoal with a bronze M, drop the texture so the shape reproduces cleanly on any printer and at small sizes. Below 320 px the guidelines call for flat artwork only, because the grain needs size to read as metal.",[["mark-bronze","The signature version: brushed bronze on charcoal."],["mark-flat","Flat versions: the same geometry with no texture, for small sizes and ordinary printers."],["mark-construction","Construction: the monogram measured against a grid."]],"one-two"],["Close range","Up close, function comes first. The business card front carries the brushed monogram alone on charcoal, suited to bronze foil, while the back is plain ivory with the name, role, phone numbers, email and address, plus a QR code that saves the contact to a phone. The letterhead uses the flat two-tone logo so it prints cleanly on any office printer, and small bronze marks on the edge show where to fold it for a DL envelope.",[["card-front","Business card front · 89 × 51 mm"],["card-back","Business card back · 89 × 51 mm"],["letterhead","Letterhead · A4, first page"],["letter-cont","Continuation sheet · A4, page two onwards"]],"two"],["Reading distance","A flyer is read in seconds, so the front says one thing: Interiors, made to measure. It adds the four services (homes and villas, offices and commercial, modular kitchens, doors and woodwork) and a single number to call or WhatsApp. Detail belongs on the reverse: the made-in-our-own-factory story, years of experience, the four-step process from site visit to installation, and a QR code for the contact.",[["flyer-front","Flyer front · A4"],["flyer-back","Flyer back · A4"]],"two"],["At a distance","At a distance, the layout is stripped back. The banner keeps the logo, the headline, one line of services in small capitals and a phone number set many times larger than the email and address. The roll-up stacks the same pieces in a single column and leaves the bottom 150 mm empty, because that part sits inside the stand base. The roll-up prints at 850 × 2000 mm and the banner at 10 × 4 ft. Both are design artwork rather than production photographs, and the photography is an illustrative placeholder.",[["rollup","Roll-up standee · 850 × 2000 mm"],["banner","Outdoor flex banner · 10 × 4 ft"]],"mix"],["Handoff","The client receives a 28-page brand guidelines document (version 2.0) and the print files for each piece, set at the sizes shown with 3 mm bleed. The guidelines cover clear space and minimum sizes, background rules, colour values (HEX, RGB and CMYK), type, icons and templates, and the asset kit lists 18 logo lockups, 4 renders and 8 templates as transparent PNGs. The placeholder photography still needs to be replaced with GM’s own project photographs, at least 2500 px wide, before anything goes to print.",[["guide-clearspace","Guidelines: clear space and minimum sizes."],["guide-kit","Guidelines: the asset kit."]],"two"]],cta:["Need an identity that works across your website, print and signage?","Tell ARQ where your brand needs to show up."]};
+var GMG=["banner","mark-bronze","mark-flat","mark-construction","card-front","card-back","letterhead","letter-cont","flyer-front","flyer-back","rollup","guide-clearspace","guide-kit"].map(function(k){return GMI+k+".webp"});
 var P=[
+ {id:"gm-modulars",f:"gfx",t:"GM Modulars",c:"Brand identity",y:"2026",role:"Brand and print designer",tools:"",cover:"assets/work-gm.webp",
+  blurb:"A brushed-metal monogram and a set of guidelines for applying it across business cards, flyers and large-format signage.",
+  sum:"A brushed-metal monogram and a set of guidelines for applying it across business cards, flyers and large-format signage.",
+  meta:[["Client","GM Modulars, Chennai"],["Role","Brand and print designer"],["Year","2026"],["Scope","Identity, guidelines, print"]],cs:GMC,g:GMG,
+  r:[["28","Pages of guidelines"],["18","Logo lockups supplied"],["06","Print formats designed"]]},
  {id:"posters",f:"gfx",t:"Poster Series",c:"Graphic design",y:"2023–24",role:"Graphic Designer",tools:"Photoshop, Illustrator, Figma",cover:"assets/work-posters.webp",
   blurb:"Bold type, dramatic perspective and tight palettes across film, music and street culture.",
   sum:"A collection of poster and typography studies: bold lettering, dramatic perspective and tight palettes, built to show range across film, music and street culture.",
@@ -603,9 +616,10 @@ addEventListener("scroll",sp,{passive:true});sp();
 
 /* project viewer */
 var pv=$("#pv"),pvc=$("#pvc"),cur=null,lastFocus=null;
-function render(p){var meta=[["Role",p.role],["Year",p.y],["Tools",p.tools],["Category",p.c]].filter(function(m){return m[1]});
+function csf(a,l,p){return '<div class="csf '+l+'">'+a.map(function(f){var src=GMI+f[0]+".webp";return '<figure><button type="button" data-i="'+p.g.indexOf(src)+'" aria-label="Enlarge: '+esc(f[1])+'"><img src="'+src+'" alt="'+esc(f[1])+'" loading="lazy"></button><figcaption>'+esc(f[1])+'</figcaption></figure>'}).join("")+"</div>"}
+function render(p){var meta=(p.meta||[["Role",p.role],["Year",p.y],["Tools",p.tools],["Category",p.c]]).filter(function(m){return m[1]});
   var arR='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg>',arL='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12H5M11 6l-6 6 6 6"/></svg>';
-  var media=p.cls==="ui"?'<div class="hint">Swipe, drag or use the arrows</div><div class="cr" style="--ar:'+p.w+'/'+p.h+'" role="group" aria-roledescription="carousel" aria-label="UI carousel slides"><div class="crt" tabindex="0">'+p.g.map(function(src,i){return '<button type="button" class="cs" data-i="'+i+'" aria-label="Slide '+(i+1)+' of '+p.g.length+', open larger"><img src="'+src+'" alt="'+esc(p.t)+', slide '+(i+1)+'" loading="lazy" width="'+p.w+'" height="'+p.h+'" draggable="false"></button>'}).join("")+'</div><div class="crc"><button type="button" class="cb cbp" aria-label="Previous slide">'+arL+'</button><div class="cd">'+p.g.map(function(_,i){return '<button type="button" data-d="'+i+'" aria-label="Go to slide '+(i+1)+'"></button>'}).join("")+'</div><span class="ck" aria-live="polite"></span><button type="button" class="cb cbn" aria-label="Next slide">'+arR+'</button></div></div>'
+  var media=p.cs?csf(p.cs.hero,"one",p):p.cls==="ui"?'<div class="hint">Swipe, drag or use the arrows</div><div class="cr" style="--ar:'+p.w+'/'+p.h+'" role="group" aria-roledescription="carousel" aria-label="UI carousel slides"><div class="crt" tabindex="0">'+p.g.map(function(src,i){return '<button type="button" class="cs" data-i="'+i+'" aria-label="Slide '+(i+1)+' of '+p.g.length+', open larger"><img src="'+src+'" alt="'+esc(p.t)+', slide '+(i+1)+'" loading="lazy" width="'+p.w+'" height="'+p.h+'" draggable="false"></button>'}).join("")+'</div><div class="crc"><button type="button" class="cb cbp" aria-label="Previous slide">'+arL+'</button><div class="cd">'+p.g.map(function(_,i){return '<button type="button" data-d="'+i+'" aria-label="Go to slide '+(i+1)+'"></button>'}).join("")+'</div><span class="ck" aria-live="polite"></span><button type="button" class="cb cbn" aria-label="Next slide">'+arR+'</button></div></div>'
    :p.v?'<div class="vg">'+p.v.map(function(v){return '<figure><div class="vw" style="--ar:'+v[3]+'/'+v[4]+'"><video controls playsinline preload="metadata" poster="'+v[1]+'" src="'+v[0]+'" aria-label="'+esc(v[2])+'"></video></div><figcaption>'+esc(v[2])+'</figcaption></figure>'}).join("")+'</div>'
    :'<div class="ga '+(p.cls||"")+'" style="--ar:'+p.w+'/'+p.h+'">'+p.g.map(function(src,i){return '<button type="button" data-i="'+i+'" aria-label="Enlarge image '+(i+1)+' of '+p.g.length+'"><img src="'+src+'" alt="'+esc(p.t)+', design '+(i+1)+'" loading="lazy" width="'+p.w+'" height="'+p.h+'"></button>'}).join("")+'</div>';
   var n=P[(P.indexOf(p)+1)%P.length];
@@ -613,7 +627,7 @@ function render(p){var meta=[["Role",p.role],["Year",p.y],["Tools",p.tools],["Ca
    +'<div class="mt4">'+meta.map(function(m){return '<div><small>'+m[0]+'</small><span>'+esc(m[1])+'</span></div>'}).join("")+'</div>'
    +media
    +'<div class="rs" style="margin-top:3.2rem">'+p.r.map(function(r){return '<div><b>'+esc(r[0])+'</b><small>'+esc(r[1])+'</small></div>'}).join("")+'</div>'
-   +p.s.map(function(s,i){return '<div class="sx"><h3>0'+(i+1)+' · '+esc(s[0])+'</h3><p>'+esc(s[1])+'</p></div>'}).join("")
+   +(p.cs?p.cs.s.map(function(s,i){return '<div class="sx"><h3>0'+(i+1)+' · '+esc(s[0])+'</h3><p>'+esc(s[1])+'</p></div>'+(s[2]&&s[2].length?csf(s[2],s[3],p):"")}).join("")+'<div class="cta2"><h2>'+esc(p.cs.cta[0])+'</h2><a class="btn" href="#contact">'+esc(p.cs.cta[1])+' ↗</a></div>':p.s.map(function(s,i){return '<div class="sx"><h3>0'+(i+1)+' · '+esc(s[0])+'</h3><p>'+esc(s[1])+'</p></div>'}).join(""))
    +'<a class="nx" href="#p-'+n.id+'"><div class="mono">Next project</div><h2>'+esc(n.t)+' ↗</h2></a>';
   $("#pvk").textContent="ARQ. · Work · "+p.t;
   var cr=$(".cr",pvc);if(cr)wireCarousel(cr);
@@ -706,7 +720,7 @@ function wireCarousel(cr){var tr=$(".crt",cr),sl=$$(".cs",cr),ds=$$(".cd button"
 /* lightbox */
 var lb=$("#lb"),lbi=$("img",lb),lbk=$(".k",lb),set=[],ix=0,lbf=null;
 function show(n){ix=(n+set.length)%set.length;lbi.src=set[ix];lbi.alt=set.alt?set.alt+", slide "+(ix+1)+" of "+set.length:cur?cur.t+", design "+(ix+1):"";lbk.textContent=String(ix+1).padStart(2,"0")+" / "+String(set.length).padStart(2,"0");lb.classList.toggle("one",set.length<2)}
-pvc.addEventListener("click",function(e){var b=e.target.closest(".ga button, .cs");if(!b||!cur)return;var tr=b.closest(".crt");if(tr&&tr.dragged)return;set=cur.g;lbf=b;show(+b.getAttribute("data-i"));lb.classList.add("open");$(".x",lb).focus()});
+pvc.addEventListener("click",function(e){var b=e.target.closest(".ga button, .cs, .csf button");if(!b||!cur)return;var tr=b.closest(".crt");if(tr&&tr.dragged)return;set=cur.g;lbf=b;show(+b.getAttribute("data-i"));lb.classList.add("open");$(".x",lb).focus()});
 function closeL(){lb.classList.remove("open");if(lbf&&lbf.focus)lbf.focus({preventScroll:true})}
 lb.addEventListener("click",function(e){if(e.target.closest(".p"))show(ix-1);else if(e.target.closest(".n"))show(ix+1);else if(e.target===lbi)show(ix+1);else closeL()});
 var tx=null;lb.addEventListener("touchstart",function(e){tx=e.touches[0].clientX},{passive:true});
