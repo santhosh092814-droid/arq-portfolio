@@ -7,7 +7,7 @@
 //  3. Save, commit, done. Keep the backtick ` characters that wrap the md text; if your article needs a
 //     backtick, write \` instead.
 window.ARQ24_POSTS = [
-{day: "08", date: "2026-11-17", cat: "Motion · Brand", region: "Gaming · 30+ years", read: "3 min", accent: "start.", poster: "blog/ARQ24_Day08_Press_Start.png", alt: "ARQ./24 Day 08 poster: the words PRESS START above a generic power button with sound waves and a four-step timeline: begin, build, pause, release",
+{day: "08", date: "2026-11-17", cat: "Motion · Brand", region: "Gaming · 30+ years", read: "3 min", accent: "start.", poster: "blog/ARQ24_Day08_Press_Start.png", alt: "ARQ./24 Day 08 poster: the words PRESS START above the PlayStation logo on a round button with sound waves and a four-step timeline: begin, build, pause, release",
  md: `
 # Press start.
 
@@ -28,9 +28,9 @@ In Creative Bloq, Andrew Vucko, founder and executive creative director of the m
 
 ## The visual, explained
 
-A plain power button in the middle of the bronze circle, with sound waves on both sides, and under it a four-step timeline: begin, build, pause, release. The pause is drawn as a dashed gap, because the pause is part of the design too. It's my own illustration of a generic power button, not PlayStation's logo or hardware.
+The PlayStation logo on a round button in the middle of the bronze circle, with sound waves on both sides, and under it a four-step timeline: begin, build, pause, release. The pause is drawn as a dashed gap, because the pause is part of the design too. The PlayStation logo belongs to Sony Interactive Entertainment and is shown here for editorial commentary; the button, waves and timeline are my own illustration.
 
-[image: ARQ./24 Day 08 poster: PRESS START, a power button with sound waves and a begin, build, pause, release timeline]
+[image: ARQ./24 Day 08 poster: PRESS START, the PlayStation logo on a button with sound waves and a begin, build, pause, release timeline]
 
 ## My take
 
