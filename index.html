@@ -346,6 +346,20 @@ blockquote footer{margin-top:2rem;font-size:.8125rem;text-transform:uppercase;le
 .a24t h2{font:700 clamp(30px,5.4vw,52px)/1.02 "Space Grotesk",Inter,sans-serif;letter-spacing:-.02em;margin-top:14px;max-width:18ch;text-wrap:balance}
 .a24t .more{color:var(--g1);padding:12px 0;border-bottom:1px solid var(--ba)}
 @media(prefers-reduced-motion:reduce){.a24 *{transition:none!important}}
+
+/* Q mark (replaces spade emblem) */
+@property --qa{syntax:"<angle>";inherits:false;initial-value:360deg}
+.qm{position:relative;height:8rem;aspect-ratio:998/906;margin:0 auto 1.6rem;filter:drop-shadow(0 18px 30px rgba(0,0,0,.6))}
+.qm:before{content:"";position:absolute;inset:-28%;z-index:-1;border-radius:50%;background:radial-gradient(closest-side,rgba(255,59,29,.0),transparent);}
+.qm img{position:absolute;inset:0;width:100%;height:100%;display:block}
+.qm .q-ring{-webkit-mask-image:conic-gradient(from -90deg,#000 var(--qa),transparent calc(var(--qa) + 10deg));mask-image:conic-gradient(from -90deg,#000 var(--qa),transparent calc(var(--qa) + 10deg));animation:qdraw 1.9s cubic-bezier(.65,0,.2,1) both paused}
+.qm .q-slash{opacity:0;transform:translate(-16%,16%);animation:qslash 1.2s 1.4s cubic-bezier(.16,1,.3,1) forwards paused}
+.qm .q-sheen{position:absolute;inset:0;pointer-events:none;-webkit-mask-image:url(assets/q/q-full.png);mask-image:url(assets/q/q-full.png);-webkit-mask-size:100% 100%;mask-size:100% 100%;background:linear-gradient(115deg,transparent 40%,rgba(255,255,255,.55) 50%,transparent 60%) no-repeat;background-size:260% 100%;background-position:130% 0;mix-blend-mode:soft-light;animation:qsweep 7s 3s ease-in-out infinite paused}
+.qm.go .q-ring,.qm.go .q-slash,.qm.go .q-sheen{animation-play-state:running}
+@keyframes qdraw{from{--qa:-10deg}to{--qa:360deg}}
+@keyframes qslash{60%{opacity:1}to{opacity:1;transform:none}}
+@keyframes qsweep{0%{background-position:130% 0}35%,100%{background-position:-60% 0}}
+@media(prefers-reduced-motion:reduce){.qm *{animation:none!important}.qm .q-slash{opacity:1;transform:none}.qm .q-ring{-webkit-mask-image:none;mask-image:none}.qm .q-sheen{display:none}}
 </style>
 </head>
 <body>
@@ -528,7 +542,7 @@ blockquote footer{margin-top:2rem;font-size:.8125rem;text-transform:uppercase;le
 <p class="cfs" role="status" aria-live="polite"></p>
 </form>
 <div class="fb">
-<div><img class="emb" data-logo="e" alt="ARQ emblem"><p class="sig d">Santhosh</p><small>UI Development · UX/UI · Research · Graphic Design</small></div>
+<div><div class="qm" role="img" aria-label="ARQ. Q mark"><img class="q-ring" src="assets/q/q-ring.png" alt="" width="998" height="906"><img class="q-slash" src="assets/q/q-slash.png" alt="" width="998" height="906"><i class="q-sheen"></i></div><p class="sig d">Santhosh</p><small>UI Development · UX/UI · Research · Graphic Design</small></div>
 <nav aria-label="Social"><ul>
 <li><a href="https://www.linkedin.com/in/santhosh-muthu-a79b8b346/" target="_blank" rel="noreferrer noopener"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>LinkedIn</a></li>
 
@@ -792,5 +806,6 @@ else{
  setTimeout(start,2500);
 }
 </script>
+<script>(function(){var q=document.querySelector(".qm");if(!q)return;if(!("IntersectionObserver" in window)){q.classList.add("go");return}var o=new IntersectionObserver(function(e){if(e[0].isIntersecting){q.classList.add("go");o.disconnect()}},{threshold:.4});o.observe(q)})();</script>
 </body>
 </html>

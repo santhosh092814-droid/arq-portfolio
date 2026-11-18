@@ -85,6 +85,56 @@ header{position:sticky;top:env(safe-area-inset-top,0px);z-index:40;margin:0 calc
 @keyframes spin{to{transform:rotate(360deg)}}
 @keyframes fl{50%{transform:translateY(-10px)}}
 
+
+/* ===== hero redesign (Q mark) ===== */
+@property --qa{syntax:"<angle>";inherits:false;initial-value:360deg}
+.hx{position:relative;isolation:isolate;overflow:hidden;margin:0 calc(-1*max(16px,env(safe-area-inset-left,0px)));background:#050506;color:#F4F2EE;min-height:calc(100svh - 48px);display:flex;align-items:stretch;padding:0!important}
+.hx-bg{position:absolute;inset:0;z-index:-1;pointer-events:none}
+.hx-bg .grid{position:absolute;inset:0;background-image:linear-gradient(rgba(244,242,238,.055) 1px,transparent 1px),linear-gradient(90deg,rgba(244,242,238,.055) 1px,transparent 1px);background-size:72px 72px;-webkit-mask-image:radial-gradient(70% 70% at 70% 45%,#000 0,transparent 78%);mask-image:radial-gradient(70% 70% at 70% 45%,#000 0,transparent 78%);animation:hxgrid 40s linear infinite}
+.hx-bg .glow{position:absolute;width:70vmin;height:70vmin;right:6%;top:50%;transform:translateY(-50%);background:radial-gradient(closest-side,rgba(201,145,95,.28),rgba(201,145,95,.06) 55%,transparent 72%);filter:blur(10px);animation:hxbreathe 9s ease-in-out infinite}
+.hx-bg .grain{position:absolute;inset:0;opacity:.07;mix-blend-mode:overlay;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+@keyframes hxgrid{to{background-position:72px 72px,72px 72px}}
+@keyframes hxbreathe{50%{opacity:.7;transform:translateY(-50%) scale(1.08)}}
+.hx-in{max-width:1200px;padding-inline:20px;position:relative;display:flex;flex-direction:column;justify-content:space-between;width:100%;padding-block:1.6rem 1.8rem;gap:2rem}
+.hx-meta{display:flex;justify-content:space-between;gap:1rem;color:rgba(244,242,238,.5);opacity:0;animation:hxfade 1s .3s forwards}
+.hx-dot{display:inline-block;width:6px;height:6px;border-radius:50%;background:#C9915F;margin-right:.7em;vertical-align:.1em;animation:hxblink 2.4s ease-in-out infinite}
+@keyframes hxblink{50%{opacity:.25}}
+@keyframes hxfade{to{opacity:1}}
+.hx-main{display:grid;grid-template-columns:1.2fr .8fr;gap:2rem;align-items:center;flex:1}
+.hx h1{font-size:clamp(2.6rem,5.1vw,4.7rem);line-height:1.02;letter-spacing:-.035em;margin:0 0 1.8rem;color:#F4F2EE}
+.hx-g{background:linear-gradient(100deg,#8e5a31 0,#E7B98A 38%,#C9915F 50%,#8e5a31 100%);background-size:220% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:up 1s var(--ease) forwards,hxshine 6s 1.6s ease-in-out infinite}
+@keyframes hxshine{0%{background-position:100% 0}60%,100%{background-position:-60% 0}}
+.hx-lead{max-width:31em;color:rgba(244,242,238,.66);font-size:clamp(1.02rem,1.3vw,1.2rem);margin:0 0 2.2rem;opacity:0;animation:hxfade 1s .8s forwards}
+.hx .cta{opacity:0;animation:hxfade 1s 1s forwards}
+.hx .btn.hx-ghost{color:#F4F2EE;border-color:rgba(244,242,238,.28);background:transparent}
+.hx .btn.hx-ghost:hover{border-color:#C9915F;color:#E7B98A;background:transparent}
+/* Q reactor */
+.hx-q{position:relative;justify-self:center;margin-bottom:2rem;width:min(100%,500px);aspect-ratio:1;display:grid;place-items:center;color:#C9915F}
+.hx-orbit{position:absolute;inset:0;width:100%;height:100%;opacity:0;animation:hxfade 1.4s .5s forwards}
+.o1{animation:hxfade 1.4s .5s forwards,hxspin 90s linear infinite}
+.o2{inset:5%;width:90%;height:90%;animation:hxfade 1.4s .7s forwards,hxspin 46s linear infinite reverse}
+@keyframes hxspin{to{transform:rotate(360deg)}}
+.hx-pulse{position:absolute;inset:18%;border-radius:50%;border:1px solid rgba(201,145,95,.35);opacity:0;animation:hxpulse 5.5s 2.4s ease-out infinite}
+@keyframes hxpulse{0%{transform:scale(.8);opacity:.55}100%{transform:scale(1.35);opacity:0}}
+.hx-mark{position:relative;width:62%;aspect-ratio:998/906;animation:hxfloat 8s 2.6s ease-in-out infinite;filter:drop-shadow(0 30px 50px rgba(0,0,0,.65))}
+.hx-mark img{position:absolute;inset:0;width:100%;height:100%;display:block}
+.q-ring{-webkit-mask-image:conic-gradient(from -90deg,#000 var(--qa),transparent calc(var(--qa) + 10deg));mask-image:conic-gradient(from -90deg,#000 var(--qa),transparent calc(var(--qa) + 10deg));animation:hxdraw 1.9s .5s cubic-bezier(.65,0,.2,1) both}
+@keyframes hxdraw{from{--qa:-10deg}to{--qa:360deg}}
+.q-slash{opacity:0;transform:translate(-16%,16%);animation:hxslash 1.2s 1.9s cubic-bezier(.16,1,.3,1) forwards}
+@keyframes hxslash{60%{opacity:1}to{opacity:1;transform:none}}
+.q-sheen{position:absolute;inset:0;pointer-events:none;-webkit-mask-image:url(assets/q/q-full.png);mask-image:url(assets/q/q-full.png);-webkit-mask-size:100% 100%;mask-size:100% 100%;background:linear-gradient(115deg,transparent 40%,rgba(255,255,255,.55) 50%,transparent 60%) no-repeat;background-size:260% 100%;background-position:130% 0;mix-blend-mode:soft-light;animation:hxsweep 7s 3.4s ease-in-out infinite}
+@keyframes hxsweep{0%{background-position:130% 0}35%,100%{background-position:-60% 0}}
+@keyframes hxfloat{50%{transform:translateY(-9px)}}
+.hx-c{position:absolute;width:16px;height:16px;border:0 solid rgba(244,242,238,.35);opacity:0;animation:hxfade 1s 1s forwards}
+.hx-c.a{left:0;top:0;border-left-width:1px;border-top-width:1px}.hx-c.b{right:0;top:0;border-right-width:1px;border-top-width:1px}.hx-c.c{left:0;bottom:0;border-left-width:1px;border-bottom-width:1px}.hx-c.d{right:0;bottom:0;border-right-width:1px;border-bottom-width:1px}
+.hx-tag{position:absolute;left:0;right:0;bottom:-2rem;text-align:center;color:rgba(244,242,238,.4);opacity:0;animation:hxfade 1s 1.4s forwards}
+.hx-foot{display:flex;gap:2.2rem;align-items:center;color:rgba(244,242,238,.45);opacity:0;animation:hxfade 1s 1.2s forwards}
+.hx-scroll{display:inline-flex;align-items:center;gap:.8rem;margin-right:auto}
+.hx-scroll i{display:block;width:42px;height:1px;background:linear-gradient(90deg,#C9915F,transparent);transform-origin:left;animation:hxline 2.8s ease-in-out infinite}
+@keyframes hxline{0%{transform:scaleX(0)}50%{transform:scaleX(1)}100%{transform:scaleX(1);opacity:0}}
+@media(max-width:860px){.hx{min-height:0}.hx-main{grid-template-columns:1fr;gap:2.4rem}.hx-q{width:min(86%,340px);order:2;justify-self:center}.hx-loc{display:none}.hx-foot{gap:1.2rem;flex-wrap:wrap}.hx h1{font-size:clamp(2.4rem,11vw,3.6rem)}}
+@media(prefers-reduced-motion:reduce){.hx *,.hx-g{animation:none!important}.hx-meta,.hx-lead,.hx .cta,.hx-foot,.hx-orbit,.hx-c,.hx-tag,.q-slash{opacity:1!important;transform:none!important}.hx-pulse,.q-sheen{display:none}.ln>span{transform:none}.q-ring{-webkit-mask-image:none;mask-image:none}}
+
 /* ticker */
 .tk{border-block:1px solid var(--line);overflow:hidden;margin:0 calc(-1*max(16px,env(safe-area-inset-left,0px)));padding-block:1.05rem}
 .tk div{display:flex;width:max-content;animation:mq 38s linear infinite}
@@ -377,21 +427,28 @@ footer{border-top:1px solid var(--line);padding-block:3rem 3.4rem}
 </header>
 
 <main id="top">
-<div class="w">
-  <section class="hero" style="border-top:0">
-    <div>
-      <div class="mono rv in">Design studio · Birmingham, UK</div>
-      <h1><span class="ln"><span style="--d:80ms">Products people</span></span><span class="ln"><span style="--d:200ms" class="ac">understand</span></span><span class="ln"><span style="--d:320ms">at first use.</span></span></h1>
-      <p class="lead rv" style="--d:500ms">ARQ. designs and builds interfaces, websites and brand material. We start with the people who will use the thing, and finish with something that is clear, fast and well made.</p>
-      <div class="cta rv" style="--d:650ms"><a class="btn" href="#contact">Start a project <i aria-hidden="true">→</i></a><a class="btn ghost" href="#work">See the work</a></div>
+<section class="hx" id="top" aria-label="ARQ. Design studio">
+  <div class="hx-bg" aria-hidden="true"><i class="grid"></i><i class="glow"></i><i class="grain"></i></div>
+  <div class="w hx-in">
+    <div class="hx-meta mono" aria-hidden="true"><span>ARQ. Design studio</span><span class="hx-loc">52.4862° N &nbsp;1.8904° W</span><span><b class="hx-dot"></b>Birmingham <time id="hxt">--:--</time></span></div>
+    <div class="hx-main">
+      <div class="hx-copy">
+        <h1><span class="ln"><span style="--d:120ms">Products people</span></span><span class="ln"><span style="--d:260ms" class="hx-g">understand</span></span><span class="ln"><span style="--d:400ms">at first use.</span></span></h1>
+        <p class="hx-lead">ARQ. designs and builds interfaces, websites and brand material. We start with the people who will use the thing, and finish when it is clear, fast and quietly well made.</p>
+        <div class="cta"><a class="btn" href="#contact">Start a project <i aria-hidden="true">→</i></a><a class="btn ghost hx-ghost" href="#work">See the work</a></div>
+      </div>
+      <div class="hx-q" aria-label="ARQ. Q mark">
+        <svg class="hx-orbit o1" viewBox="0 0 400 400" aria-hidden="true"><circle cx="200" cy="200" r="196" fill="none" stroke="currentColor" stroke-opacity=".35" stroke-width="1"/><g stroke="currentColor" stroke-opacity=".55" stroke-width="1" id="ticks"></g></svg>
+        <svg class="hx-orbit o2" viewBox="0 0 400 400" aria-hidden="true"><circle cx="200" cy="200" r="168" fill="none" stroke="currentColor" stroke-opacity=".3" stroke-dasharray="2 9"/><circle cx="200" cy="32" r="3.2" fill="#C9915F"/></svg>
+        <span class="hx-pulse"></span>
+        <div class="hx-mark"><img class="q-ring" src="assets/q/q-ring.png" alt="" width="998" height="906"><img class="q-slash" src="assets/q/q-slash.png" alt="" width="998" height="906"><i class="q-sheen"></i></div>
+        <span class="hx-c a"></span><span class="hx-c b"></span><span class="hx-c c"></span><span class="hx-c d"></span>
+        <span class="hx-tag mono">Q · The ARQ. mark</span>
+      </div>
     </div>
-    <div class="stage rv" style="--d:300ms" aria-label="ARQ emblem">
-      <span class="cm a"></span><span class="cm b"></span><span class="cm c"></span><span class="cm d"></span>
-      <img src="assets/arq-emblem.webp" alt="ARQ emblem in brushed metal and bronze" width="480" height="480">
-      <span class="tag">ARQ. STUDIO · BIRMINGHAM</span>
-    </div>
-  </section>
-</div>
+    <div class="hx-foot mono" aria-hidden="true"><span class="hx-scroll"><i></i>Scroll</span><span>Interfaces</span><span>Websites</span><span>Brand</span><span>Motion</span></div>
+  </div>
+</section>
 
 <div class="w" id="stack">
 <!-- creative-dock -->
@@ -849,5 +906,7 @@ addEventListener("keydown",function(e){
 })();
 </script>
 
+<script>(function(){var g=document.getElementById('ticks');if(g){var h='';for(var i=0;i<120;i++){var a=i*3*Math.PI/180,L=i%10===0?12:i%5===0?7:4,x1=200+Math.cos(a)*196,y1=200+Math.sin(a)*196,x2=200+Math.cos(a)*(196-L),y2=200+Math.sin(a)*(196-L);h+='<line x1="'+x1.toFixed(2)+'" y1="'+y1.toFixed(2)+'" x2="'+x2.toFixed(2)+'" y2="'+y2.toFixed(2)+'"/>'}g.innerHTML=h}
+var t=document.getElementById('hxt');function tick(){try{t.textContent=new Intl.DateTimeFormat('en-GB',{hour:'2-digit',minute:'2-digit',timeZone:'Europe/London'}).format(new Date())}catch(e){}}tick();setInterval(tick,20000)})();</script>
 </body>
 </html>
