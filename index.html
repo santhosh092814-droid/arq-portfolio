@@ -372,7 +372,113 @@ blockquote footer{margin-top:2rem;font-size:.8125rem;text-transform:uppercase;le
 <div class="cue hr" style="--dl:3400ms">Scroll to enter</div>
 </section>
 
-<section class="mq" style="padding:2rem 0" aria-label="Design principles"><div class="tr" id="tr"></div></section>
+<section id="stack" style="padding-inline:var(--gut)">
+<!-- creative-dock -->
+<style>
+#arq-creative-dock{--dock-ink:var(--fg);--dock-soft:var(--muted);--dock-line:var(--line);--dock-face:var(--s2);--dock-accent:var(--ac);--dock-bar:color-mix(in srgb,var(--fg) 5%,var(--bg));--dock-speed:39s;--dock-radius:15px;color:var(--dock-ink);width:100%}
+#arq-creative-dock *{box-sizing:border-box}
+#arq-creative-dock .dock-module{padding:4.5rem 0 4rem}
+#arq-creative-dock .affiliations{padding-bottom:24px;border-bottom:1px solid var(--dock-line)}
+#arq-creative-dock .strip-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;font:500 12px/1.4 var(--s);color:var(--dock-soft)}
+#arq-creative-dock .motion-control{border:0;background:transparent;color:var(--dock-soft);font:inherit;min-height:32px;padding:6px 9px;border-radius:6px;cursor:pointer}
+#arq-creative-dock .motion-control:hover{color:var(--dock-ink);background:color-mix(in srgb,var(--fg) 8%,transparent)}
+#arq-creative-dock .logo-window{overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent);mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent);margin-top:18px}
+#arq-creative-dock .logo-track{display:flex;width:max-content;animation:arq-dock-marquee var(--dock-speed) linear infinite}
+#arq-creative-dock .logo-group{display:flex;align-items:center;gap:64px;padding-right:64px}
+#arq-creative-dock .lg-item{flex-shrink:0;display:flex;align-items:center;justify-content:center;height:54px;opacity:.78}
+#arq-creative-dock .lg-item img{display:block;width:auto;max-width:none;height:var(--h);filter:brightness(0) invert(1)}
+#arq-creative-dock[data-paused="true"] .logo-track{animation-play-state:paused}
+#arq-creative-dock .toolkit{padding-top:30px}
+#arq-creative-dock .heading{display:flex;align-items:baseline;justify-content:space-between;gap:14px}
+#arq-creative-dock h2{margin:0;font-family:var(--d);font-size:clamp(2.2rem,5vw,3.4rem);line-height:1.15;font-weight:400;letter-spacing:.01em;text-transform:none}
+#arq-creative-dock h2 span{color:var(--dock-accent)}
+#arq-creative-dock .heading>span{font:500 11px/1.4 var(--s);color:var(--dock-soft)}
+#arq-creative-dock .dock-stage{padding:48px 0 28px;display:flex;justify-content:center}
+#arq-creative-dock .dock-bar{display:flex;flex-wrap:wrap;justify-content:center;align-items:flex-end;gap:8px;width:max-content;max-width:100%;padding:17px 12px 20px;border:1px solid var(--dock-line);border-radius:24px;background:var(--dock-bar);box-shadow:inset 0 1px 0 color-mix(in srgb,var(--fg) 8%,transparent),0 14px 30px rgba(0,0,0,.18)}
+#arq-creative-dock .dock-app{--scale:1;--lift:0;flex:0 0 64px;width:64px;height:64px;position:relative;display:flex;align-items:center;justify-content:center;padding:0;border:0;border-radius:12px;background:transparent;color:var(--dock-ink);font:inherit;cursor:pointer}
+#arq-creative-dock .app-face{position:relative;display:flex;align-items:center;justify-content:center;width:44px;height:44px;border:1px solid var(--dock-line);border-radius:var(--dock-radius);background:var(--dock-face);box-shadow:0 3px 5px rgba(0,0,0,.12);transform:translateY(calc(var(--lift)*-1px)) scale(var(--scale));transform-origin:center bottom;transition:transform .5s cubic-bezier(.22,1,.36,1),border-color .4s ease,box-shadow .4s ease}
+#arq-creative-dock .app-face img{width:25px;height:25px;object-fit:contain;filter:grayscale(1) brightness(0) invert(1);opacity:.84;transition:opacity .4s ease}
+#arq-creative-dock .app-face img.procreate{filter:grayscale(1);border-radius:7px}
+#arq-creative-dock .brand-glyph{position:absolute;width:25px;height:25px;background:var(--brand);-webkit-mask-image:var(--glyph);mask-image:var(--glyph);-webkit-mask-position:center;mask-position:center;-webkit-mask-size:contain;mask-size:contain;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;opacity:0;transition:opacity .4s ease}
+#arq-creative-dock .app-face .brand-image{position:absolute;width:25px;height:25px;object-fit:contain;opacity:0;filter:none;transition:opacity .4s ease}
+#arq-creative-dock .dock-app:is(:hover,:focus-visible,[aria-pressed="true"]) .app-face{border-color:color-mix(in srgb,var(--brand) 50%,var(--dock-line));box-shadow:0 8px 20px color-mix(in srgb,var(--brand) 20%,transparent),inset 0 0 16px color-mix(in srgb,var(--brand) 8%,transparent)}
+#arq-creative-dock .dock-app:is(:hover,:focus-visible,[aria-pressed="true"]) .mono-image{opacity:0}
+#arq-creative-dock .dock-app:is(:hover,:focus-visible,[aria-pressed="true"]) :is(.brand-glyph,.brand-image){opacity:1}
+#arq-creative-dock .dock-detail{margin:0;text-align:center;min-height:18px;font:400 12px/1.4 var(--s);color:var(--dock-soft)}
+@keyframes arq-dock-marquee{to{transform:translateX(-50%)}}
+@media(max-width:600px){#arq-creative-dock .heading{flex-direction:column;align-items:flex-start;gap:8px}#arq-creative-dock .dock-stage{padding-top:36px}#arq-creative-dock .dock-bar{padding:12px 10px;gap:12px 6px}#arq-creative-dock .dock-app{flex-basis:56px;width:56px;height:56px}#arq-creative-dock .logo-group{gap:40px;padding-right:40px}}
+@media(prefers-reduced-motion:reduce){#arq-creative-dock .logo-track{animation:none}#arq-creative-dock .logo-window{overflow-x:auto}#arq-creative-dock .repeated{display:none}#arq-creative-dock .app-face{transform:none;transition:none}}
+</style>
+<div id="arq-creative-dock" data-dock>
+  <div class="dock-module">
+    <section class="affiliations" aria-label="Education and collaborations">
+      <div class="strip-heading"><span>Education &amp; collaborations</span><button class="motion-control" type="button" aria-label="Pause scrolling logos" aria-pressed="false">Pause</button></div>
+      <div class="logo-window"><div class="logo-track"><div class="logo-group">
+        <div class="lg-item" style="--h:44px"><img src="assets/dock/bcu.svg" alt="Birmingham City University"></div>
+        <div class="lg-item" style="--h:40px"><img src="assets/dock/cit.png" alt="Chennai Institute of Technology"></div>
+        <div class="lg-item" style="--h:38px"><img src="assets/dock/hilton.png" alt="Hilton"></div>
+        <div class="lg-item" style="--h:34px"><img src="assets/dock/gm.png" alt="GM Modulars"></div>
+      </div></div></div>
+    </section>
+    <section class="toolkit" aria-label="My creative dock">
+      <div class="heading"><h2>My creative dock<span>.</span></h2><span>Ideas to execution</span></div>
+      <div class="dock-stage"><div class="dock-bar" role="group" aria-label="Design and development tools"></div></div>
+      <p class="dock-detail" aria-live="polite">Design, create and build.</p>
+    </section>
+  </div>
+</div>
+<script>(function(){
+  const root=document.getElementById('arq-creative-dock');if(!root)return;
+  const A='assets/dock/';
+  const apps=[
+    {name:'Figma',description:'Interfaces & prototyping',icon:A+'figma.svg',color:'#f24e1e',colourImage:A+'figma-colour.svg'},
+    {name:'Framer',description:'Website design & publishing',icon:A+'framer.svg',color:'#0055ff'},
+    {name:'Notion',description:'Planning & documentation',icon:A+'notion.svg',color:'var(--fg)'},
+    {name:'Blender',description:'3D modelling & animation',icon:A+'blender.svg',color:'#ea7600'},
+    {name:'Procreate',description:'Digital drawing & illustration',icon:A+'procreate.png',color:'#a368d6',colourImage:A+'procreate-colour.png'},
+    {name:'VS Code',description:'Code editor',icon:A+'vscode.svg',color:'#007acc'},
+    {name:'React',description:'Component-based interfaces',icon:A+'react.svg',color:'#61dafb'},
+    {name:'HTML',description:'Web structure',icon:A+'html5.svg',color:'#e34f26'},
+    {name:'GitHub',description:'Repositories & collaboration',icon:A+'github.svg',color:'var(--fg)'}
+  ];
+  const bar=root.querySelector('.dock-bar'),detail=root.querySelector('.dock-detail'),reduced=matchMedia('(prefers-reduced-motion: reduce)'),buttons=[];
+  let selected=-1,hovered=-1,focused=-1;
+  function update(){
+    const active=hovered>=0?hovered:focused>=0?focused:selected;
+    buttons.forEach((b,i)=>{const on=i===active&&!reduced.matches;b.style.setProperty('--scale',on?1.3:1);b.style.setProperty('--lift',on?6:0);b.setAttribute('aria-pressed',String(i===selected));});
+    detail.textContent=active>=0?apps[active].name+' \u2014 '+apps[active].description:'Design, create and build.';
+  }
+  apps.forEach((app,i)=>{
+    const b=document.createElement('button');b.type='button';b.className='dock-app';b.setAttribute('aria-label',app.name);b.setAttribute('aria-pressed','false');
+    b.style.setProperty('--brand',app.color);b.style.setProperty('--glyph','url("'+app.icon+'")');
+    const face=document.createElement('span');face.className='app-face';
+    const im=document.createElement('img');im.src=app.icon;im.alt='';im.loading='lazy';im.className='mono-image'+(app.name==='Procreate'?' procreate':'');
+    let c;if(app.colourImage){c=document.createElement('img');c.src=app.colourImage;c.alt='';c.loading='lazy';c.className='brand-image';}else{c=document.createElement('span');c.className='brand-glyph';c.setAttribute('aria-hidden','true');}
+    face.append(im,c);b.appendChild(face);bar.appendChild(b);buttons.push(b);
+    b.addEventListener('mouseenter',()=>{hovered=i;update();});b.addEventListener('mouseleave',()=>{hovered=-1;update();});
+    b.addEventListener('focus',()=>{focused=i;update();});b.addEventListener('blur',()=>{focused=-1;update();});
+    b.addEventListener('click',()=>{selected=selected===i?-1:i;update();});
+  });
+  bar.addEventListener('mouseleave',()=>{hovered=-1;update();});
+  const track=root.querySelector('.logo-track'),group=track.querySelector('.logo-group'),pause=root.querySelector('.motion-control');
+  const base=group.innerHTML,state={playing:!reduced.matches};
+  function layout(){
+    track.querySelectorAll('.repeated').forEach(n=>n.remove());group.innerHTML=base;
+    const one=group.scrollWidth;if(!one)return;
+    const need=Math.max(1,Math.ceil((window.innerWidth*1.1)/one));
+    for(let i=1;i<need;i++)group.insertAdjacentHTML('beforeend',base);
+    const copy=group.cloneNode(true);copy.classList.add('repeated');copy.setAttribute('aria-hidden','true');copy.querySelectorAll('img').forEach(x=>x.alt='');track.appendChild(copy);
+    root.style.setProperty('--dock-speed',Math.max(20,Math.round(group.scrollWidth/42))+'s');
+  }
+  function render(){root.dataset.paused=String(!state.playing);pause.textContent=state.playing?'Pause':'Play';pause.setAttribute('aria-label',state.playing?'Pause scrolling logos':'Play scrolling logos');pause.setAttribute('aria-pressed',String(!state.playing));}
+  pause.addEventListener('click',()=>{state.playing=!state.playing;render();});
+  reduced.addEventListener('change',()=>{state.playing=!reduced.matches;update();render();});
+  let t;addEventListener('resize',()=>{clearTimeout(t);t=setTimeout(layout,200);});
+  const imgs=[...group.querySelectorAll('img')];let n=0;const go=()=>{if(++n>=imgs.length)layout();};imgs.forEach(i=>i.complete?go():(i.addEventListener('load',go),i.addEventListener('error',go)));
+  update();render();
+})();</script>
+<!-- /creative-dock -->
+</section>
 
 <section id="story"><div class="g12">
 <div class="c6">
@@ -487,7 +593,7 @@ grid();addEventListener("resize",grid);
 
 /* content */
 const words=["Research First","Design Clearly","Test With People","Craft The Details","Ship And Learn"];
-$("#tr").innerHTML=[...words,...words].map(w=>`<span class="d">${w}</span>`).join("");
+
 const pr=[["People before pixels","My research project with AFJ Travel explored how a fleet-management system could better support users and improve operational visibility."],["Craft the visual story","From portraits and posters to 3D product visuals, I use composition, typography and imagery to communicate ideas clearly."],["Think beyond the screen","Engineering and product design taught me to consider how systems work together, not just how individual elements look."],["Design for real people","At Hilton Birmingham Metropole, I create event campaigns, menus, websites and brand materials for real-world use."]];
 $("#pr").innerHTML=pr.map((p,i)=>`<li class="rv" style="--dl:${i*90}ms"><span class="k">0${i+1}</span><div><h3>${p[0]}</h3><p>${p[1]}</p></div></li>`).join("");
 const wk0=[["UI Carousel","UI Design","2026","6 slides","A six-slide carousel that teaches practical UI habits through side-by-side wrong and good screens."],["Website Design","UX / UI","2024–26","10 hero sections","Hero-section concepts across travel, retail, marketing, education and crypto, 2024–2026."],["Motion Graphics","Motion Design","2026","3 pieces","Kinetic typography and motion graphics for vertical social, made in After Effects."],["Poster Series","Graphic Design","2023–24","8 posters","Bold type, dramatic perspective and tight palettes across film, music and street culture."],["GM Modulars","Brand identity · Guidelines · Print","2026","6 applications","A brushed-metal monogram and a set of guidelines for applying it across business cards, flyers and large-format signage."]];const ORD=[4,3,1,0,2],wk=ORD.map(k=>wk0[k]);
