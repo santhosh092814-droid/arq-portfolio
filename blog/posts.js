@@ -9,6 +9,49 @@
 //  3. Save, commit, done. Keep the backtick ` characters that wrap the md text; if your article needs a
 //     backtick, write \` instead.
 window.ARQ24_POSTS = [
+{day: "09", date: "2026-11-18", cat: "UX / UI", region: "Mobile · iOS 27.3 beta", read: "3 min", accent: "zone.", poster: "blog/ARQ24_Day09_Thumb_Zone.png", alt: "ARQ./24 Day 09 poster: the words THUMB ZONE above a generic phone with a calendar grid, where the search and add buttons move from the hard-to-reach top corner down into the shaded thumb zone at the bottom",
+ md: `
+# Thumb zone.
+
+**ARQ./24 · Day 09** · Nov 18, 2026 · @Santhosh · UX / UI · 3 min read
+
+## What is ARQ./24?
+
+ARQ./24 is a daily series where I pick one real story from the design world and share what it means to me as a UX designer. One story, one take, every day. Everything is taken from published sources, with links at the end of each post so you can read the original yourself.
+
+## What happened
+
+Apple released iOS 27.3 beta 2 on 16 November, and 9to5Mac's Ryan Christoffel spotted some small but useful design changes in the Calendar app. The app still looks "largely familiar", but the changes make it better suited to one-handed use.
+
+- **Buttons moved down:** the search button and the button for adding a new event used to sit in the top-right corner. In iOS 27.3 both have moved to the bottom of the screen.
+- **Clearer orientation:** the current month now sits at the top centre of the screen, with the year added. Because the year is always visible, Apple removed it from the back button in the top-left.
+- **A smarter Today button:** the "Today" button, which takes you back to the current day, now always shows the actual date.
+- **Still a beta:** this is in a beta release, so it isn't in everyone's hands yet.
+
+The writer, who normally holds his iPhone in his left hand, says the buttons were especially hard to reach before. His verdict: these are "relatively minor changes but they could make a big difference in everyday use."
+
+## The visual, explained
+
+A plain phone with a calendar grid. The dashed circles in the top corner are where the buttons used to be. The shaded arc at the bottom is the thumb zone, the area your thumb reaches comfortably when you hold the phone in one hand, and the arrow shows the search and add buttons moving into it. It's my own illustration of a generic phone, not Apple's interface or logo.
+
+[image: ARQ./24 Day 09 poster: THUMB ZONE, a phone where the search and add buttons move from the top corner down into the thumb zone]
+
+## My take
+
+This is the kind of design news that never trends, and it's exactly the kind I care about. Nothing about the Calendar app looks new. But the two actions people use most just moved to where their hand already is.
+
+Phones have grown, and the top corners are the hardest place to tap with one hand. That's where a lot of apps still put their most important buttons, because that's where buttons have always been. Moving them is a small layout change with a real effect: fewer stretches, fewer shuffles of the phone in your hand, less chance of dropping it on the bus. Good UX is often not a redesign. It's noticing how people actually hold the thing.
+
+## What I'm taking into my own work
+
+International students in the UK do a lot on their phones with one hand: holding a bag, a coffee, a rail on a busy bus, while checking a bank app, a map or an email from the university. In my UX case study, I want to test every key screen one-handed and place the main actions in the thumb zone. If the most important button needs two hands, I've put it in the wrong place.
+
+## Source
+
+- 9to5Mac, "iOS 27.3 gives Apple's Calendar app new design updates" by Ryan Christoffel (16 November 2026): https://9to5mac.com/2026/11/16/ios-27-3-gives-apples-calendar-app-new-design-updates/
+
+*ARQ./24 is a daily design news series by Santhosh Muthu at ARQ. One design story, every day.*
+`},
 {day: "08", date: "2026-11-17", cat: "Motion · Brand", region: "Gaming · 30+ years", read: "3 min", accent: "start.", poster: "blog/ARQ24_Day08_Press_Start.png", slides: ["blog/ARQ24_Day08_Press_Start.png", "blog/ARQ24_Day08_Slide2.jpg", "blog/ARQ24_Day08_Slide3.jpg", "blog/ARQ24_Day08_Slide4.jpg", "blog/ARQ24_Day08_Slide5.jpg", "blog/ARQ24_Day08_Slide6.jpg"], alt: "ARQ./24 Day 08 poster: the words PRESS START above the PlayStation logo on a round button with sound waves and a four-step timeline: begin, build, pause, release",
  md: `
 # Press start.
