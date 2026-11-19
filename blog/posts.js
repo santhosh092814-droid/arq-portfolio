@@ -9,6 +9,49 @@
 //  3. Save, commit, done. Keep the backtick ` characters that wrap the md text; if your article needs a
 //     backtick, write \` instead.
 window.ARQ24_POSTS = [
+{day: "10", date: "2026-11-19", cat: "Packaging", region: "UK · Drinks", read: "3 min", accent: "print.", poster: "blog/ARQ24_Day10_Sun_Print.png", alt: "ARQ./24 Day 10 poster: the words SUN PRINT above a sun shining on a blue cyanotype print of a white leafy frond, with the real frond lifted off the paper beside it",
+ md: `
+# Sun print.
+
+**ARQ./24 · Day 10** · Nov 19, 2026 · @Santhosh · Packaging · 3 min read
+
+## What is ARQ./24?
+
+ARQ./24 is a daily series where I pick one real story from the design world and share what it means to me as a UX designer. One story, one take, every day. Everything is taken from published sources, with links at the end of each post so you can read the original yourself.
+
+## What happened
+
+Creative Boom's Tom May reports on a new packaging redesign for Everleaf, a premium non-alcoholic aperitif founded by conservation biologist and bartender Paul Mathew. The work is by Love, a creative agency based in Manchester and New York. Everleaf is already established in bars and restaurants; the goal now is to win over shoppers too.
+
+- **Art made by the sun:** Love created the new botanical artwork in-house using cyanotype, a photographic process from the 1840s. Real plants were laid on light-sensitive paper, exposed to sunlight, then scanned and refined.
+- **A lighter, better bottle:** the new bottle is 23% lighter (385g, down from 500g) and made from 100% post-consumer recycled glass. It has a softer, curved shape, embossed leaves around the base, a leaf mark moulded into the shoulder, and a longer neck that is easier to grip.
+- **Easier to tell apart:** each flavour (Marine, Forest and Mountain) gets its own colour on the cap disc and label. Shipping boxes are kraft cardboard printed in one colour with low ink coverage.
+- **Where it's going:** bars and restaurants, Everleaf's own website, Ocado and Majestic.
+
+Love's senior design director Nick Johnson puts it simply: "Everleaf didn't need reinvention; it needed its natural brand world to work harder." He also says the longer neck and clearer colour coding "make it work better for bartenders too."
+
+## The visual, explained
+
+The sun shines on a sheet of blue cyanotype paper, and where a plant blocked the light, a white silhouette is left behind. Beside it, the real frond lifts off the page. That's the whole process in one picture: plant, sunlight, print. It's my own illustration, not Everleaf's artwork or bottle.
+
+[image: ARQ./24 Day 10 poster: SUN PRINT, a sun over a blue cyanotype print of a white frond, with the real frond lifted off the paper]
+
+## My take
+
+What I like here is that the craft and the usability sit side by side. The cyanotypes give the brand something no stock image or AI render can: real plants, real light, a bit of imperfection. But the changes I'd point to as a UX designer are the quiet ones. A longer neck that's easier to grip. A colour on the cap so you can find the right flavour in a busy bar. A lighter bottle that's cheaper to carry and ship.
+
+Packaging is an interface. People "use" it in a few seconds: on a shelf, behind a bar, in a delivery box. Love didn't start again from scratch; they made the existing brand work harder, and they designed for the bartender reaching for a bottle, not only for the shopper looking at it.
+
+## What I'm taking into my own work
+
+In my UX case study on international students in the UK, I want to remember that the "users" aren't only the students. They're also the people who help them: university staff, landlords, bank advisers. A design that works for the person at the counter, not just the person in front of it, usually works better for everyone. And when something already works, the job is often to make it work harder, not to throw it away.
+
+## Source
+
+- Creative Boom, "This non-alcoholic aperitif packaging was made with real plants, sunlight and embossed glass" by Tom May (17 November 2026): https://www.creativeboom.com/news/this-non-alcoholic-aperitif-packaging-was-made-with-real-plants-sunlight-and-embossed-glass/
+
+*ARQ./24 is a daily design news series by Santhosh Muthu at ARQ. One design story, every day.*
+`},
 {day: "09", date: "2026-11-18", cat: "UX / UI", region: "Mobile · iOS 27.3 beta", read: "3 min", accent: "zone.", poster: "blog/ARQ24_Day09_Thumb_Zone.png", alt: "ARQ./24 Day 09 poster: the words THUMB ZONE above a generic phone with a calendar grid, where the search and add buttons move from the hard-to-reach top corner down into the shaded thumb zone at the bottom",
  md: `
 # Thumb zone.
