@@ -9,11 +9,11 @@
 //  3. Save, commit, done. Keep the backtick ` characters that wrap the md text; if your article needs a
 //     backtick, write \` instead.
 window.ARQ24_POSTS = [
-{day: "10", date: "2026-11-19", cat: "Packaging", region: "UK · Drinks", read: "3 min", accent: "print.", poster: "blog/ARQ24_Day10_Sun_Print.png", alt: "ARQ./24 Day 10 poster: the words SUN PRINT above a sun shining on a blue cyanotype print of a white leafy frond, with the real frond lifted off the paper beside it",
+{day: "10", date: "2026-11-19", cat: "Brand · Campaign", region: "Global · Gaming", read: "3 min", accent: "ads.", poster: "blog/ARQ24_Day10_Zero_Ads.png", alt: "ARQ./24 Day 10 poster: the words ZERO ADS above the Grand Theft Auto VI logo on a sunset circle with palm tree silhouettes",
  md: `
-# Sun print.
+# Zero ads.
 
-**ARQ./24 · Day 10** · Nov 19, 2026 · @Santhosh · Packaging · 3 min read
+**ARQ./24 · Day 10** · Nov 19, 2026 · @Santhosh · Brand · Campaign · 3 min read
 
 ## What is ARQ./24?
 
@@ -21,34 +21,32 @@ ARQ./24 is a daily series where I pick one real story from the design world and 
 
 ## What happened
 
-Creative Boom's Tom May reports on a new packaging redesign for Everleaf, a premium non-alcoholic aperitif founded by conservation biologist and bartender Paul Mathew. The work is by Love, a creative agency based in Manchester and New York. Everleaf is already established in bars and restaurants; the goal now is to win over shoppers too.
+GTA 6 unlocked at midnight. The day before, Creative Boom's Katy Cowan called it the year's biggest campaign, from a brand that refuses to sell ad space.
 
-- **Art made by the sun:** Love created the new botanical artwork in-house using cyanotype, a photographic process from the 1840s. Real plants were laid on light-sensitive paper, exposed to sunlight, then scanned and refined.
-- **A lighter, better bottle:** the new bottle is 23% lighter (385g, down from 500g) and made from 100% post-consumer recycled glass. It has a softer, curved shape, embossed leaves around the base, a leaf mark moulded into the shoulder, and a longer neck that is easier to grip.
-- **Easier to tell apart:** each flavour (Marine, Forest and Mountain) gets its own colour on the cap disc and label. Shipping boxes are kraft cardboard printed in one colour with low ink coverage.
-- **Where it's going:** bars and restaurants, Everleaf's own website, Ocado and Majestic.
-
-Love's senior design director Nick Johnson puts it simply: "Everleaf didn't need reinvention; it needed its natural brand world to work harder." He also says the longer neck and clearer colour coding "make it work better for bartenders too."
+- **No brand deals:** Take-Two CEO Strauss Zelnick ruled out product placement and brand deals altogether, saying "all the brands are made up". The brands in the game are parodies written and designed in-house, from Patriot Beer to Sessanta Nove and hundreds more.
+- **Silence as a strategy:** there was a year of silence between trailers, and Rockstar has barely given an interview. When the second trailer arrived, it was watched 475 million times in a day.
+- **The world spilled into real streets:** Colossal Media painted a huge mural of Jason and Lucia in Williamsburg, Brooklyn, and 10 new murals appeared in Wynwood, Miami. Rockstar says more than 50 real street artists painted walls inside the game, with no generative AI.
+- **Other brands copied the look:** Hyundai, BMW and Burger King have dressed their own social posts in the game's sunset palette.
 
 ## The visual, explained
 
-The sun shines on a sheet of blue cyanotype paper, and where a plant blocked the light, a white silhouette is left behind. Beside it, the real frond lifts off the page. That's the whole process in one picture: plant, sunlight, print. It's my own illustration, not Everleaf's artwork or bottle.
+The GTA VI logo sits on a sunset circle with palm trees, the palette everyone is borrowing this month. The headline says the strange part: the biggest campaign of the year, with no ads sold. The GTA VI logo belongs to Rockstar Games and is shown here for editorial commentary; the sunset, palms and layout are my own illustration.
 
-[image: ARQ./24 Day 10 poster: SUN PRINT, a sun over a blue cyanotype print of a white frond, with the real frond lifted off the paper]
+[image: ARQ./24 Day 10 poster: ZERO ADS, the GTA VI logo on a sunset circle with palm trees]
 
 ## My take
 
-What I like here is that the craft and the usability sit side by side. The cyanotypes give the brand something no stock image or AI render can: real plants, real light, a bit of imperfection. But the changes I'd point to as a UX designer are the quiet ones. A longer neck that's easier to grip. A colour on the cap so you can find the right flavour in a busy bar. A lighter bottle that's cheaper to carry and ship.
+Rockstar didn't market the game around the world. It built the world so well that the marketing came out of it. Fake beer brands, fake fashion labels, murals painted by real artists: every detail was designed with the same care, so every detail could become a poster, a cover or a meme.
 
-Packaging is an interface. People "use" it in a few seconds: on a shelf, behind a bar, in a delivery box. Love didn't start again from scratch; they made the existing brand work harder, and they designed for the bartender reaching for a bottle, not only for the shopper looking at it.
+That's a design-system lesson, not just an advertising one. When a world (or a product) is consistent all the way down, people trust it and share it on their own. Other brands copying the sunset palette is the proof. And the silence matters too: by saying less, Rockstar made every trailer feel like an event.
 
 ## What I'm taking into my own work
 
-In my UX case study on international students in the UK, I want to remember that the "users" aren't only the students. They're also the people who help them: university staff, landlords, bank advisers. A design that works for the person at the counter, not just the person in front of it, usually works better for everyone. And when something already works, the job is often to make it work harder, not to throw it away.
+In my UX case study on international students in the UK, I want the small details to be as consistent as the big screens: the same tone in every message, the same visual language from the first email to the last form. Students can tell when something was designed with care, and that's what makes them trust it. And I want to say less, but make every message count.
 
 ## Source
 
-- Creative Boom, "This non-alcoholic aperitif packaging was made with real plants, sunlight and embossed glass" by Tom May (17 November 2026): https://www.creativeboom.com/news/this-non-alcoholic-aperitif-packaging-was-made-with-real-plants-sunlight-and-embossed-glass/
+- Creative Boom, "GTA 6: the biggest campaign for a brand that won't sell ads" by Katy Cowan (18 November 2026): https://www.creativeboom.com/insight/why-gta-6-is-the-years-biggest-campaign-for-a-brand-that-refuses-to-sell-ad-space/
 
 *ARQ./24 is a daily design news series by Santhosh Muthu at ARQ. One design story, every day.*
 `},
