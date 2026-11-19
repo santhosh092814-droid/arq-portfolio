@@ -9,7 +9,7 @@
 //  3. Save, commit, done. Keep the backtick ` characters that wrap the md text; if your article needs a
 //     backtick, write \` instead.
 window.ARQ24_POSTS = [
-{day: "10", date: "2026-11-19", cat: "Brand · Campaign", region: "Global · Gaming", read: "3 min", accent: "ads.", poster: "blog/ARQ24_Day10_Zero_Ads.png", alt: "ARQ./24 Day 10 poster: the words ZERO ADS above the Grand Theft Auto VI logo on a sunset circle with palm tree silhouettes",
+{day: "10", date: "2026-11-19", cat: "Brand · Campaign", region: "Global · Gaming", read: "3 min", accent: "ads.", poster: "blog/ARQ24_Day10_Zero_Ads.png", alt: "ARQ./24 Day 10 poster: the words ZERO ADS above the Grand Theft Auto VI logo on a paper-collage sunset circle with palm trees and the sea",
  md: `
 # Zero ads.
 
@@ -30,7 +30,7 @@ GTA 6 unlocked at midnight. The day before, Creative Boom's Katy Cowan called it
 
 ## The visual, explained
 
-The GTA VI logo sits on a sunset circle with palm trees, the palette everyone is borrowing this month. The headline says the strange part: the biggest campaign of the year, with no ads sold. The GTA VI logo belongs to Rockstar Games and is shown here for editorial commentary; the sunset, palms and layout are my own illustration.
+The GTA VI logo sits on a sunset circle with palm trees, the palette everyone is borrowing this month. The headline says the strange part: the biggest campaign of the year, with no ads sold. The GTA VI logo belongs to Rockstar Games and is shown here for editorial commentary; the paper-collage sunset is an AI-generated illustration I made for this post, and the layout is my own.
 
 [image: ARQ./24 Day 10 poster: ZERO ADS, the GTA VI logo on a sunset circle with palm trees]
 
