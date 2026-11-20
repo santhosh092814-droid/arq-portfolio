@@ -9,6 +9,49 @@
 //  3. Save, commit, done. Keep the backtick ` characters that wrap the md text; if your article needs a
 //     backtick, write \` instead.
 window.ARQ24_POSTS = [
+{day: "11", date: "2026-11-20", cat: "Identity · Craft", region: "London agency · Bourbon", read: "3 min", accent: "wax.", poster: "blog/ARQ24_Day11_Real_Wax.png", alt: "ARQ./24 Day 11 poster: the words REAL WAX above a bronze circle with a dripping red wax seal pressed with a wheat ear, and a real wheat stalk lying beside it",
+ md: `
+# Real wax.
+
+**ARQ./24 · Day 11** · Nov 20, 2026 · @Santhosh · Identity · Craft · 3 min read
+
+## What is ARQ./24?
+
+ARQ./24 is a daily series where I pick one real story from the design world and share what it means to me as a UX designer. One story, one take, every day. Everything is taken from published sources, with links at the end of each post so you can read the original yourself.
+
+## What happened
+
+Kentucky bourbon brand Maker's Mark has a new global identity, launched on 17 November. It was made by Turner Duckworth London, the same agency behind its last refresh five years ago. Creative Boom's Katy Cowan wrote it up on 19 November.
+
+- **Made by hand, in real wax:** Turner Duckworth took stalks of soft red winter wheat, rings of American oak and plants native to Star Hill Farm, where the distillery is, and dipped and pressed each one into the brand's red wax. Those pressed shapes are the new marks at the heart of the identity.
+- **The drawing made way for the real thing:** the agency's 2021 identity was built around a graphic version of the wax drip. This time they used the wax itself.
+- **Type from a real hand:** new custom typography is inspired by the handwriting of Margie Samuels, who founded Maker's Mark with her husband Bill Samuels Sr and came up with the bottle, the label and the wax. There's also an updated colour palette and new photography.
+- **Rolling out worldwide:** across digital, social, advertising, retail and events. It has already appeared at events in the US and China and in outdoor campaigns in Australia and the UK, with more markets to follow through 2027.
+
+Chloe Lloyd-Jones, vice president of global brand marketing at Maker's Mark, put it simply: "In a world increasingly driven by speed and automation, we still believe some things are worth making slowly, by hand."
+
+## The visual, explained
+
+A red wax seal dripping over the bronze circle, with a wheat ear pressed into it, and a real wheat stalk lying beside it. The point is the swap: not a drawing of wax, but the mark of a real object pressed into real wax. It's my own illustration, not the Maker's Mark logo or artwork.
+
+[image: ARQ./24 Day 11 poster: REAL WAX, a dripping red wax seal pressed with a wheat ear]
+
+## My take
+
+In 2021 the drip became a graphic. In 2026 the agency went back to the actual wax. I think that's the smartest move a brand can make right now. When anyone can generate a clean logo in seconds, the thing that's hard to fake is evidence of a real process: a real farm, real wheat, a real person's handwriting.
+
+As a UX designer, I read this as a lesson about proof. Users trust what they can trace back to something real. Maker's Mark didn't just say "handmade", it built the identity out of the handmade thing. Show the process, don't just describe it.
+
+## What I'm taking into my own work
+
+In my UX case study on international students in the UK, I want the real research to show up in the design itself: actual quotes from students, real photos from my own interviews and spaces, not stock images or polished guesses. If the story is real, the design should carry the evidence.
+
+## Source
+
+- Creative Boom, "Turner Duckworth dips Maker's Mark's new identity in red wax" by Katy Cowan (19 November 2026): https://www.creativeboom.com/news/turner-duckworth-dips-makers-marks-new-identity-in-red-wax/
+
+*ARQ./24 is a daily design news series by Santhosh Muthu at ARQ. One design story, every day.*
+`},
 {day: "10", date: "2026-11-19", cat: "Brand · Campaign", region: "Global · Gaming", read: "3 min", accent: "ads.", poster: "blog/ARQ24_Day10_Zero_Ads.png", alt: "ARQ./24 Day 10 poster: the words ZERO ADS above the Grand Theft Auto VI logo on a paper-collage sunset circle with palm trees and the sea",
  md: `
 # Zero ads.
