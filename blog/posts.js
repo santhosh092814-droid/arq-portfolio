@@ -9,6 +9,50 @@
 //  3. Save, commit, done. Keep the backtick ` characters that wrap the md text; if your article needs a
 //     backtick, write \` instead.
 window.ARQ24_POSTS = [
+{day: "12", date: "2026-11-21", cat: "Design tools · AI", region: "Global · Creative software", read: "3 min", accent: "off.", poster: "blog/ARQ24_Day12_AI_Off.png", alt: "ARQ./24 Day 12 poster: the words AI OFF above a bronze circle with a large toggle switch turned off, its knob marked with a power symbol and a dashed, faded AI sparkle in the empty track",
+ md: `
+# AI off.
+
+**ARQ./24 · Day 12** · Nov 21, 2026 · @Santhosh · Design tools · AI · 3 min read
+
+## What is ARQ./24?
+
+ARQ./24 is a daily series where I pick one real story from the design world and share what it means to me as a UX designer. One story, one take, every day. Everything is taken from published sources, with links at the end of each post so you can read the original yourself.
+
+## What happened
+
+On 19 November Canva announced two new controls for people on Canva Free and Canva Pro, reported the same day by 9to5Mac's Marcus Mendes.
+
+- **One switch for generative AI:** a setting called "Enable generative AI features". Turn it off and Canva's supported generative AI features are hidden across the app. You can turn them back on at any time. 9to5Mac says it sits under Profile > Settings > Permissions. Canva's own help page says the setting is still rolling out gradually, so not everyone will see it yet.
+- **Less AI content in the library:** a second option, under Your account > AI personalization, shows you fewer AI-generated templates and elements in search and recommendations. It doesn't change designs you've already made, and Canva's help page is upfront that it "only works as well as our AI-flagging coverage allows."
+- **Some AI stays on:** tools that use AI without generating new content, like Background Remover and Magic Grab, keep working either way, because they only work on what's already in your design.
+
+Both controls cost nothing extra. Admins on Teams, Business, Enterprise and Education accounts could already manage AI access for their teams; this brings a version of that to individual users. Canva also said its community wants "an easier way to find design assets made by real people", and its line on the change was simple: "It's not our place to tell anyone how to create."
+
+## The visual, explained
+
+A big toggle switch on the bronze circle, turned off. The knob carries a power symbol, and the AI sparkle that would normally sit there is just a faded, dashed outline in the empty track. Not gone for good, just switched off until you want it. It's my own illustration, not Canva's interface or logo.
+
+[image: ARQ./24 Day 12 poster: AI OFF, a toggle switch turned off with a faded AI sparkle in the track]
+
+## My take
+
+For the last two years, most apps have treated AI as something to push into every corner of the interface. Canva just made "no thanks" a single, visible setting instead of a hunt through ten different menus.
+
+As a UX designer, I read this as a lesson about respect. A feature you can't switch off isn't a feature, it's a requirement. Giving people control doesn't make them use your product less; it makes them trust it more. The honest detail is that AI is still on by default, so the real test is how easy Canva makes this switch to find.
+
+## What I'm taking into my own work
+
+In my UX case study on international students in the UK, I don't want to force any one kind of help on people. If I design a chatbot or a smart suggestion, there should always be a clear way to say "not now" and reach a real person instead. Choice is part of the design, not an afterthought.
+
+## Source
+
+- 9to5Mac, "Canva introduces new controls to hide generative AI features" by Marcus Mendes (19 November 2026): https://9to5mac.com/2026/11/19/canva-introduces-new-controls-to-hide-generative-ai-features/
+- Canva Help Center, "Turn off AI features and see less AI-generated content": https://www.canva.com/help/manage-ai-features/
+- Also reported by 9to5Google, "AI features could be turned off with a simple toggle, Canva proves" by Ben Schoon (19 November 2026): https://9to5google.com/2026/11/19/canva-ai-features-toggle/
+
+*ARQ./24 is a daily design news series by Santhosh Muthu at ARQ. One design story, every day.*
+`},
 {day: "11", date: "2026-11-20", cat: "Identity · Craft", region: "London agency · Bourbon", read: "3 min", accent: "wax.", poster: "blog/ARQ24_Day11_Real_Wax.png", alt: "ARQ./24 Day 11 poster: the words REAL WAX above a bronze circle with a dripping red wax seal pressed with a wheat ear, and a real wheat stalk lying beside it",
  md: `
 # Real wax.
