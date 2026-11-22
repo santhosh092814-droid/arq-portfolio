@@ -9,6 +9,50 @@
 //  3. Save, commit, done. Keep the backtick ` characters that wrap the md text; if your article needs a
 //     backtick, write \` instead.
 window.ARQ24_POSTS = [
+{day: "13", date: "2026-11-22", cat: "Brand · Identity", region: "US · UK · Food & drink", read: "3 min", accent: "logo.", poster: "blog/ARQ24_Day13_Photo_Logo.png", alt: "ARQ./24 Day 13 poster: the words PHOTO LOGO above a bronze circle with a textured crescent moon framed by camera viewfinder brackets and a focus point",
+ md: `
+# Photo logo.
+
+**ARQ./24 · Day 13** · Nov 22, 2026 · @Santhosh · Brand · Identity · 3 min read
+
+## What is ARQ./24?
+
+ARQ./24 is a daily series where I pick one real story from the design world and share what it means to me as a UX designer. One story, one take, every day. Everything is taken from published sources, with links at the end of each post so you can read the original yourself.
+
+## What happened
+
+Late-night bakery Insomnia Cookies has a refreshed identity by &Walsh, the New York studio led by Jessica Walsh. Creative Boom's Katy Cowan wrote it up on 19 November.
+
+- **A brand with a moon:** Insomnia Cookies started in 2003, when Seth Berkowitz began baking from his University of Pennsylvania dorm room. It now has more than 375 bakeries across the US, Canada and the UK. Its original identity already used a cookie as a moon.
+- **The moon is now a photo:** the new logo keeps the moon, but it's a photograph of a melted chocolate chunk cookie, half-eaten into a crescent. A vector version is kept for small sizes and print.
+- **One promise:** the strategy is built on a single idea, "Always Warm".
+- **A big team and a lot of shoots:** typography by Julio Zukerman, illustration by Julio and Simran Meshram, photography by Henry Hargreaves, food styling by Charlotte Omnes and Daniella Khan, and motion by Pedro Magalhães, Igor Fajardo and Marco Del Pra. Over six months, &Walsh ran more than five photo and video shoots covering 12 campaigns, with a tiered system deciding which launches get the photographic style and which get a more graphic one.
+- **Already out there:** across campaigns, digital, newsletters, print and packaging.
+
+Carolina Vazquez, art director at &Walsh, said: "The goal was to make the brand feel fresh without losing what's always made it Insomnia."
+
+## The visual, explained
+
+A crescent moon with a textured, photographic surface, framed by camera viewfinder brackets and a focus point on the bronze circle. The idea: the logo is no longer drawn, it's shot. It's my own illustration of a moon, not the Insomnia Cookies logo or photography.
+
+[image: ARQ./24 Day 13 poster: PHOTO LOGO, a textured crescent moon inside camera viewfinder brackets]
+
+## My take
+
+Most logos are built to be as flat and simple as possible, so they work everywhere. Putting a photograph in the logo breaks that rule on purpose. You can almost smell it, which is exactly the point for a brand that sells warm cookies at midnight.
+
+The detail I like most as a UX designer is the vector version kept for small sizes and print. That's a responsive system, not just a logo: the rich version where there's room to enjoy it, the simple version where it has to stay readable. It's the same thinking we use for interfaces. Design the ideal, then design the fallback just as carefully.
+
+## What I'm taking into my own work
+
+In my UX case study on international students in the UK, I want every key screen to have a "small size" version in mind: a low-data mode, a version that works on an old phone, a clear text-only path. The rich version gets the attention, but the fallback is often what someone actually uses.
+
+## Source
+
+- Creative Boom, "&Walsh takes a bite out of the moon for Insomnia Cookies" by Katy Cowan (19 November 2026): https://www.creativeboom.com/news/walsh-takes-a-bite-out-of-the-moon-for-insomnia-cookies/
+
+*ARQ./24 is a daily design news series by Santhosh Muthu at ARQ. One design story, every day.*
+`},
 {day: "12", date: "2026-11-21", cat: "Design tools · AI", region: "Global · Creative software", read: "3 min", accent: "off.", poster: "blog/ARQ24_Day12_AI_Off.png", alt: "ARQ./24 Day 12 poster: the words AI OFF above a bronze circle with a large toggle switch turned off, its knob marked with a power symbol and a dashed, faded AI sparkle in the empty track",
  md: `
 # AI off.
