@@ -9,6 +9,47 @@
 //  3. Save, commit, done. Keep the backtick ` characters that wrap the md text; if your article needs a
 //     backtick, write \` instead.
 window.ARQ24_POSTS = [
+{day: "14", date: "2026-11-23", cat: "UX / UI · Product", region: "Global · Android · AI apps", read: "3 min", accent: "context.", poster: "blog/ARQ24_Day14_In_Context.png", slides: ["blog/ARQ24_Day14_In_Context.png", "blog/ARQ24_Day14_In_Context_2.png", "blog/ARQ24_Day14_In_Context_3.png", "blog/ARQ24_Day14_In_Context_4.png", "blog/ARQ24_Day14_In_Context_5.png"], alt: "ARQ./24 Day 14 poster: the words IN CONTEXT above a bronze circle with a phone showing a chat, where a dark camera sheet with viewfinder brackets and a shutter button slides up from the bottom, with upward chevrons beside it",
+ md: `
+# In context.
+
+**ARQ./24 · Day 14** · Nov 23, 2026 · @Santhosh · UX / UI · Product · 3 min read
+
+## What is ARQ./24?
+
+ARQ./24 is a daily series where I pick one real story from the design world and share what it means to me as a UX designer. One story, one take, every day. Everything is taken from published sources, with links at the end of each post so you can read the original yourself.
+
+## What happened
+
+Google has redesigned the in-app camera in the Gemini app for Android. 9to5Google's Abner Li wrote it up on 21 November.
+
+- **The old way:** the camera lives in the "plus" menu of the prompt box, and it used to open a fullscreen viewfinder that 9to5Google called "quite generic". You left the conversation to take the photo.
+- **The new way:** the camera now appears inline, on the Gemini home screen or inside a conversation, as a bottom sheet. You can drag it up to fill most of the screen, and it runs nearly edge to edge, behind the system navigation bar.
+- **Fewer buttons on show:** a three-dot button next to the shutter opens the flash and front-camera options. There's a back button on the other side, and you can also swipe down to leave.
+- **Rollout:** the redesign launched first in Gemini for iOS. On Android it has widely rolled out in beta and stable, version 17.76 and up. The old fullscreen camera is still used when you open it from the Gemini overlay.
+
+## The visual, explained
+
+A phone with a chat on screen, and a dark camera sheet sliding up from the bottom with viewfinder brackets and a shutter. Behind it, a dashed outline of the old fullscreen camera, and beside it, chevrons pointing up. The idea: the camera comes to the conversation instead of the conversation disappearing. It's my own drawing of a generic phone, not Google's interface.
+
+[image: ARQ./24 Day 14 poster: IN CONTEXT, a phone where a camera sheet slides up inside a chat]
+
+## My take
+
+This looks like a small change, but it's a big idea in UX: don't make people leave the place they're working to do one small part of the task. A fullscreen camera is a detour. You lose sight of the question you were asking, and coming back means finding your place again. A bottom sheet keeps the chat right there behind the camera, so the photo feels like part of the conversation, not a separate trip.
+
+I also like what they hid. Flash and front camera are useful, but rarely needed, so they sit behind one button. The screen is about one action: take the photo.
+
+## What I'm taking into my own work
+
+In my UX case study on international students in the UK, a lot of the journey is forms: visas, bank accounts, housing. The worst moments are when a form sends you somewhere else mid-task, to upload a passport photo or find a document, and you come back to a timed-out page. My rule from today: if a step needs a tool, bring the tool into the step. Keep people in context.
+
+## Source
+
+- 9to5Google, "Gemini app rolls out very slick camera redesign on Android" by Abner Li (21 November 2026): https://9to5google.com/2026/11/21/gemini-camera-redesign/
+
+*ARQ./24 is a daily design news series by Santhosh Muthu at ARQ. One design story, every day.*
+`},
 {day: "13", date: "2026-11-22", cat: "Brand · Identity", region: "US · UK · Food & drink", read: "3 min", accent: "logo.", poster: "blog/ARQ24_Day13_Photo_Logo.png", alt: "ARQ./24 Day 13 poster: the words PHOTO LOGO above a bronze circle with a textured crescent moon framed by camera viewfinder brackets and a focus point",
  md: `
 # Photo logo.
