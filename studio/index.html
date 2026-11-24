@@ -641,7 +641,7 @@ footer{border-top:1px solid var(--line);padding-block:3rem 3.4rem}
         <div class="mono">Start a project</div>
         <h2>Tell us what needs to <span class="ac">make sense</span>.</h2>
         <p class="lead">Describe the product, the people or the problem. Santhosh reads every message and replies personally.</p>
-        <a class="em" href="mailto:santhoshmuthu910@gmail.com">santhoshmuthu910@gmail.com</a>
+        <a class="em" href="mailto:santhosh@madebyarq.com">santhosh@madebyarq.com</a>
       </div>
       <form id="cf" class="rv" style="--d:100ms" action="https://api.web3forms.com/submit" method="POST" novalidate>
         <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
@@ -667,7 +667,7 @@ footer{border-top:1px solid var(--line);padding-block:3rem 3.4rem}
   <div class="w">
     <div class="fb">
       <img src="assets/arq-wordmark.webp" alt="ARQ" width="66" height="22">
-      <nav aria-label="Footer"><a href="#blog">Blog</a><a href="https://santhosh092814-droid.github.io/arq-portfolio/">Santhosh’s portfolio ↗</a><a href="https://www.linkedin.com/in/santhosh-muthu-a79b8b346/" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="mailto:santhoshmuthu910@gmail.com">Email</a></nav>
+      <nav aria-label="Footer"><a href="#blog">Blog</a><a href="https://santhosh092814-droid.github.io/arq-portfolio/">Santhosh’s portfolio ↗</a><a href="https://www.linkedin.com/in/santhosh-muthu-a79b8b346/" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="mailto:santhosh@madebyarq.com">Email</a></nav>
     </div>
     <p class="cp">© 2026 ARQ. Design studio, Birmingham, UK.</p>
   </div>
@@ -905,11 +905,11 @@ addEventListener("keydown",function(e){
 /* enquiry form */
 (function(){var f=$("#cf");if(!f)return;var st=$(".fs",f),btn=$("button",f),key=(((window.ARQ_CONFIG||{}).web3formsKey)||f.access_key.value||"").trim();f.access_key.value=key;
   f.addEventListener("submit",function(e){e.preventDefault();if(!f.reportValidity())return;var n=f.name.value.trim().split(" ")[0];
-    if(!key||key==="YOUR_WEB3FORMS_ACCESS_KEY"){st.className="fs err";st.textContent="The form isn’t switched on yet. Please email santhoshmuthu910@gmail.com.";return}
+    if(!key||key==="YOUR_WEB3FORMS_ACCESS_KEY"){st.className="fs err";st.textContent="The form isn’t switched on yet. Please email santhosh@madebyarq.com.";return}
     btn.disabled=true;st.className="fs";st.textContent="Sending…";
     fetch(f.action,{method:"POST",body:new FormData(f),headers:{Accept:"application/json"}}).then(function(r){return r.json().then(function(j){return {ok:r.ok,j:j}})})
     .then(function(o){if(o.ok&&o.j.success){st.className="fs ok";st.textContent="Thank you, "+n+". Your message has reached ARQ. and Santhosh will reply to you personally by email.";f.reset()}else throw new Error("fail")})
-    .catch(function(){st.className="fs err";st.textContent="Couldn’t send just now. Please email santhoshmuthu910@gmail.com."}).then(function(){btn.disabled=false})})})();
+    .catch(function(){st.className="fs err";st.textContent="Couldn’t send just now. Please email santhosh@madebyarq.com."}).then(function(){btn.disabled=false})})})();
 })();
 </script>
 
