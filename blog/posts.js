@@ -9,6 +9,50 @@
 //  3. Save, commit, done. Keep the backtick ` characters that wrap the md text; if your article needs a
 //     backtick, write \` instead.
 window.ARQ24_POSTS = [
+{day: "15", date: "2026-11-24", cat: "Brand · Identity", region: "Netherlands · Finland · AI", read: "3 min", accent: "age.", poster: "blog/ARQ24_Day15_Stone_Age.png", slides: ["blog/ARQ24_Day15_Stone_Age.png", "blog/ARQ24_Day15_Stone_Age_2.png", "blog/ARQ24_Day15_Stone_Age_3.png", "blog/ARQ24_Day15_Stone_Age_4.png", "blog/ARQ24_Day15_Stone_Age_5.png"], alt: "ARQ./24 Day 15 poster: the words STONE AGE above a bronze circle with a cracked computer mouse turned to stone, half-buried in dark rock with a fossil spiral",
+ md: `
+# Stone age.
+
+**ARQ./24 · Day 15** · Nov 24, 2026 · @Santhosh · Brand · Identity · 3 min read
+
+## What is ARQ./24?
+
+ARQ./24 is a daily series where I pick one real story from the design world and share what it means to me as a UX designer. One story, one take, every day. Everything is taken from published sources, with links at the end of each post so you can read the original yourself.
+
+## What happened
+
+Amsterdam agency Verve has branded Zero, an AI startup from Helsinki that makes CRM software. Creative Boom's Tom May wrote it up on 24 November.
+
+- **A happy delay:** Verve flew to Helsinki to work with Zero's founders. A delayed flight sent the team to the Amos Rex museum, where its "Generation 2026" exhibition included a piece by ceramic artist Johan Urrutia: a typewriter that has turned to stone.
+- **The idea:** an "extinction event". Old CRM tools are a Stone Age world of cracked earth and fossilised tools, and Zero is the next step. Verve showed the founders several routes, including a safer lifestyle-tech one, and this is the one that won.
+- **Against the lookalikes:** Creative Boom notes that most AI-native rivals go for a dark-mode, crypto-adjacent look. Zero keeps its signature yellow, because no one else in the category owns it, paired with a deep oxblood and a soft blue. The typeface is Install by Calame.Bureau.
+- **Drawn by hand, then scaled:** Verve illustrator Kevin Lebon drew Neolithic landscapes by hand, then fed them into Figma Weave, an AI tool, to generate more scenes in the same art direction.
+- **A character for a chat-only future:** "Zorb" is a gleaming, all-knowing space object with a small dot-matrix face that shows moods through force fields made of hand-drawn cave marks. Zero is moving to a chat-only, "zero-click" interface, and Zorb is meant to become the face of the product.
+
+Walewijn den Boer, Verve's creative director, said: "The old tools are turning to stone, and Zero is bringing the new ones."
+
+## The visual, explained
+
+A computer mouse, cracked and turned to stone, half-buried in a layer of dark rock with a fossil spiral beside it. The idea: the tools we click today are tomorrow's fossils. It's my own illustration, not Zero's branding or Verve's artwork. Inside the carousel: the flight delay and the stone typewriter, the hand-drawn-then-scaled illustration process, and my take.
+
+[image: ARQ./24 Day 15 poster: STONE AGE, a cracked stone computer mouse half-buried in rock]
+
+## My take
+
+Two things stood out to me. First, the idea came from a delay and a museum visit, not a mood board of other AI brands. When a whole category copies itself, the best references are often outside it.
+
+Second, the process. Hand-drawn illustration, then AI to make more of it in the same style. The human sets the direction and the craft; the tool scales it. That's a healthier picture of AI in design than "type a prompt, ship the result". And as a UX designer I'm curious about the product side: if Zero really goes "zero-click" and chat-only, the character becomes the interface. Zorb's moods will need to be as clear as any button.
+
+## What I'm taking into my own work
+
+In my UX case study on international students in the UK, a lot of the services students use already feel the same: generic, cold, a bit robotic. I want my design to have a recognisable human voice, and I want my references to come from students' real lives, not from other apps. If I use AI to scale anything, I'll make the first version by hand.
+
+## Source
+
+- Creative Boom, "What's the answer to a sea of lookalike AI brands? A fossilised typewriter, a flight delay and hand-drawn cave art" by Tom May (24 November 2026): https://www.creativeboom.com/news/whats-the-answer-to-a-sea-of-lookalike-ai-brands-a-fossilised-typewriter-a-flight-delay-and-some-hand-drawn-cave-art-of-course/
+
+*ARQ./24 is a daily design news series by Santhosh Muthu at ARQ. One design story, every day.*
+`},
 {day: "14", date: "2026-11-23", cat: "UX / UI · Product", region: "Global · Android · AI apps", read: "3 min", accent: "context.", poster: "blog/ARQ24_Day14_In_Context.png", slides: ["blog/ARQ24_Day14_In_Context.png", "blog/ARQ24_Day14_In_Context_2.png", "blog/ARQ24_Day14_In_Context_3.png", "blog/ARQ24_Day14_In_Context_4.png", "blog/ARQ24_Day14_In_Context_5.png"], alt: "ARQ./24 Day 14 poster: the words IN CONTEXT above a bronze circle with a phone showing a chat, where a dark camera sheet with viewfinder brackets and a shutter button slides up from the bottom, with upward chevrons beside it",
  md: `
 # In context.
