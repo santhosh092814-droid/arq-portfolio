@@ -9,6 +9,47 @@
 //  3. Save, commit, done. Keep the backtick ` characters that wrap the md text; if your article needs a
 //     backtick, write \` instead.
 window.ARQ24_POSTS = [
+{day: "16", date: "2026-11-25", cat: "Type · Typography", region: "France · Type foundry", read: "3 min", accent: "years.", poster: "blog/ARQ24_Day16_20_Years.png", slides: ["blog/ARQ24_Day16_20_Years.png", "blog/ARQ24_Day16_20_Years_2.png", "blog/ARQ24_Day16_20_Years_3.png", "blog/ARQ24_Day16_20_Years_4.png", "blog/ARQ24_Day16_20_Years_5.png", "blog/ARQ24_Day16_20_Years_6.png"], alt: "ARQ./24 Day 16 poster: the words 20 YEARS above a bronze circle with an old proof sheet, where a serif letter V is half filled in and half a dashed outline, with a drafting pen redrawing it",
+ md: `
+# 20 years.
+
+**ARQ./24 · Day 16** · Nov 25, 2026 · @Santhosh · Type · Typography · 3 min read
+
+## What is ARQ./24?
+
+ARQ./24 is a daily series where I pick one real story from the design world and share what it means to me as a UX designer. One story, one take, every day. Everything is taken from published sources, with links at the end of each post so you can read the original yourself.
+
+## What happened
+
+Paris-based type foundry Production Type has revived Vendôme, a French typeface from 1950. Creative Bloq's Natalie Fear wrote it up on 24 November.
+
+- **The original:** Vendôme was drawn by sculptor and set designer François Ganeau, with art direction from Roger Excoffon. Creative Bloq describes it by its leaning stems, wavering strokes, plunging Vs and suddenly sharp serifs. It became an icon on ads, book jackets, record sleeves and film posters.
+- **Copied to bits:** its success led sign painters and shopkeepers to copy it. Phototypesetting made copying easy, and by the 90s there were countless versions of very mixed quality.
+- **20 years of work:** Production Type's team, including type historians with PhDs, spent over 20 years redrawing it from archival paper proofs, and drew the missing weights from scratch.
+- **The launch:** the new family is called Vendôme Nouveau. It debuted on the New York subway, where commuters were photographed reading fake self-help books, one of them called "How to Raise a Sans Serif in an All-Serif Family".
+
+## The visual, explained
+
+An old proof sheet with a serif letter V. Half of it is solid ink, the other half is still a dashed outline, and a drafting pen is redrawing it. That's the story in one picture: a slow, careful rebuild from the original paper. The V is my own drawing, not Vendôme or Production Type's artwork. Inside the carousel: where Vendôme came from, how it got copied to bits, the 20-year redraw, and my take.
+
+[image: ARQ./24 Day 16 poster: 20 YEARS, a half-redrawn serif V on an old proof sheet]
+
+## My take
+
+What I like most here is where they went for the truth. After 70 years of copies, the easy route would have been to tidy up one of the copies. Production Type went back to the original paper proofs instead, and accepted that it would take a very long time.
+
+UX has the same problem. A lot of interfaces are copies of copies: we copy a pattern from an app that copied it from another app, and every copy drifts a little further from the real need behind it. The fix is the same as theirs. Go back to the source, which for us means real users, and rebuild from there.
+
+## What I'm taking into my own work
+
+For my UX case study on international students in the UK, I'm starting from interviews and real stories from students, not from how other apps solve it. Where I do borrow a pattern, I want to know where it came from and why it exists, before I use it.
+
+## Source
+
+- Creative Bloq, "It took designers 20 years to bring this font back from the dead" by Natalie Fear (24 November 2026): https://www.creativebloq.com/news/it-took-designers-20-years-to-bring-this-font-back-from-the-dead
+
+*ARQ./24 is a daily design news series by Santhosh Muthu at ARQ. One design story, every day.*
+`},
 {day: "15", date: "2026-11-24", cat: "Brand · Identity", region: "Netherlands · Finland · AI", read: "3 min", accent: "age.", poster: "blog/ARQ24_Day15_Stone_Age.png", slides: ["blog/ARQ24_Day15_Stone_Age.png", "blog/ARQ24_Day15_Stone_Age_2.png", "blog/ARQ24_Day15_Stone_Age_3.png", "blog/ARQ24_Day15_Stone_Age_4.png", "blog/ARQ24_Day15_Stone_Age_5.png"], alt: "ARQ./24 Day 15 poster: the words STONE AGE above a bronze circle with a cracked computer mouse turned to stone, half-buried in dark rock with a fossil spiral",
  md: `
 # Stone age.
