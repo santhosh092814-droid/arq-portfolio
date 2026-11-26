@@ -9,6 +9,50 @@
 //  3. Save, commit, done. Keep the backtick ` characters that wrap the md text; if your article needs a
 //     backtick, write \` instead.
 window.ARQ24_POSTS = [
+{day: "17", date: "2026-11-26", cat: "Spatial · Public art", region: "France · Metro station", read: "3 min", accent: "tiles.", poster: "blog/ARQ24_Day17_30000_Tiles.png", slides: ["blog/ARQ24_Day17_30000_Tiles.png", "blog/ARQ24_Day17_30000_Tiles_2.png", "blog/ARQ24_Day17_30000_Tiles_3.png", "blog/ARQ24_Day17_30000_Tiles_4.png", "blog/ARQ24_Day17_30000_Tiles_5.png", "blog/ARQ24_Day17_30000_Tiles_6.png"], alt: "ARQ./24 Day 17 poster: the words 30,000 TILES above a bronze circle with a basketball made of small geometric ceramic tiles in cobalt, ivory, black and sand, flying towards a hoop",
+ md: `
+# 30,000 tiles.
+
+**ARQ./24 · Day 17** · Nov 26, 2026 · @Santhosh · Spatial · Public art · 3 min read
+
+## What is ARQ./24?
+
+ARQ./24 is a daily series where I pick one real story from the design world and share what it means to me as a UX designer. One story, one take, every day. Everything is taken from published sources, with links at the end of each post so you can read the original yourself.
+
+## What happened
+
+London-based, French-born artist Camille Walala is transforming a metro station near Lyon with more than 30,000 hand-crafted ceramic tiles. Creative Boom's Tom May wrote it up on 25 November.
+
+- **The station:** Flachet–Alain Gilles, in Villeurbanne, part of greater Lyon. Around 5.7 million passengers use it each year.
+- **The name:** the piece is called Alley-Oop, after the basketball move where one player throws the ball towards the hoop and a teammate catches it in mid-air and scores. It's also a nod to the station's namesake, Alain Gilles, described as one of the greatest players in French basketball history.
+- **The look:** stacked, striped blocks, wavy lines and repeated shapes bounce across the platform walls and columns. Creative Boom links the 3D-effect patterns to a 1980s building in Villeurbanne by Swiss architect Mario Botta, and Walala's style to the Memphis Group.
+- **How it's built:** Walala won the commission in 2022 through an international competition run by Sytral Mobilités, Lyon's public transport authority, with around 300 artists in the running. She's working with architects Atelier Martel, art production studio Poïèma and engineers Betrec. The work happens at night so the station stays open throughout, and it's set for completion next spring.
+- **A first:** it's the biggest project of her career, her first permanent public artwork, and her first major project in France.
+
+Walala's own words: "People rarely think about how and what an environment like a metro station communicates with us." Her aim is "turning a transient transport space into a place of discovery, contemplation and interaction."
+
+## The visual, explained
+
+A basketball made of small ceramic tiles, flying towards a hoop. It puts the two halves of the story into one object: the tiles, and the alley-oop. The tile patterns are my own drawing, not Walala's artwork. Inside the carousel: the tiled station, where the name comes from, how it's being built at night, and my take.
+
+[image: ARQ./24 Day 17 poster: 30,000 TILES, a tiled basketball flying towards a hoop]
+
+## My take
+
+The line that stuck with me is Walala's point that people rarely think about what a metro station communicates. Most stations are places you pass through and wait in, so nobody designs them to say anything. But a blank space still says something: it says nobody thought about you while you wait.
+
+UX has a lot of these in-between spaces. Loading states, waiting screens, the days between "application submitted" and "decision made". We put our effort into the main steps and leave the waits blank. This project is a reminder that the wait is part of the journey too, and it can be designed with as much care as the destination.
+
+## What I'm taking into my own work
+
+In my UX case study on international students in the UK, the hardest moments often aren't the big steps. They're the waits in between: waiting for an offer, for a visa, for the first weeks after arriving to make sense. I'm mapping those waits as screens and moments in their own right, not just the gaps between steps.
+
+## Source
+
+- Creative Boom, "Why Camille Walala is transforming a metro station with 30,000 hand-made tiles inspired by basketball" by Tom May (25 November 2026): https://www.creativeboom.com/news/camille-walala-is-covering-a-lyon-metro-station-in-30000-hand-made-tiles/
+
+*ARQ./24 is a daily design news series by Santhosh Muthu at ARQ. One design story, every day.*
+`},
 {day: "16", date: "2026-11-25", cat: "Type · Typography", region: "France · Type foundry", read: "3 min", accent: "years.", poster: "blog/ARQ24_Day16_20_Years.png", slides: ["blog/ARQ24_Day16_20_Years.png", "blog/ARQ24_Day16_20_Years_2.png", "blog/ARQ24_Day16_20_Years_3.png", "blog/ARQ24_Day16_20_Years_4.png", "blog/ARQ24_Day16_20_Years_5.png", "blog/ARQ24_Day16_20_Years_6.png"], alt: "ARQ./24 Day 16 poster: the words 20 YEARS above a bronze circle with an old proof sheet, where a serif letter V is half filled in and half a dashed outline, with a drafting pen redrawing it",
  md: `
 # 20 years.
