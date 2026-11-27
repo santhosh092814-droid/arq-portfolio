@@ -9,6 +9,51 @@
 //  3. Save, commit, done. Keep the backtick ` characters that wrap the md text; if your article needs a
 //     backtick, write \` instead.
 window.ARQ24_POSTS = [
+{day: "18", date: "2026-11-27", cat: "Brand · Identity", region: "UK · Festival", read: "3 min", accent: "first.", poster: "blog/ARQ24_Day18_City_First.png", slides: ["blog/ARQ24_Day18_City_First.png", "blog/ARQ24_Day18_City_First_2.png", "blog/ARQ24_Day18_City_First_3.png", "blog/ARQ24_Day18_City_First_4.png", "blog/ARQ24_Day18_City_First_5.png", "blog/ARQ24_Day18_City_First_6.png"], alt: "ARQ./24 Day 18 poster: the words CITY FIRST above a bronze circle with a 3-day festival pass showing a seaside sunset and pier, while a small stub reading ONE ACT has been torn off and drifts away",
+ md: `
+# City first.
+
+**ARQ./24 · Day 18** · Nov 27, 2026 · @Santhosh · Brand · Identity · 3 min read
+
+## What is ARQ./24?
+
+ARQ./24 is a daily series where I pick one real story from the design world and share what it means to me as a UX designer. One story, one take, every day. Everything is taken from published sources, with links at the end of each post so you can read the original yourself.
+
+## What happened
+
+Victorious Festival, the three-day August bank holiday festival on Southsea seafront in Portsmouth, has a new brand by London agency Wildish & Co. Creative Boom's Katy Cowan wrote it up on 26 November.
+
+- **The problem:** too many people were buying a ticket for one act on one day, then going home. Each day felt like a different crowd, which made it hard to build a community around the festival.
+- **The shift:** instead of selling the headliners, the brand now sells the weekend, and the city. The new positioning, "The People's Classic", is built around the people who keep coming back: families, festival veterans, traders, volunteers and first-timers. A second line, "Portsmouth Says Welcome", ties it to the host city.
+- **The logo:** the O in Victorious becomes a starburst, taken from the sun on Portsmouth's coat of arms. It also works on its own across social, merch, wristbands and wayfinding.
+- **The system:** a custom headline typeface, Victorious Bold, with tall, narrow capitals; a palette named Navy, Sky, Sunset and Sunrise, taken from the seafront; a wave device that frames tickets, flags and signage; and engraving-style illustrations like a crab in headphones and a seagull in a bucket hat.
+- **The detail I like most:** every artist's press photo gets a custom risograph-inspired treatment, so the acts look like part of the festival's world, not the other way round.
+- **The launch:** big posters at London Waterloo, Clapham Junction and Brighton, alongside the 2027 line-up.
+
+Wildish & Co.'s managing director Sam Fresco summed it up: "Victorious sells you Portsmouth, and it belongs to whoever turns up."
+
+## The visual, explained
+
+A 3-day pass with the seafront on it, and a small stub marked "ONE ACT" torn off and drifting away. That's the whole story in one object: the one-act ticket is what the festival is moving away from, and the place is what's left in your hand. The illustration is my own drawing, not Wildish & Co.'s work. Inside the carousel: the one-day-crowd problem, how the brand now sells the city, how the acts are made to fit in, and my take.
+
+[image: ARQ./24 Day 18 poster: CITY FIRST, a 3-day seaside pass with a torn-off ONE ACT stub]
+
+## My take
+
+Line-ups change every year. The seafront doesn't. Most festivals compete on the one thing they can't own, and Victorious has moved to the thing nobody else can copy.
+
+There's a UX lesson in that. A lot of products are sold on their headline feature, and people turn up for that one thing, use it, and leave. The things that make people stay, and come back, are usually around the feature: the place, the people, how it feels to be there. If each "day" of your product feels like a different crowd, the fix might not be a bigger headline. It might be designing the stay.
+
+## What I'm taking into my own work
+
+In my UX case study on international students in the UK, the course is the headline: it's why students choose a university. But what decides whether they settle is everything around it: finding a home, getting to know the city, meeting people. I'm treating the city around the course as part of the product, not just the background.
+
+## Source
+
+- Creative Boom, "Why Victorious Festival stopped selling its headliners and started selling Portsmouth" by Katy Cowan (26 November 2026): https://www.creativeboom.com/news/why-victorious-festival-stopped-selling-its-headliners-and-started-selling-portsmouth/
+
+*ARQ./24 is a daily design news series by Santhosh Muthu at ARQ. One design story, every day.*
+`},
 {day: "17", date: "2026-11-26", cat: "Spatial · Public art", region: "France · Metro station", read: "3 min", accent: "tiles.", poster: "blog/ARQ24_Day17_30000_Tiles.png", slides: ["blog/ARQ24_Day17_30000_Tiles.png", "blog/ARQ24_Day17_30000_Tiles_2.png", "blog/ARQ24_Day17_30000_Tiles_3.png", "blog/ARQ24_Day17_30000_Tiles_4.png", "blog/ARQ24_Day17_30000_Tiles_5.png", "blog/ARQ24_Day17_30000_Tiles_6.png"], alt: "ARQ./24 Day 17 poster: the words 30,000 TILES above a bronze circle with a basketball made of small geometric ceramic tiles in cobalt, ivory, black and sand, flying towards a hoop",
  md: `
 # 30,000 tiles.
