@@ -209,36 +209,50 @@ section{padding-block:6rem;border-top:1px solid var(--line)}
 .note{margin:2.4rem 0 0;color:var(--dim);font-size:14px}
 .note a{color:var(--ac);border-bottom:1px solid color-mix(in srgb,var(--ac) 40%,transparent)}
 
-/* process */
-.pw{border:1px solid var(--line);background:var(--card);border-radius:2px}
-.pt{display:grid;grid-template-columns:repeat(4,1fr);position:relative}
-.pt button{position:relative;text-align:left;background:transparent;border:0;border-right:1px solid var(--line);padding:1.6rem 1.4rem 1.7rem;display:flex;flex-direction:column;gap:.55rem;min-width:0;transition:background .35s var(--ease)}
-.pt button:last-child{border-right:0}
-.pt button:before{content:"";position:absolute;left:0;top:0;height:3px;width:100%;background:var(--ac);transform:scaleX(0);transform-origin:0 50%;transition:transform .5s var(--ease)}
-.pt button:hover{background:color-mix(in srgb,var(--ac) 6%,transparent)}
-.pt button:hover:before{transform:scaleX(.35)}
-.pt button[aria-selected="true"]{background:color-mix(in srgb,var(--ac) 9%,transparent)}
-.pt button[aria-selected="true"]:before{transform:scaleX(1)}
-.pt .n{font:500 12px var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--dim);display:flex;align-items:center;gap:.6rem}
-.pt .n i{width:9px;height:9px;border-radius:50%;border:1.5px solid var(--dim);transition:all .35s var(--ease)}
-.pt button[aria-selected="true"] .n{color:var(--ac)}
-.pt button[aria-selected="true"] .n i{background:var(--ac);border-color:var(--ac);box-shadow:0 0 0 5px color-mix(in srgb,var(--ac) 22%,transparent)}
-.pt h3{font-size:1.5rem;line-height:1.1}
-.pt p{margin:0;color:var(--mute);font-size:15px;line-height:1.45}
-.pc{padding:2rem 1.6rem 2.2rem;display:grid;grid-template-columns:.8fr 1.2fr;gap:2rem;min-height:290px}
-.pc[hidden]{display:none}
-.pc .lead2{font:700 clamp(1.4rem,2.6vw,2rem)/1.15 var(--disp);letter-spacing:-.02em;margin:0 0 1rem;text-wrap:balance}
-.pc .cnt{font:500 12px var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--dim)}
-.pc ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:.7rem 1.4rem;align-content:start}
-.pc li{position:relative;padding:.85rem 1rem .85rem 2.7rem;border:1px solid var(--line);border-radius:2px;color:var(--fg);font-size:15.5px;line-height:1.4;opacity:0;transform:translateY(12px);animation:li .6s var(--ease) forwards;animation-delay:calc(var(--i)*90ms + 80ms);transition:border-color .25s,transform .3s var(--ease)}
-.pc li:hover{border-color:var(--ac);transform:translateY(-2px)}
-.pc li:before{content:counter(k);counter-increment:k;position:absolute;left:.9rem;top:.85rem;font:500 12px var(--mono);color:var(--ac)}
-.pc ul{counter-reset:k}
-.pc li.one{grid-column:1/-1}
-@keyframes li{to{opacity:1;transform:none}}
-.ptr{height:3px;background:var(--line);border-top:1px solid var(--line);box-sizing:content-box;position:relative;overflow:hidden}
-.ptr i{position:absolute;left:0;top:0;bottom:0;width:100%;background:var(--ac);transform:scaleX(.25);transform-origin:0 50%;transition:transform .7s var(--ease)}
-.ptr.auto i{transition:none}
+/* process: route */
+.pr-route{--col:340px;--gap:3.5rem;--x:calc(var(--col) + var(--gap));--ind:2.75rem;--nh:clamp(4.5rem,9vw,7.5rem);position:relative}
+.pr-rail,.pr-fill{position:absolute;left:var(--x);top:0;width:2px;margin-left:-1px;border-radius:2px}
+.pr-rail{background:var(--line);height:0}
+.pr-fill{background:var(--ac);height:0;transition:height .35s var(--ease)}
+.pr-stage{display:grid;grid-template-columns:var(--col) minmax(0,1fr);column-gap:var(--gap);padding-bottom:4.5rem}
+.pr-stage:last-child{padding-bottom:0}
+.pr-head{position:sticky;top:96px;align-self:start}
+.pr-num{display:block;height:calc(var(--nh)*.74);font:700 var(--nh)/.74 var(--disp);letter-spacing:-.04em;color:transparent;-webkit-text-stroke:1.5px var(--line);transition:color .5s var(--ease),-webkit-text-stroke-color .5s var(--ease);margin-left:-.04em}
+.pr-stage.cur .pr-num{color:var(--ac);-webkit-text-stroke-color:var(--ac)}
+.pr-head h3{font-size:1.9rem;line-height:1.1;margin-top:1.5rem}
+.pr-lead{margin:.7rem 0 0;color:var(--mute);font-size:16px;line-height:1.5;max-width:21em}
+.pr-count{display:block;margin-top:1.3rem;font:500 12px/1 var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--dim)}
+.pr-steps{list-style:none;margin:0;padding:calc(var(--nh)*.37 - .675*1.3rem) 0 0;--fs:clamp(1.15rem,1.9vw,1.35rem)}
+.pr-steps li{--nd:12px;position:relative;padding:0 0 1.9rem var(--ind);font:500 var(--fs)/1.35 var(--disp);letter-spacing:-.01em;color:var(--dim);transition:color .4s var(--ease)}
+.pr-steps li:last-child{padding-bottom:0}
+/* marker: all circles, centred on the first line of text */
+.pr-steps li:before{content:"";position:absolute;left:0;top:calc(var(--fs)*.675 - var(--nd)/2);width:var(--nd);height:var(--nd);margin-left:calc(var(--nd)/-2);border-radius:50%;background:var(--bg);border:2px solid var(--line);box-sizing:border-box;transition:background .4s var(--ease),border-color .4s var(--ease),box-shadow .4s var(--ease)}
+.pr-steps li.on{color:var(--fg)}
+.pr-steps li.on:before{background:var(--ac);border-color:var(--ac);box-shadow:0 0 0 5px color-mix(in srgb,var(--ac) 18%,transparent)}
+/* stage start: bigger ring with a dot inside */
+.pr-steps li.k{--nd:22px;font-size:calc(var(--fs)*1.08)}
+.pr-steps li.k:before{border-width:2px}
+.pr-steps li.k:after{content:"";position:absolute;left:0;top:calc(var(--fs)*1.08*.675 - 4px);width:8px;height:8px;margin-left:-4px;border-radius:50%;background:var(--line);transition:background .4s var(--ease)}
+.pr-steps li.k.on:before{background:var(--bg);border-color:var(--ac)}
+.pr-steps li.k.on:after{background:var(--ac)}
+/* launch: biggest, filled, with a tick */
+.pr-steps li.end{--nd:30px;font-size:clamp(1.5rem,2.6vw,2rem);color:var(--dim)}
+.pr-steps li.end:before{top:calc(clamp(1.5rem,2.6vw,2rem)*.675 - 15px)}
+.pr-steps li.end.on{color:var(--ac)}
+.pr-steps li.end.on:before{box-shadow:0 0 0 7px color-mix(in srgb,var(--ac) 18%,transparent)}
+.pr-steps li.end:after{content:"";position:absolute;left:0;top:calc(clamp(1.5rem,2.6vw,2rem)*.675 - 6px);width:12px;height:7px;margin:0 0 0 -6px;border-left:2.5px solid var(--line);border-bottom:2.5px solid var(--line);transform:rotate(-45deg) translate(1px,-2px);transition:border-color .4s var(--ease)}
+.pr-steps li.end.on:after{border-color:var(--onac)}
+.pr-sub{display:block;margin-top:.45rem;font:400 15px/1.5 var(--body);letter-spacing:0;color:var(--dim);max-width:30em}
+.pr-route.nojs .pr-steps li{color:var(--fg)}.pr-route.nojs .pr-steps li:before{background:var(--ac);border-color:var(--ac)}
+@media(max-width:860px){
+ .pr-route{--x:16px;--ind:2.8rem;--nh:4rem}
+ .pr-stage{grid-template-columns:1fr;padding-bottom:3rem}
+ .pr-head{position:static;padding-left:calc(var(--x) + var(--ind));margin-bottom:1.5rem}
+ .pr-head h3{font-size:1.6rem;margin-top:1.2rem}
+ .pr-steps{padding-top:0;margin-left:var(--x)}
+}
+@media(prefers-reduced-motion:reduce){.pr-fill,.pr-num,.pr-steps li,.pr-steps li:before,.pr-steps li:after{transition:none!important}}
+
 
 /* series */
 .sr{display:grid;grid-template-columns:1.1fr .9fr;gap:3rem;align-items:center;background:var(--card);border:1px solid var(--line);padding:clamp(1.6rem,4vw,3.4rem);border-radius:2px}
@@ -398,10 +412,6 @@ footer{border-top:1px solid var(--line);padding-block:3rem 3.4rem}
   .cn{grid-template-columns:repeat(2,1fr)}
   .hero{grid-template-columns:1fr;gap:3.5rem;padding-block:3.5rem 3rem;min-height:0}
   .stage{width:min(100%,340px);justify-self:start}
-  .pt{grid-template-columns:repeat(2,1fr)}
-  .pt button:nth-child(2){border-right:0}
-  .pt button:nth-child(-n+2){border-bottom:1px solid var(--line)}
-  .pc{grid-template-columns:1fr;min-height:0}
   .sr,.ab,.ct{grid-template-columns:1fr;gap:2.4rem}
   .ga,.ga.web{grid-template-columns:repeat(3,1fr)}
   .bcards{grid-template-columns:repeat(2,1fr)}
@@ -414,8 +424,6 @@ footer{border-top:1px solid var(--line);padding-block:3rem 3.4rem}
   .sv,.wk,.r2{grid-template-columns:1fr}
   .sv>div{grid-template-columns:1fr;grid-template-areas:"n" "h" "p" "u";padding:1.8rem 1.5rem}
   .sv .mono{font-size:2.4rem}
-  .pt button{padding:1.2rem 1rem 1.3rem}.pt h3{font-size:1.2rem}.pt p{font-size:14px}
-  .pc ul{grid-template-columns:1fr}.pc li.one{grid-column:auto}
   .wk .mt{flex-direction:column;gap:.4rem}
   .wk .pill{opacity:1;transform:none}
   .ga,.ga.web{grid-template-columns:repeat(2,1fr)}
@@ -630,18 +638,19 @@ footer .fb nav a{display:inline-flex;align-items:center;min-height:44px}
 
   <div class="w">
   <section id="process">
-    <div class="sh"><h2 class="rv">How a project <span class="ac">runs</span>.</h2><p class="rv" style="--d:100ms">Four stages, the same every time. Pick a stage to see exactly what happens in it, or let it play through.</p></div>
-    <div class="pw rv" id="pw">
-      <div class="pt" role="tablist" aria-label="Project stages" id="pt">
-        <button type="button" role="tab" id="t1" aria-controls="pp" aria-selected="true" data-i="0"><span class="n"><i></i>Stage 1</span><h3>Onboarding</h3><p>From first call to a locked direction.</p></button>
-        <button type="button" role="tab" id="t2" aria-controls="pp" aria-selected="false" tabindex="-1" data-i="1"><span class="n"><i></i>Stage 2</span><h3>Design</h3><p>From sitemap to approved screens.</p></button>
-        <button type="button" role="tab" id="t3" aria-controls="pp" aria-selected="false" tabindex="-1" data-i="2"><span class="n"><i></i>Stage 3</span><h3>Development</h3><p>The approved design, built for real.</p></button>
-        <button type="button" role="tab" id="t4" aria-controls="pp" aria-selected="false" tabindex="-1" data-i="3"><span class="n"><i></i>Stage 4</span><h3>Testing</h3><p>Checked, demoed and launched.</p></button>
-      </div>
-      <div class="ptr" id="ptr" aria-hidden="true"><i></i></div>
-      <div class="pc" id="pp" role="tabpanel" aria-live="polite" tabindex="0"></div>
-    </div>
-  </section>
+ <div class="sh"><h2 class="rv">How a project <span class="ac">runs</span>.</h2><p class="rv" style="--d:100ms">Four stages, the same every time. Scroll to follow a project from the first call to launch.</p></div>
+ <div class="pr-route nojs" id="pr-route">
+  <div class="pr-rail" aria-hidden="true"></div><div class="pr-fill" id="pr-fill" aria-hidden="true"></div>
+  <article class="pr-stage"><div class="pr-head"><span class="pr-num" aria-hidden="true">01</span><h3>Onboarding</h3><p class="pr-lead">Everything is agreed before any design work starts.</p><span class="pr-count">5 steps</span></div>
+   <ol class="pr-steps"><li class="k">Client kickoff call</li><li>Proposal</li><li>Contract</li><li>Invoice</li><li>Locking in the design direction</li></ol></article>
+  <article class="pr-stage"><div class="pr-head"><span class="pr-num" aria-hidden="true">02</span><h3>Design</h3><p class="pr-lead">Structure first, then visuals, with your content in hand.</p><span class="pr-count">4 steps</span></div>
+   <ol class="pr-steps"><li class="k">Sitemap in FigJam</li><li>Wireframes in Relume</li><li>Collecting brand details, copy and images</li><li>Figma design and iteration</li></ol></article>
+  <article class="pr-stage"><div class="pr-head"><span class="pr-num" aria-hidden="true">03</span><h3>Development</h3><p class="pr-lead">The approved design is built in the platform you prefer.</p><span class="pr-count">1 step</span></div>
+   <ol class="pr-steps"><li class="k">Development of the approved design in the client's preferred platform<span class="pr-sub">Nothing new is designed here. The approved screens are built as they are.</span></li></ol></article>
+  <article class="pr-stage"><div class="pr-head"><span class="pr-num" aria-hidden="true">04</span><h3>Testing</h3><p class="pr-lead">Every item is checked before the site goes live.</p><span class="pr-count">6 steps</span></div>
+   <ol class="pr-steps"><li class="k">Responsiveness on phone, tablet and laptop</li><li>Payment integration</li><li>On-page SEO</li><li>Blog</li><li>Demo call with the client</li><li class="end">Launch</li></ol></article>
+ </div>
+</section>
 
   <section id="arq24">
     <div class="sr rv">
@@ -804,24 +813,25 @@ $$(".rv").forEach(function(e){io.observe(e)});
 function count(el){var to=+el.getAttribute("data-count");if(reduce){el.textContent=to;return}var t0=performance.now(),d=1300;
   (function s(t){var k=Math.min(1,(t-t0)/d),v=Math.round(to*(1-Math.pow(1-k,3)));el.textContent=v;if(k<1)requestAnimationFrame(s)})(t0)}
 var co=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){$$("[data-count]",x.target).forEach(count);co.unobserve(x.target)}})},{threshold:.4});co.observe($("#cn"));
-/* process stepper: equal stages, auto-plays until the visitor takes over */
-var ST=[
- {k:"Stage 1 · Onboarding",l:"Everything is agreed before any design work starts.",i:["Client kickoff call","Proposal","Contract","Invoice","Locking in the design direction"]},
- {k:"Stage 2 · Design",l:"Structure first, then visuals, with your content in hand.",i:["Sitemap in FigJam","Wireframes in Relume","Collecting brand details, copy and images","Figma design and iteration"]},
- {k:"Stage 3 · Development",l:"The approved design is built in the platform you prefer.",i:["Development of the approved design in the client's preferred platform"]},
- {k:"Stage 4 · Testing",l:"Every item is checked before the site goes live.",i:["Responsiveness on phone, tablet and laptop","Payment integration","On-page SEO","Blog","Demo call with the client","Launch"]}];
-var pt=$("#pt"),tabs=$$("button",pt),pp=$("#pp"),ptr=$("#ptr").firstElementChild,sc=0,timer=null,user=false,vis=false;
-function stage(n,fromUser){sc=n;tabs.forEach(function(t,i){t.setAttribute("aria-selected",i===n?"true":"false");t.tabIndex=i===n?0:-1});
-  var d=ST[n];pp.setAttribute("aria-labelledby","t"+(n+1));
-  pp.innerHTML='<div><div class="cnt">'+esc(d.k)+'</div><h3 class="lead2" style="margin-top:.8rem">'+esc(d.l)+'</h3></div><ul>'+d.i.map(function(x,i){return '<li style="--i:'+i+'"'+(d.i.length%2&&i===d.i.length-1?' class="one"':'')+'>'+esc(x)+'</li>'}).join("")+'</ul>';
-  ptr.style.transform="scaleX("+((n+1)/4)+")"}
-function tick(){if(user||!vis||reduce)return;stage((sc+1)%4)}
-function start(){clearInterval(timer);if(!reduce)timer=setInterval(tick,5200)}
-tabs.forEach(function(t){t.addEventListener("click",function(){user=true;clearInterval(timer);stage(+t.getAttribute("data-i"),true)})});
-pt.addEventListener("keydown",function(e){var k=e.key,n=sc;if(k==="ArrowRight"||k==="ArrowDown")n=(sc+1)%4;else if(k==="ArrowLeft"||k==="ArrowUp")n=(sc+3)%4;else if(k==="Home")n=0;else if(k==="End")n=3;else return;e.preventDefault();user=true;clearInterval(timer);stage(n,true);tabs[n].focus()});
-$("#pw").addEventListener("mouseenter",function(){user=true});
-var po=new IntersectionObserver(function(en){en.forEach(function(x){vis=x.isIntersecting})},{threshold:.35});po.observe($("#pw"));
-stage(0);start();
+/* process route: line fills as the visitor scrolls */
+(function(){
+var fill=document.getElementById('pr-fill'),route=document.getElementById('pr-route');
+route.classList.remove('nojs');
+var steps=[].slice.call(document.querySelectorAll('.pr-steps li')),stages=[].slice.call(document.querySelectorAll('.pr-stage'));
+var force=null;
+function cen(li){var r=li.getBoundingClientRect(),cs=getComputedStyle(li,'::before');return r.top+scrollY+parseFloat(cs.top)+parseFloat(cs.height)/2}
+var rail=document.querySelector('.pr-rail');
+function bounds(){var rt=route.getBoundingClientRect().top+scrollY,a=cen(steps[0])-rt,z=cen(steps[steps.length-1])-rt;
+ [rail,fill].forEach(function(e){e.style.top=a+'px'});rail.style.height=(z-a)+'px';return{rt:rt,a:a,z:z}}
+function upd(){
+ var bd=bounds(),mid=force!==null?force:scrollY+innerHeight*.55,h=0;
+ steps.forEach(function(li){var c=cen(li),on=c<mid;li.classList.toggle('on',on);if(on)h=Math.max(h,c-bd.rt-bd.a)});
+ fill.style.height=Math.max(0,h)+'px';
+ var cur=0;stages.forEach(function(s,i){if(s.getBoundingClientRect().top+scrollY<mid+40)cur=i});
+ stages.forEach(function(s,i){s.classList.toggle('cur',i===cur)});
+}
+addEventListener('scroll',upd,{passive:true});addEventListener('resize',upd);upd();
+})();
 var prog=$("#prog");function sp(){var h=document.documentElement.scrollHeight-innerHeight;prog.style.transform="scaleX("+(h>0?Math.min(1,scrollY/h):0)+")"}
 addEventListener("scroll",sp,{passive:true});sp();
 
