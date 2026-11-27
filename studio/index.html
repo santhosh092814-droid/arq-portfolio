@@ -158,13 +158,22 @@ section{padding-block:6rem;border-top:1px solid var(--line)}
 .sh p{margin:0;color:var(--mute);max-width:32em}
 
 /* services */
-.sv{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
-.sv>div{background:var(--card);padding:2rem 1.6rem 2.2rem;display:flex;flex-direction:column;gap:1rem;min-width:0;position:relative;transition:background .4s,transform .5s var(--ease)}
-.sv>div:before{content:"";position:absolute;left:0;top:0;height:2px;width:100%;background:var(--ac);transform:scaleX(0);transform-origin:0 50%;transition:transform .5s var(--ease)}
-.sv>div:hover:before{transform:scaleX(1)}
-.sv h3{font-size:1.35rem;line-height:1.2}
-.sv p{margin:0;color:var(--mute);font-size:15.5px}
-.sv ul{list-style:none;margin:auto 0 0;padding:1.2rem 0 0;border-top:1px solid var(--line);display:flex;flex-direction:column;gap:.35rem;font:400 12px var(--mono);letter-spacing:.06em;color:var(--dim)}
+.sv{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}
+.sv>div{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:2.2rem 2.2rem 2.1rem;display:grid;grid-template-columns:auto 1fr;grid-template-areas:"n h" "n p" "n u";column-gap:2rem;row-gap:.9rem;align-content:start;min-width:0;position:relative;overflow:hidden;transition:background .45s var(--ease),color .45s var(--ease),border-color .45s var(--ease),transform .5s var(--ease)}
+.sv>div:before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--ac);transform:scaleY(.18);transform-origin:0 0;transition:transform .55s var(--ease)}
+.sv>div:hover:before,.sv>div:focus-within:before{transform:scaleY(1)}
+.sv .mono{grid-area:n;font:700 3.4rem/1 var(--disp);letter-spacing:-.04em;color:var(--ac);opacity:.9;min-width:2.2ch;transition:color .45s var(--ease)}
+.sv h3{grid-area:h;font-size:1.55rem;line-height:1.15;transition:color .45s var(--ease)}
+.sv p{grid-area:p;margin:0;color:var(--mute);font-size:15.5px;max-width:46ch;transition:color .45s var(--ease)}
+.sv ul{grid-area:u;list-style:none;margin:.5rem 0 0;padding:0;display:flex;flex-wrap:wrap;gap:.5rem;font:400 12px var(--mono);letter-spacing:.04em}
+.sv li{padding:.38rem .8rem;border:1px solid var(--line);border-radius:999px;color:var(--dim);transition:border-color .45s var(--ease),color .45s var(--ease)}
+@media(hover:hover){
+  .sv>div:hover{background:var(--ink);border-color:var(--ink)}
+  .sv>div:hover h3{color:var(--inkfg)}
+  .sv>div:hover p{color:var(--inkmute)}
+  .sv>div:hover .mono{color:var(--inkac)}
+  .sv>div:hover li{border-color:var(--inkline);color:var(--inkmute)}
+}
 
 /* work */
 .fl{display:flex;flex-wrap:wrap;gap:.6rem;margin:0 0 2rem}
@@ -372,7 +381,6 @@ footer{border-top:1px solid var(--line);padding-block:3rem 3.4rem}
 #lb .k{position:absolute;left:0;right:0;bottom:max(14px,env(safe-area-inset-bottom,0px));text-align:center;font:500 12px var(--mono);letter-spacing:.2em;color:#BDBBB6}
 
 @media(max-width:1020px){
-  .sv{grid-template-columns:repeat(2,1fr)}
   .cn{grid-template-columns:repeat(2,1fr)}
   .hero{grid-template-columns:1fr;gap:3.5rem;padding-block:3.5rem 3rem;min-height:0}
   .stage{width:min(100%,340px);justify-self:start}
@@ -390,6 +398,8 @@ footer{border-top:1px solid var(--line);padding-block:3rem 3.4rem}
   .nv nav{display:none}
   section{padding-block:4rem}
   .sv,.wk,.r2{grid-template-columns:1fr}
+  .sv>div{grid-template-columns:1fr;grid-template-areas:"n" "h" "p" "u";padding:1.8rem 1.5rem}
+  .sv .mono{font-size:2.4rem}
   .pt button{padding:1.2rem 1rem 1.3rem}.pt h3{font-size:1.2rem}.pt p{font-size:14px}
   .pc ul{grid-template-columns:1fr}.pc li.one{grid-column:auto}
   .wk .mt{flex-direction:column;gap:.4rem}
@@ -717,7 +727,7 @@ var P=[
   sum:"A brushed-metal monogram and a set of guidelines for applying it across business cards, flyers and large-format signage.",
   meta:[["Client","GM Modulars, Chennai"],["Role","Brand and print designer"],["Year","2026"],["Scope","Identity, guidelines, print"]],cs:GMC,g:GMG,
   r:[["28","Pages of guidelines"],["18","Logo lockups supplied"],["06","Print formats designed"]]},
- {id:"helio-nexus",f:"gfx",t:"Helio Nexus",c:"Brand identity",y:"2026",role:"Brand identity designer",tools:"",cover:"assets/work-helio.webp",
+ {id:"helio-nexus",f:"gfx",t:"Helio Nexus",c:"Brand identity",y:"2026",role:"Brand identity designer",tools:"",cover:"assets/work-helio.webp?v=2",
   blurb:"A visual and verbal system for an early-stage solar-wind aircraft research venture, built so every claim carries its status.",
   sum:"A visual and verbal system for an early-stage solar-wind aircraft research venture, built so every claim carries its status.",
   meta:[["Client", "Helio Nexus"], ["Role", "Brand identity designer"], ["Year", "2026"], ["Scope", "Identity, guidelines, applications"]],cs:HNC,g:HNG,gi:"assets/helio/hn-",
