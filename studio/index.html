@@ -11,11 +11,25 @@
 <link rel="apple-touch-icon" href="favicon/apple-touch-icon.png?v=2">
 <meta property="og:site_name" content="Made By ARQ">
 <meta property="og:title" content="Made By ARQ">
+<link rel="canonical" href="https://madebyarq.com/">
+<meta name="theme-color" content="#0B0B0C">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://madebyarq.com/">
+<meta property="og:description" content="Made By ARQ (ARQ.) is a Birmingham design studio for UI/UX, websites, brand graphics and motion.">
+<meta property="og:image" content="https://madebyarq.com/assets/og-cover.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Made By ARQ: Products people understand at first use, with the metal Q mark">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Made By ARQ">
+<meta name="twitter:description" content="Birmingham design studio for UI/UX, websites, brand graphics and motion.">
+<meta name="twitter:image" content="https://madebyarq.com/assets/og-cover.png">
 <meta name="description" content="Made By ARQ (ARQ.) is a Birmingham design studio for UI/UX, websites, brand graphics and motion.">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Made By ARQ","alternateName":["ARQ","ARQ."],"url":"https://madebyarq.com/"}</script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;700&display=swap">
+<link rel="preload" href="assets/fonts/space-grotesk-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <style>
+@font-face{font-family:Inter;font-weight:400;font-style:normal;font-display:swap;src:url(assets/fonts/inter-latin-400-normal.woff2) format('woff2')}@font-face{font-family:Inter;font-weight:500;font-style:normal;font-display:swap;src:url(assets/fonts/inter-latin-500-normal.woff2) format('woff2')}@font-face{font-family:Inter;font-weight:600;font-style:normal;font-display:swap;src:url(assets/fonts/inter-latin-600-normal.woff2) format('woff2')}@font-face{font-family:'Space Grotesk';font-weight:500;font-style:normal;font-display:swap;src:url(assets/fonts/space-grotesk-latin-500-normal.woff2) format('woff2')}@font-face{font-family:'Space Grotesk';font-weight:700;font-style:normal;font-display:swap;src:url(assets/fonts/space-grotesk-latin-700-normal.woff2) format('woff2')}@font-face{font-family:'JetBrains Mono';font-weight:400;font-style:normal;font-display:swap;src:url(assets/fonts/jetbrains-mono-latin-400-normal.woff2) format('woff2')}@font-face{font-family:'JetBrains Mono';font-weight:500;font-style:normal;font-display:swap;src:url(assets/fonts/jetbrains-mono-latin-500-normal.woff2) format('woff2')}
 /* Layout: light paper ground with one dark object (the metal ARQ emblem panel) and a dark "stage 4" card. Bronze from the logo's Q is the only accent. Dark theme is a toggle. */
 :root{
   --bg:#F2F3F3; --card:#FFFFFF; --line:#DADCDC; --fg:#111113; --mute:#47494D; --dim:#65676B; --ac:#96582A; --ac2:#7A4520; --onac:#FFFFFF;
@@ -186,7 +200,7 @@ section{padding-block:6rem;border-top:1px solid var(--line)}
 .wk .im{position:relative;aspect-ratio:16/9;overflow:hidden;background:var(--card);border:1px solid var(--line);border-radius:2px}
 .wk img{width:100%;height:100%;object-fit:cover;transition:transform .8s var(--ease)}
 .wk a:hover img{transform:scale(1.05)}
-.wk .pill{position:absolute;right:14px;bottom:14px;background:var(--ink);color:var(--inkfg);font:500 11px var(--mono);letter-spacing:.14em;text-transform:uppercase;padding:.55rem .85rem;border-radius:999px;opacity:0;transform:translateY(8px);transition:all .4s var(--ease)}
+.wk .pill{position:absolute;right:14px;bottom:14px;background:var(--ink);color:var(--inkfg);font:500 12px var(--mono);letter-spacing:.14em;text-transform:uppercase;padding:.55rem .85rem;border-radius:999px;opacity:0;transform:translateY(8px);transition:all .4s var(--ease)}
 .wk a:hover .pill,.wk a:focus-visible .pill{opacity:1;transform:none}
 .wk .mt{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;margin-top:1rem}
 .wk h3{font-size:1.5rem}
@@ -274,10 +288,10 @@ footer{border-top:1px solid var(--line);padding-block:3rem 3.4rem}
 .pvw .lead{font-size:clamp(1.05rem,1.6vw,1.3rem);color:var(--mute);max-width:40em;margin:0}
 .mt4{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);margin:2.6rem 0 3rem}
 .mt4>div{background:var(--card);padding:1rem 1.1rem;min-width:0}
-.mt4 small{display:block;font:500 11px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--dim);margin-bottom:.35rem}
+.mt4 small{display:block;font:500 12px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--dim);margin-bottom:.35rem}
 .mt4 span{font-weight:500}
 .csf{display:grid;gap:1rem;margin:0 0 2.4rem}.csf figure{margin:0}.csf button{display:block;width:100%;padding:0;border:1px solid var(--line);background:var(--card);border-radius:2px;overflow:hidden;cursor:zoom-in}
-.csf img{display:block;width:100%;height:auto}.csf figcaption{margin-top:.65rem;font:500 11px/1.4 "JetBrains Mono",monospace;letter-spacing:.14em;text-transform:uppercase;color:var(--dim)}
+.csf img{display:block;width:100%;height:auto}.csf figcaption{margin-top:.65rem;font:500 12px/1.4 "JetBrains Mono",monospace;letter-spacing:.14em;text-transform:uppercase;color:var(--dim)}
 @media(min-width:768px){.csf.two{grid-template-columns:1fr 1fr}.csf.mix{grid-template-columns:1fr 2.6fr;align-items:end}.csf.one-two{grid-template-columns:1fr 1fr}.csf.one-two figure:first-child{grid-column:1/-1}}
 .cta2{border-top:1px solid var(--line);padding:3.5rem 0 1.5rem;display:grid;gap:1.6rem;justify-items:start}.cta2 h2{font-size:clamp(1.8rem,4vw,3rem);line-height:1.08;max-width:22ch;margin:0}
 .pvw .csf:first-of-type{margin-top:2.4rem}
@@ -298,7 +312,7 @@ footer{border-top:1px solid var(--line);padding-block:3rem 3.4rem}
 .rs{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:0 0 3.2rem}
 .rs div{border-left:2px solid var(--ac);padding:.2rem 0 .2rem 1rem}
 .rs b{display:block;font:700 2.2rem/1 var(--disp);letter-spacing:-.02em}
-.rs small{display:block;margin-top:.4rem;font:500 11px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--dim)}
+.rs small{display:block;margin-top:.4rem;font:500 12px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--dim)}
 .nx{display:block;border-top:1px solid var(--line);margin-top:3.5rem;padding-top:2.2rem}
 .nx h2{font-size:clamp(1.8rem,4vw,3rem);margin-top:.6rem;transition:color .3s}
 .nx:hover h2{color:var(--ac)}
@@ -323,7 +337,7 @@ footer{border-top:1px solid var(--line);padding-block:3rem 3.4rem}
 .cd button{width:9px;height:9px;padding:0;border-radius:99px;border:0;background:var(--line);transition:width .35s var(--ease),background .3s}
 .cd button[aria-current="true"]{width:30px;background:var(--ac)}
 .ck{font:500 12px var(--mono);letter-spacing:.16em;color:var(--dim);min-width:5.5em;text-align:center}
-.hint{display:flex;align-items:center;gap:.6rem;font:500 11px var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--dim);margin-bottom:1rem}
+.hint{display:flex;align-items:center;gap:.6rem;font:500 12px var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--dim);margin-bottom:1rem}
 
 /* blog */
 .bcards{display:grid;grid-template-columns:repeat(3,1fr);gap:1.6rem}
@@ -334,7 +348,7 @@ footer{border-top:1px solid var(--line);padding-block:3rem 3.4rem}
 .bc .bd{padding-top:1rem}
 .bc h3{font-size:1.25rem;line-height:1.2;margin:.5rem 0 .7rem;transition:color .3s}
 .bc:hover h3{color:var(--ac)}
-.m2{display:flex;flex-wrap:wrap;gap:.45rem .7rem;align-items:center;font:500 11px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--dim)}
+.m2{display:flex;flex-wrap:wrap;gap:.45rem .7rem;align-items:center;font:500 12px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--dim)}
 .chip{border:1px solid var(--line);padding:.22rem .55rem;border-radius:999px}
 .bhead{display:flex;justify-content:space-between;align-items:flex-end;gap:1.5rem;flex-wrap:wrap;margin:2.6rem 0 1.6rem}
 .bvw{max-width:1160px;margin:0 auto;padding-block:3.5rem 5rem}
@@ -342,7 +356,7 @@ footer{border-top:1px solid var(--line);padding-block:3rem 3.4rem}
 .bvw .lead{font-size:clamp(1.05rem,1.6vw,1.25rem);color:var(--mute);max-width:36em;margin:0}
 .art{max-width:720px;margin:0 auto}
 .art h1{font-size:clamp(2rem,5.2vw,3.6rem)}
-.art .meta{display:flex;flex-wrap:wrap;gap:.5rem .8rem;align-items:center;font:500 11px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--dim)}
+.art .meta{display:flex;flex-wrap:wrap;gap:.5rem .8rem;align-items:center;font:500 12px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--dim)}
 .art .sec{margin-top:2.8rem}
 .art h2{font-size:1.5rem;margin:0 0 1rem}
 .art h2.k{font:500 12px var(--mono);letter-spacing:.18em;text-transform:uppercase;color:var(--ac)}
@@ -356,8 +370,8 @@ footer{border-top:1px solid var(--line);padding-block:3rem 3.4rem}
 .art figure{margin:2rem 0}
 .art figure img{width:100%;height:auto;border:1px solid var(--line);border-radius:2px}
 .art .a24sl{display:block;position:relative;width:100%;padding:0;border:0;background:none;cursor:zoom-in}.art .a24sl:focus-visible{outline:2px solid var(--ac);outline-offset:4px}
-.a24b,.a24s{position:absolute;padding:7px 11px;border-radius:999px;background:rgba(11,11,12,.78);color:#F4F2EE;font:500 11px var(--mono);letter-spacing:.12em;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}.a24b{top:14px;right:14px}.a24s{bottom:14px;right:14px}
-.art figcaption{margin-top:.7rem;font:500 11px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--dim)}
+.a24b,.a24s{position:absolute;padding:7px 11px;border-radius:999px;background:rgba(11,11,12,.78);color:#F4F2EE;font:500 12px var(--mono);letter-spacing:.12em;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}.a24b{top:14px;right:14px}.a24s{bottom:14px;right:14px}
+.art figcaption{margin-top:.7rem;font:500 12px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--dim)}
 .art .sec.src p{font-size:14.5px}
 .bpn{display:grid;grid-template-columns:1fr 1fr;gap:1rem;border-top:1px solid var(--line);margin-top:3.2rem;padding-top:1.6rem}
 .bpn a{display:block;border:1px solid var(--line);padding:1.1rem 1.2rem;border-radius:2px;border-bottom:1px solid var(--line);color:var(--fg);transition:border-color .25s}
@@ -421,9 +435,16 @@ footer{border-top:1px solid var(--line);padding-block:3rem 3.4rem}
   *,*:before,*:after{animation:none!important;transition:none!important}
   .rv{opacity:1;transform:none}.ln>span{transform:none}.pbar i{transform:scaleX(1)}
 }
+.skip{position:absolute;left:12px;top:-60px;z-index:100;background:var(--ink);color:var(--inkfg);padding:.7rem 1rem;border-radius:8px;font:500 13px var(--mono);letter-spacing:.08em;transition:top .2s}.skip:focus{top:12px}
+.nv nav a{display:inline-flex;align-items:center;min-height:44px;padding:0}.nv nav a:after{bottom:9px}
+.nv .btn,.btn{min-height:44px}.fl button{min-height:44px}
+footer .fb nav a{display:inline-flex;align-items:center;min-height:44px}
+.pn{margin:.2rem 0 0;font:400 13px var(--body);color:var(--dim)}
+#arq-creative-dock .motion-control{min-height:44px;min-width:44px}
 </style>
 </head>
 <body>
+<a class="skip" href="#top">Skip to content</a>
 
 <div class="prog" id="prog" aria-hidden="true"></div>
 <header>
@@ -441,10 +462,10 @@ footer{border-top:1px solid var(--line);padding-block:3rem 3.4rem}
 </header>
 
 <main id="top">
-<section class="hx" id="top" aria-label="ARQ. Design studio">
+<section class="hx" id="top" aria-label="Made By ARQ">
   <div class="hx-bg" aria-hidden="true"><i class="grid"></i><i class="glow"></i><i class="grain"></i></div>
   <div class="w hx-in">
-    <div class="hx-meta mono" aria-hidden="true"><span>ARQ. Design studio</span><span class="hx-loc">52.4862° N &nbsp;1.8904° W</span><span><b class="hx-dot"></b>Birmingham <time id="hxt">--:--</time></span></div>
+    <div class="hx-meta mono" aria-hidden="true"><span>Made By ARQ</span><span class="hx-loc">52.4862° N &nbsp;1.8904° W</span><span><b class="hx-dot"></b>Birmingham <time id="hxt">--:--</time></span></div>
     <div class="hx-main">
       <div class="hx-copy">
         <h1><span class="ln"><span style="--d:120ms">Products people</span></span><span class="ln"><span style="--d:260ms" class="hx-g">understand</span></span><span class="ln"><span style="--d:400ms">at first use.</span></span></h1>
@@ -484,7 +505,7 @@ footer{border-top:1px solid var(--line);padding-block:3rem 3.4rem}
 #arq-creative-dock .heading{display:flex;align-items:baseline;justify-content:space-between;gap:14px}
 #arq-creative-dock h2{margin:0;font-family:var(--disp);font-size:clamp(30px,4.4vw,44px);line-height:1.15;font-weight:700;letter-spacing:-.02em;text-transform:none}
 #arq-creative-dock h2 span{color:var(--dock-accent)}
-#arq-creative-dock .heading>span{font:500 11px/1.4 var(--body);color:var(--dock-soft)}
+#arq-creative-dock .heading>span{font:500 12px/1.4 var(--body);color:var(--dock-soft)}
 #arq-creative-dock .dock-stage{padding:48px 0 28px;display:flex;justify-content:center}
 #arq-creative-dock .dock-bar{display:flex;flex-wrap:wrap;justify-content:center;align-items:flex-end;gap:8px;width:max-content;max-width:100%;padding:17px 12px 20px;border:1px solid var(--dock-line);border-radius:24px;background:var(--dock-bar);box-shadow:inset 0 1px 0 color-mix(in srgb,var(--fg) 8%,transparent),0 14px 30px rgba(0,0,0,.18)}
 #arq-creative-dock .dock-app{--scale:1;--lift:0;flex:0 0 64px;width:64px;height:64px;position:relative;display:flex;align-items:center;justify-content:center;padding:0;border:0;border-radius:12px;background:transparent;color:var(--dock-ink);font:inherit;cursor:pointer}
@@ -502,10 +523,44 @@ footer{border-top:1px solid var(--line);padding-block:3rem 3.4rem}
 @media(prefers-reduced-motion:reduce){#arq-creative-dock .logo-track{animation:none}#arq-creative-dock .logo-window{overflow-x:auto}#arq-creative-dock .repeated{display:none}#arq-creative-dock .app-face{transform:none;transition:none}}
 
 :root[data-theme="dark"] #arq-creative-dock .lg-item img,:root[data-theme="dark"] #arq-creative-dock .app-face img:not(.brand-image):not(.procreate){filter:grayscale(1) brightness(0) invert(1)}</style>
+
+<div class="w">
+  <div class="cn" id="cn">
+    <div class="rv"><b data-count="5">0</b><span class="mono">Projects open on this site</span></div>
+    <div class="rv" style="--d:100ms"><b data-count="32">0</b><span class="mono">Designs to browse</span></div>
+    <div class="rv" style="--d:200ms"><b data-count="3">0</b><span class="mono">Motion pieces to play</span></div>
+    <div class="rv" style="--d:300ms"><b data-count="4">0</b><span class="mono">Stages in every project</span></div>
+  </div>
+
+  <section id="services">
+    <div class="sh"><h2 class="rv">What we <span class="ac">make</span>.</h2><p class="rv" style="--d:100ms">Four areas of work, each one researched, designed and, where it needs building, built by the same studio.</p></div>
+    <div class="sv">
+      <div class="rv"><div class="mono">01</div><h3>UI and UX design</h3><p>Research, user flows, wireframes and high-fidelity interfaces for apps and web products, tested with real users before launch.</p><ul><li>User interviews</li><li>Prototypes in Figma</li><li>Usability testing</li></ul></div>
+      <div class="rv" style="--d:90ms"><div class="mono">02</div><h3>Websites</h3><p>Responsive sites designed, then built in the platform you prefer. Quick to load, simple to update and checked on real devices.</p><ul><li>Design and development</li><li>Accessible by default</li><li>On-page SEO and blog</li></ul></div>
+      <div class="rv" style="--d:180ms"><div class="mono">03</div><h3>Brand and graphics</h3><p>Posters, social campaigns and marketing material with consistent type, layout and colour across print and screen.</p><ul><li>Identity touches</li><li>Campaign graphics</li><li>Print and digital</li></ul></div>
+      <div class="rv" style="--d:270ms"><div class="mono">04</div><h3>Motion</h3><p>Kinetic type and short motion pieces for social feeds and product stories, made to be read in the first seconds.</p><ul><li>Vertical reels</li><li>Interface motion</li><li>After Effects</li></ul></div>
+    </div>
+  </section>
+
+  <section id="work">
+    <div class="sh"><h2 class="rv">Selected <span class="ac">work</span>.</h2><p class="rv" style="--d:100ms">Open any project to see every design, play the motion pieces and read how it was made.</p></div>
+    <div class="fl rv" id="fl" role="group" aria-label="Filter work">
+      <button type="button" data-f="all" aria-pressed="true">All</button>
+      <button type="button" data-f="ui" aria-pressed="false">UI / UX</button>
+      <button type="button" data-f="web" aria-pressed="false">Websites</button>
+      <button type="button" data-f="gfx" aria-pressed="false">Graphics</button>
+      <button type="button" data-f="mo" aria-pressed="false">Motion</button>
+    </div>
+    <div class="wk" id="wk"></div>
+    <p class="note">The founder's resume and longer write-ups are on the <a href="https://santhosh092814-droid.github.io/arq-portfolio/">personal portfolio</a>.</p>
+  </section>
+
+  </div>
+
 <div id="arq-creative-dock" data-dock>
   <div class="dock-module">
-    <section class="affiliations" aria-label="Education and collaborations">
-      <div class="strip-heading"><span>Education &amp; collaborations</span><button class="motion-control" type="button" aria-label="Pause scrolling logos" aria-pressed="false">Pause</button></div>
+    <section class="affiliations" aria-label="Studied at and collaborated with">
+      <div class="strip-heading"><span>Studied at and collaborated with</span><button class="motion-control" type="button" aria-label="Pause scrolling logos" aria-pressed="false">Pause</button></div>
       <div class="logo-window"><div class="logo-track"><div class="logo-group">
         <div class="lg-item" style="--h:44px"><img src="assets/dock/bcu.svg" alt="Birmingham City University"></div>
         <div class="lg-item" style="--h:40px"><img src="assets/dock/cit.png" alt="Chennai Institute of Technology"></div>
@@ -513,8 +568,8 @@ footer{border-top:1px solid var(--line);padding-block:3rem 3.4rem}
         <div class="lg-item" style="--h:34px"><img src="assets/dock/gm.png" alt="GM Modulars"></div>
       </div></div></div>
     </section>
-    <section class="toolkit" aria-label="My creative dock">
-      <div class="heading"><h2>My creative dock<span>.</span></h2><span>Ideas to execution</span></div>
+    <section class="toolkit" aria-label="Our creative dock">
+      <div class="heading"><h2>Our creative dock<span>.</span></h2><span>Ideas to execution</span></div>
       <div class="dock-stage"><div class="dock-bar" role="group" aria-label="Design and development tools"></div></div>
       <p class="dock-detail" aria-live="polite">Design, create and build.</p>
     </section>
@@ -573,37 +628,7 @@ footer{border-top:1px solid var(--line);padding-block:3rem 3.4rem}
 <!-- /creative-dock -->
 </div>
 
-<div class="w">
-  <div class="cn" id="cn">
-    <div class="rv"><b data-count="5">0</b><span class="mono">Projects open on this site</span></div>
-    <div class="rv" style="--d:100ms"><b data-count="32">0</b><span class="mono">Designs to browse</span></div>
-    <div class="rv" style="--d:200ms"><b data-count="3">0</b><span class="mono">Motion pieces to play</span></div>
-    <div class="rv" style="--d:300ms"><b data-count="4">0</b><span class="mono">Stages in every project</span></div>
-  </div>
-
-  <section id="services">
-    <div class="sh"><h2 class="rv">What we <span class="ac">make</span>.</h2><p class="rv" style="--d:100ms">Four areas of work, each one researched, designed and, where it needs building, built by the same studio.</p></div>
-    <div class="sv">
-      <div class="rv"><div class="mono">01</div><h3>UI and UX design</h3><p>Research, user flows, wireframes and high-fidelity interfaces for apps and web products, tested with real users before launch.</p><ul><li>User interviews</li><li>Prototypes in Figma</li><li>Usability testing</li></ul></div>
-      <div class="rv" style="--d:90ms"><div class="mono">02</div><h3>Websites</h3><p>Responsive sites designed, then built in the platform you prefer. Quick to load, simple to update and checked on real devices.</p><ul><li>Design and development</li><li>Accessible by default</li><li>On-page SEO and blog</li></ul></div>
-      <div class="rv" style="--d:180ms"><div class="mono">03</div><h3>Brand and graphics</h3><p>Posters, social campaigns and marketing material with consistent type, layout and colour across print and screen.</p><ul><li>Identity touches</li><li>Campaign graphics</li><li>Print and digital</li></ul></div>
-      <div class="rv" style="--d:270ms"><div class="mono">04</div><h3>Motion</h3><p>Kinetic type and short motion pieces for social feeds and product stories, made to be read in the first seconds.</p><ul><li>Vertical reels</li><li>Interface motion</li><li>After Effects</li></ul></div>
-    </div>
-  </section>
-
-  <section id="work">
-    <div class="sh"><h2 class="rv">Selected <span class="ac">work</span>.</h2><p class="rv" style="--d:100ms">Open any project to see every design, play the motion pieces and read how it was made.</p></div>
-    <div class="fl rv" id="fl" role="group" aria-label="Filter work">
-      <button type="button" data-f="all" aria-pressed="true">All</button>
-      <button type="button" data-f="ui" aria-pressed="false">UI / UX</button>
-      <button type="button" data-f="web" aria-pressed="false">Websites</button>
-      <button type="button" data-f="gfx" aria-pressed="false">Graphics</button>
-      <button type="button" data-f="mo" aria-pressed="false">Motion</button>
-    </div>
-    <div class="wk" id="wk"></div>
-    <p class="note">The founder's resume and longer write-ups are on the <a href="https://santhosh092814-droid.github.io/arq-portfolio/">personal portfolio</a>.</p>
-  </section>
-
+  <div class="w">
   <section id="process">
     <div class="sh"><h2 class="rv">How a project <span class="ac">runs</span>.</h2><p class="rv" style="--d:100ms">Four stages, the same every time. Pick a stage to see exactly what happens in it, or let it play through.</p></div>
     <div class="pw rv" id="pw">
@@ -642,7 +667,7 @@ footer{border-top:1px solid var(--line);padding-block:3rem 3.4rem}
     <div class="ab">
       <div class="rv"><div class="mono">About</div><h2 style="margin-top:1rem">Led by <span class="ac">Santhosh</span>.</h2></div>
       <div class="rv" style="--d:100ms">
-        <p>ARQ. is a design studio founded by Santhosh Muthu, a UI developer and UX/UI designer based in Birmingham. He holds an MSc in User Experience Design from Birmingham City University and has worked across marketing, product design and 3D visualisation.</p>
+        <p>Made By ARQ (ARQ.) is a design studio founded by Santhosh Muthu, a UI developer and UX/UI designer based in Birmingham. He holds an MSc in User Experience Design from Birmingham City University and has worked across marketing, product design and 3D visualisation.</p>
         <p>He designs from research first, builds what he designs, and shows the working along the way. If you want to see how he thinks, the case studies and the daily series are public.</p>
         <p><a class="lk" href="https://santhosh092814-droid.github.io/arq-portfolio/">Visit the personal portfolio ↗</a></p>
       </div>
@@ -659,8 +684,8 @@ footer{border-top:1px solid var(--line);padding-block:3rem 3.4rem}
       </div>
       <form id="cf" class="rv" style="--d:100ms" action="https://api.web3forms.com/submit" method="POST" novalidate>
         <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
-        <input type="hidden" name="subject" value="New enquiry from the ARQ. studio site">
-        <input type="hidden" name="from_name" value="ARQ. Studio">
+        <input type="hidden" name="subject" value="New enquiry from the Made By ARQ site">
+        <input type="hidden" name="from_name" value="Made By ARQ">
         <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
         <div class="r2">
           <label><span class="mono">Name</span><input id="f-name" name="name" autocomplete="name" required></label>
@@ -670,6 +695,7 @@ footer{border-top:1px solid var(--line);padding-block:3rem 3.4rem}
           <select id="f-type" name="project_type"><option>UI / UX design</option><option>Website</option><option>Brand and graphics</option><option>Motion</option><option>Not sure yet</option></select></label>
         <label><span class="mono">Message</span><textarea id="f-msg" name="message" required placeholder="The product, the people, or the problem…"></textarea></label>
         <div><button type="submit" class="btn">Send message <i aria-hidden="true">→</i></button></div>
+        <p class="pn">Your details are used only to reply to this message.</p>
         <p class="fs" role="status" aria-live="polite"></p>
       </form>
     </div>
@@ -683,7 +709,7 @@ footer{border-top:1px solid var(--line);padding-block:3rem 3.4rem}
       <img src="assets/arq-wordmark.webp" alt="ARQ" width="66" height="22">
       <nav aria-label="Footer"><a href="#blog">Blog</a><a href="https://santhosh092814-droid.github.io/arq-portfolio/">Santhosh’s portfolio ↗</a><a href="https://www.linkedin.com/in/santhosh-muthu-a79b8b346/" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="mailto:santhosh@madebyarq.com">Email</a></nav>
     </div>
-    <p class="cp">© 2026 ARQ. Design studio, Birmingham, UK.</p>
+    <p class="cp">© 2026 Made By ARQ, Birmingham, UK.</p>
   </div>
 </footer>
 
@@ -700,7 +726,7 @@ footer{border-top:1px solid var(--line);padding-block:3rem 3.4rem}
 </div>
 
 <script src="config.js"></script>
-<script>document.write('<script src="https://santhosh092814-droid.github.io/arq-portfolio/blog/posts.js?v='+Date.now()+'"><\/script>')</script>
+<script>document.write('<script src="https://santhosh092814-droid.github.io/arq-portfolio/blog/posts.js?v='+Math.floor(Date.now()/3600000)+'"><\/script>')</script>
 <script>
 (function(){
 "use strict";
@@ -732,25 +758,25 @@ var P=[
   sum:"A visual and verbal system for an early-stage solar-wind aircraft research venture, built so every claim carries its status.",
   meta:[["Client", "Helio Nexus"], ["Role", "Brand identity designer"], ["Year", "2026"], ["Scope", "Identity, guidelines, applications"]],cs:HNC,g:HNG,gi:"assets/helio/hn-",
   r:[["19", "Pages of guidelines"], ["4", "Logo versions"], ["9", "Colours, each with a role"]]},
- {id:"posters",f:"gfx",t:"Poster Series",c:"Graphic design",y:"2023–24",role:"Graphic Designer",tools:"Photoshop, Illustrator, Figma",cover:"assets/work-posters.webp",
+ {id:"posters",f:"gfx",t:"Poster Series",c:"Graphic design",y:"2023–24",role:"Graphic Designer",tools:"Photoshop, Illustrator, Figma",cover:"assets/work-posters.webp?v=2",
   blurb:"Bold type, dramatic perspective and tight palettes across film, music and street culture.",
   sum:"A collection of poster and typography studies: bold lettering, dramatic perspective and tight palettes, built to show range across film, music and street culture.",
   g:["eyes","her","black","saints","dead","outlaw","run","night"].map(function(k){return "assets/work/"+k+".webp"}),w:800,h:1000,
   s:[["The brief","A self-initiated series showing how the studio approaches posters across genres. Every piece had to be read from across a room and still reward a closer look."],["Concept","Low-angle photography paired with oversized, distressed lettering on paper-stock textures. Each poster limits itself to one or two colours so the image and the type lock together."],["Execution","Compositing, halftone and grain textures, and hand-tuned letterforms. Small editorial details such as captions, barcodes and icons give each piece an extra layer."],["The result","A versatile body of work covering film, campaign and editorial posters, and the base for brand and event work."]],
   r:[["08","Posters in the series"],["06","Colour palettes explored"],["01","Consistent visual language"]]},
- {id:"websites",f:"web",t:"Website Design",c:"UX / UI",y:"2024–2026",role:"UI Designer",tools:"Figma, Framer",cover:"assets/work-websites.webp",
+ {id:"websites",f:"web",t:"Website Design",c:"UX / UI",y:"2024–2026",role:"UI Designer",tools:"Figma, Framer",cover:"assets/work-websites.webp?v=2",
   blurb:"Ten hero sections across travel, retail, education, crypto, beauty and real estate.",
   sum:"Ten hero-section concepts across travel, luxury retail, marketing, education, crypto, beauty and real estate: one bold first screen per brand, designed to say who it is for in a few seconds.",
   g:nums("wd",10),w:1000,h:1333,cls:"web",
   s:[["The brief","A running series of website hero sections, designed between 2024 and 2026 as concept and prototype work. Each one had to explain what the brand does, who it is for and what to do next, all above the fold."],["Visual language","Each brand gets its own mood. Warm, photographic layouts for travel and watches, clean light interfaces for marketing and education, a dark data-led look for crypto. Large headlines, generous spacing and one clear call to action keep every screen easy to scan."],["Design system","Across the set the same building blocks return: a slim navigation bar, proof points such as ratings and user counts, floating detail cards and one primary button style. That keeps each hero consistent inside its own brand while staying quick to produce."],["Final screens","Ten finished heroes, including Winzy, Veluno, Triloe, Sparkly, ShipX, Chainex and Skyline. They show range across sectors and tones, and they are the base full landing pages are built from."]],
   r:[["10","Hero sections designed"],["07","Industries covered"],["03","Years of work, 2024–26"]]},
- {id:"ui-carousel",f:"ui",t:"UI Carousel",c:"UI design",y:"",role:"UI Designer",tools:"",cover:"assets/work-ui.webp",
+ {id:"ui-carousel",f:"ui",t:"UI Carousel",c:"UI design",y:"",role:"UI Designer",tools:"",cover:"assets/work-ui.webp?v=2",
   blurb:"A six-slide carousel that teaches five interface habits with wrong and good screens side by side.",
   sum:"A six-slide educational carousel designed for a UI design creator, turning five practical interface habits into a set people can save, swipe and learn from.",
   g:nums("ui",6),w:900,h:1125,cls:"ui",
   s:[["The brief","Create a clean, scannable carousel that teaches interface design basics to a social audience. Each slide had to make one idea obvious in a few seconds. (Client name withheld.)"],["The content","Five principles, one per slide: limit your colour palette with a 60-30-10 split, use fewer fonts and weights, add more spacing, use borders instead of shadows, and avoid decorative background shapes."],["Visual approach","Every principle is shown as a wrong and a good version of the same mobile screen, side by side, so the difference is visible without reading. A tight, bold headline, one muted paragraph and a quiet dotted background keep attention on the examples."],["The result","A complete six-slide set delivered ready to post."]],
   r:[["06","Slides designed"],["05","UI principles taught"],["05","Wrong vs good screen pairs"]]},
- {id:"motion",f:"mo",t:"Motion Graphics",c:"Motion design",y:"2026",role:"Motion Designer",tools:"Adobe After Effects, Claude Code, Codex",cover:"assets/work-motion.webp",
+ {id:"motion",f:"mo",t:"Motion Graphics",c:"Motion design",y:"2026",role:"Motion Designer",tools:"Adobe After Effects, Claude Code, Codex",cover:"assets/work-motion.webp?v=2",
   blurb:"Three vertical reels in kinetic typography, made in After Effects.",
   sum:"Short motion pieces that make words and shapes move with purpose: kinetic typography and message animation built for vertical social.",
   v:[["media/motion-1.mp4","media/poster-1.jpg","Kinetic type reel",716,1274],["media/motion-2.mp4","media/poster-2.jpg","Message animation",720,1280],["media/motion-5.mp4","media/poster-5.jpg","Focus organises motion",720,1280]],
@@ -820,9 +846,9 @@ function render(p){var meta=(p.meta||[["Role",p.role],["Year",p.y],["Tools",p.to
 function openP(id){var p=P.filter(function(x){return x.id===id})[0];if(!p){closeP();return}
   if(cur===p&&pv.classList.contains("open"))return;
   if(!pv.classList.contains("open"))lastFocus=document.activeElement;
-  cur=p;render(p);pv.scrollTop=0;pv.classList.add("open");document.body.classList.add("lock");document.title=p.t+" · ARQ. Design Studio";
+  cur=p;render(p);pv.scrollTop=0;pv.classList.add("open");document.body.classList.add("lock");document.title=p.t+" · Made By ARQ";
   setTimeout(function(){try{pv.focus({preventScroll:true})}catch(e){}},50)}
-function closeP(){if(!pv.classList.contains("open"))return;pv.classList.remove("open");document.body.classList.remove("lock");cur=null;document.title="ARQ. Design Studio";
+function closeP(){if(!pv.classList.contains("open"))return;pv.classList.remove("open");document.body.classList.remove("lock");cur=null;document.title="Made By ARQ";
   $$("video",pvc).forEach(function(v){v.pause()});if(lastFocus&&lastFocus.focus){try{lastFocus.focus({preventScroll:true})}catch(e){}}}
 function route(){var h=location.hash;if(h.indexOf("#p-")===0){closeB();openP(h.slice(3))}else if(h==="#blog"||h.indexOf("#blog-")===0){closeP();openB(h.slice(6))}else{closeP();closeB()}}
 
@@ -873,9 +899,9 @@ function openB(slug){var p=slug?POSTS.filter(function(x){return x.slug===slug})[
   if(!bv.classList.contains("open"))lastFocus=document.activeElement;
   bvc.innerHTML=p?bPost(p):bIndex();$("#bvk").textContent=p?"ARQ. · ARQ./24 · Day "+p.day:"ARQ. · ARQ./24";
   if(curB!==(p||"idx")){bv.scrollTop=0}curB=p||"idx";
-  bv.classList.add("open");document.body.classList.add("lock");document.title=p?"Day "+p.day+": "+p.title+" · ARQ./24":"ARQ./24 Blog · ARQ. Design Studio";
+  bv.classList.add("open");document.body.classList.add("lock");document.title=p?"Day "+p.day+": "+p.title+" · ARQ./24":"ARQ./24 Blog · Made By ARQ";
   setTimeout(function(){try{bv.focus({preventScroll:true})}catch(e){}},50)}
-function closeB(){if(!bv.classList.contains("open"))return;bv.classList.remove("open");document.body.classList.remove("lock");curB=null;document.title="ARQ. Design Studio";if(lastFocus&&lastFocus.focus){try{lastFocus.focus({preventScroll:true})}catch(e){}}}
+function closeB(){if(!bv.classList.contains("open"))return;bv.classList.remove("open");document.body.classList.remove("lock");curB=null;document.title="Made By ARQ";if(lastFocus&&lastFocus.focus){try{lastFocus.focus({preventScroll:true})}catch(e){}}}
 $("#bvx").addEventListener("click",function(){location.hash="#arq24"});
 (function(){var h=$("#bhome");if(!h)return;var n=POSTS.slice(0,3);if(!n.length)return;h.innerHTML=n.map(bcard).join("");var hh=$("#bhh");if(hh)hh.hidden=false})();
 addEventListener("hashchange",route);
