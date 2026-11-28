@@ -9,6 +9,50 @@
 //  3. Save, commit, done. Keep the backtick ` characters that wrap the md text; if your article needs a
 //     backtick, write \` instead.
 window.ARQ24_POSTS = [
+{day: "19", date: "2026-11-28", cat: "UX · UI", region: "Global · Messaging app", read: "3 min", accent: "labels.", poster: "blog/ARQ24_Day19_No_Labels.png", slides: ["blog/ARQ24_Day19_No_Labels.png", "blog/ARQ24_Day19_No_Labels_2.png", "blog/ARQ24_Day19_No_Labels_3.png", "blog/ARQ24_Day19_No_Labels_4.png", "blog/ARQ24_Day19_No_Labels_5.png", "blog/ARQ24_Day19_No_Labels_6.png"], alt: "ARQ./24 Day 19 poster: the words NO LABELS above a bronze circle with an app tab bar of five icons, while the word labels UPDATES, CALLS, CONTACTS, CHATS and YOU fall away beneath it",
+ md: `
+# No labels.
+
+**ARQ./24 · Day 19** · Nov 28, 2026 · @Santhosh · UX · UI · 3 min read
+
+## What is ARQ./24?
+
+ARQ./24 is a daily series where I pick one real story from the design world and share what it means to me as a UX designer. One story, one take, every day. Everything is taken from published sources, with links at the end of each post so you can read the original yourself.
+
+## What happened
+
+WhatsApp is testing a few changes, and one of them is small on screen but big for UX. 9to5Mac's Marcus Mendes wrote it up on 27 November, based on reports from WABetaInfo and an official WhatsApp announcement.
+
+- **Icons only:** in a beta for iPhone, the text labels under the tab bar icons are gone. The tab bar now shows icons for Updates, Calls, Contacts, Chats and You, without any words. The existing Liquid Glass look stays.
+- **View-once texts:** also in iOS beta testing (TestFlight). View once already worked for photos, videos and voice messages; now it's coming to text. Long-press send to choose it. The recipient opens it in a separate view, screenshots, screen recordings, copying and forwarding are blocked, and once it's closed, neither person can see it again.
+- **Travel eSIMs (announced):** WhatsApp says iPhone and Android users will be able to buy an international travel data plan inside the app in a few taps, without leaving WhatsApp and while keeping their number. Partners include Jio, Smart Axiata, Smart Communications and Verizon. It will roll out "in select countries soon", with no countries or prices named yet.
+
+Worth saying clearly: the two beta changes are tests. As 9to5Mac notes, there's no word on when, or whether, they'll reach everyone.
+
+## The visual, explained
+
+An app tab bar with five icons, and the word labels underneath it falling away: UPDATES, CALLS, CONTACTS, CHATS, YOU. That's the change in one picture. The icons and the tab bar are my own drawings, not WhatsApp's interface. Inside the carousel: the before-and-after tab bar, how view-once texts work, the travel eSIM news, and my take.
+
+[image: ARQ./24 Day 19 poster: NO LABELS, a tab bar of five icons with their word labels falling away]
+
+## My take
+
+Removing labels makes a screen look calmer. But a label isn't decoration; it's the answer to "what does this do?". Icons are only obvious to people who already know the app. A phone handset reads as "calls" almost everywhere, but a dotted ring for Updates, or two heads for Contacts, is something you learn.
+
+For an app used by so many different people, in so many languages, that's a real trade-off. The cost of a cleaner tab bar isn't paid by the power user. It's paid by the new user, the older user, and the person using the app in their second language. If I were testing this, I'd watch first-time users try to find something specific, not ask existing users whether they like the look.
+
+## What I'm taking into my own work
+
+My UX case study is about international students in the UK, people who are often using new apps, in a second language, in a new country. For them, a plain word next to an icon is the cheapest accessibility win there is. I'm keeping labels on every main action in my designs, and I'll test icon-only versions with new users before I ever drop a word.
+
+And the travel eSIM news lands close to home too: getting data on arrival is one of the first problems a student faces when they land in the UK.
+
+## Source
+
+- 9to5Mac, "WhatsApp announces travel eSIMs, tests view-once texts and a cleaner interface" by Marcus Mendes (27 November 2026): https://9to5mac.com/2026/11/27/whatsapp-announces-travel-esims-tests-view-once-texts-and-a-cleaner-interface/
+
+*ARQ./24 is a daily design news series by Santhosh Muthu at ARQ. One design story, every day.*
+`},
 {day: "18", date: "2026-11-27", cat: "Brand · Identity", region: "UK · Festival", read: "3 min", accent: "first.", poster: "blog/ARQ24_Day18_City_First.png", slides: ["blog/ARQ24_Day18_City_First.png", "blog/ARQ24_Day18_City_First_2.png", "blog/ARQ24_Day18_City_First_3.png", "blog/ARQ24_Day18_City_First_4.png", "blog/ARQ24_Day18_City_First_5.png", "blog/ARQ24_Day18_City_First_6.png"], alt: "ARQ./24 Day 18 poster: the words CITY FIRST above a bronze circle with a 3-day festival pass showing a seaside sunset and pier, while a small stub reading ONE ACT has been torn off and drifts away",
  md: `
 # City first.
